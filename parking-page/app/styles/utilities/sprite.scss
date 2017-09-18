@@ -1,0 +1,37 @@
+$icons: (
+    sprite: (width: 131.8px, height: 134px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
+    email: (width: 80.7px, height: 29.6px, backgroundX: 0px, backgroundY: 0px),
+    phone: (width: 71.8px, height: 47px, backgroundX: 0px, backgroundY: -30px),
+    pistenBully: (width: 129.8px, height: 31.2px, backgroundX: 0px, backgroundY: -77px),
+    reform: (width: 131.8px, height: 24.3px, backgroundX: 0px, backgroundY: -109px),
+);
+
+$sprite: map-get($icons, sprite);
+
+
+@mixin get-sprite($spritename){
+    $spritename: map-get($icons, $spritename);
+    
+    display: inline-block;
+    vertical-align: middle;
+    width: map-get($spritename, width);
+    height: map-get($spritename, height);
+    background-image: url(map-get($sprite, svgPath));
+    background-position: map-get($spritename, backgroundX) map-get($spritename, backgroundY);
+    background-repeat: no-repeat;
+
+    // #{$modernizr-nosvg} & { background-image: url(map-get($sprite, pngPath)); }
+}
+
+.sprite-email{
+	@include get-sprite(email);
+}
+.sprite-phone{
+	@include get-sprite(phone);
+}
+.sprite-pistenBully{
+	@include get-sprite(pistenBully);
+}
+.sprite-reform{
+	@include get-sprite(reform);
+}

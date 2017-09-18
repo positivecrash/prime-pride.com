@@ -1,0 +1,34 @@
+%width_base
+{
+  box-sizing: border-box;
+  width:100%;
+  max-width: $width-base-max - $padding-side*2;
+  margin: 0 auto;
+
+  padding-left: $padding-side;
+  padding-right: $padding-side;
+}
+
+
+%link_noline{
+  &, &:hover, &:focus, &:visited{
+    text-decoration: none;
+    text-decoration: none !important;
+  }
+}
+
+
+
+%flex_center{
+  /* align centered content all sides */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex_align_v{
+  /* align centered content vertically */
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,289 @@
+@charset "UTF-8";
+@import "compass";
+
+@include font-face("DINProC", font-files("DINPro-CondMedium.woff","DINPro-CondMedium.ttf"), "DINPro-CondMedium.eot", 500);
+@include font-face("PragmaticaLightC", font-files("PragmaticaLightC.woff","PragmaticaLightC.ttf"), "PragmaticaLightC.eot", normal);
+
+@import "utilities/my_reset";
+@import "utilities/variables";
+@import "utilities/media";
+
+@import "utilities/extends";
+@import "utilities/sprite";
+
+
+
+
+$gap_h: 100px;
+
+%back{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+
+html, body{
+  position: relative;
+  height: 100%;
+}
+
+body{
+  background-color: #fff;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: $font-family-base;
+
+  &:before, #back{
+    @extend %back;
+    background-color: $c-base;
+
+    height: 35%;
+    padding-bottom: image-height('mountains_new.png');
+  }
+
+  &:before{
+    z-index: 0;
+  }
+
+  #back{
+    z-index: 1;
+
+    background: image_url('banners/1.jpg') no-repeat 50% 50%;
+    background-size: cover;
+  }
+}
+
+
+
+
+
+.d-t{
+  display: table;
+}
+
+.d-t-cell_m{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.t-gray{
+  color: $c-gray;
+}
+
+
+
+
+
+
+#top, #bottom{
+  position: relative;
+  z-index: 2;
+}
+
+#top{
+  @extend %flex_center;
+
+  height: 40%;
+  color: #fff;
+  padding-top: $gap_h;
+  box-sizing: border-box;
+
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+
+
+
+
+
+#bottom{
+  height: 60%;
+  color: $c-text;
+
+
+  &:before{
+    @extend %back;
+
+    top:1px;
+    height: image-height('mountains_new.png');
+    background: image_url('mountains_new.svg') no-repeat 50% 0;
+
+    z-index: 0;
+  }
+}
+
+#bottom-content{
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+
+
+
+
+
+#brands{
+  padding-top: $gap_h + 60px;
+  margin: 0 auto;
+
+  .left, .right {
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  *[class *= 'sprite-']{
+    margin-left: 34px;
+
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}
+
+#brands-text{
+  text-transform: uppercase;
+  border-width: 1px 0;
+  border-style: dashed;
+  border-color: $c-gray;
+
+  padding: 16px 0;
+  max-width: 250px;
+  margin: 0 auto;
+
+  font-size: 10px;
+
+  color: $c-gray;
+
+  p{
+    max-width: 200px;
+    margin: 0 auto;
+    letter-spacing: 6px;
+  }
+}
+
+
+
+
+
+
+
+
+#contacts{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.contacts-line{
+  margin-top: 20px;
+
+  :first-child{
+    margin-top: 0;
+  }
+}
+
+
+#phone{
+  font-size: 60px;
+  line-height: 1;
+  font-family: $font-family-second;
+  position: relative;
+}
+
+#email{
+  font-size: 25px;
+  line-height: 1;
+  position: relative;
+
+  box-sizing: border-box;
+  padding: 10px 30px;
+  border: 1px solid $c-gray;
+  max-width: 282px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 640px) and (min-height: 720px) {
+
+  body{
+    overflow: hidden;
+  }
+
+
+  #brands{
+    display: table;
+    padding-top: $gap_h + 20px;
+   
+    .left, .right {
+      width: 530px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  #contacts{
+    /* align centered content all sides */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 186px;
+
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+
+  #phone{
+
+    &:before{
+      $phone: map-get($icons, phone);
+
+      content: "";
+      @include get-sprite(phone);
+
+      position: absolute;
+      left: - 90px;
+      top: 50%;
+      margin-top: - map-get($phone, height)/2;
+    }
+  }
+
+
+  #email{
+
+    &:before{
+      content: "";
+      position: absolute;
+
+      $email: map-get($icons, email);
+      @include get-sprite(email);
+
+      left: - map-get($email, width);
+      top: 50%;
+      margin-top: - map-get($email, height)/2;
+    }
+  }
+  
+}
