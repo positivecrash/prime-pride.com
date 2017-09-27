@@ -1,13 +1,13 @@
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondMedium.eot?1505731956');
-  src: url('../fonts/DINPro-CondMedium.eot?&1505731956#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondMedium.woff?1505731956') format('woff'), url('../fonts/DINPro-CondMedium.ttf?1491803426') format('truetype');
+  src: url('../fonts/DINPro-CondMedium.eot?1505736500');
+  src: url('../fonts/DINPro-CondMedium.eot?&1505736500#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondMedium.woff?1505736500') format('woff'), url('../fonts/DINPro-CondMedium.ttf?1491803426') format('truetype');
   font-weight: 500;
 }
 @font-face {
   font-family: "PragmaticaLightC";
-  src: url('../fonts/PragmaticaLightC.eot?1505731956');
-  src: url('../fonts/PragmaticaLightC.eot?&1505731956#iefix') format('embedded-opentype'), url('../fonts/PragmaticaLightC.woff?1505731956') format('woff'), url('../fonts/PragmaticaLightC.ttf?1491805524') format('truetype');
+  src: url('../fonts/PragmaticaLightC.eot?1505736500');
+  src: url('../fonts/PragmaticaLightC.eot?&1505736500#iefix') format('embedded-opentype'), url('../fonts/PragmaticaLightC.woff?1505736500') format('woff'), url('../fonts/PragmaticaLightC.ttf?1491805524') format('truetype');
   font-weight: normal;
 }
 * {

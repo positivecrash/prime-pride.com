@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import "compass";
+
+@import "utilities/my_reset";
+@import "utilities/variables";
+@import "utilities/media";
+
+@import "utilities/extends";
+@import "utilities/text";
+
+@import "utilities/sprite";
+@import "utilities/icons";
+
+@import "sections/header";
+
+
+
+html, body{
+  position: relative;
+  height: 100%;
+}
+
+body{
+  background-color: #fff;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: $font-family-base;
+}
+
+
+
+/* CONTAINERS */
+
+.container
+{
+	@extend %width_base;
+}
+
+.container-full
+{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+/* end of CONTAINERS */
+
+
+
+
+
+
+.d-t{
+  display: table;
+}
+
+.d-t-cell{
+  display: table-cell;
+}
+
+
+
+
+/* ALIGN ELEMENT */
+
+.align-b-middle
+{
+	vertical-align: middle;
+}
+
+.align-t-right
+{
+	text-align: right;
+}
+
+/* end of ALIGN ELEMENT */

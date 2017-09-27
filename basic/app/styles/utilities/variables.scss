@@ -1,23 +1,21 @@
 $point-mobile: 640px;
 $point-tablet: 768px;
-$point-desktop-s: 1024px;
-$point-desktop-m: 1280px;
-$point-desktop-b: 1620px;
+$point-desktop-s: 1000px;
 
 $width-base-max: $point-desktop-s;
 
-$padding-side: 40;
+$padding-side: 10px;
 
 
 
 //colors
-$c-base: #212324;
-$c-gray: #848484;
+$c-base: #222;
+$c-beige: #F2D383;
 
 $c-text: $c-base;
 
 
 
 //fonts, types, text
-$font-family-base:  'PragmaticaLightC', Helvetica, Arial, sans-serif;
+$font-family-base:  'Fira Sans', 'Roboto', Arial, sans-serif;
 $font-family-second: 'DINProC', serif;

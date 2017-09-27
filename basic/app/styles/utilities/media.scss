@@ -21,20 +21,3 @@
 		@content;
 	}
 }
-
-@mixin min_desktop_m
-{
-	@media screen and (min-width: #{$point-desktop-m + 1})
-	{
-		@content;
-	}
-}
-
-
-@mixin desktop_b
-{
-	@media screen and (min-width: #{$point-desktop-b})
-	{
-		@content;
-	}
-}

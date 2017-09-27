@@ -1,0 +1,47 @@
+header[role="banner"]{
+	background-color: $c-base;
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+
+	font-family: $font-family-second;
+	font-size: 19px;
+	line-height: 1.2;
+
+	text-transform: uppercase;
+
+	&, a
+	{
+		color: $c-beige;
+	}
+
+	a
+	{
+		@extend %link_noline;
+	}
+}
+
+
+#header-logo
+{
+	display: block;
+	width: image-width('pp-logo.png');
+
+	@extend %container_image;
+}
+
+
+ul.header-nav
+{
+	list-style: none;
+
+	& > li 
+	{
+		display: inline-block;
+	}
+
+	a.i-search
+	{
+		font-size: 22px;
+	}
+}

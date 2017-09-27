@@ -18,17 +18,11 @@
 }
 
 
-
-%flex_center{
-  /* align centered content all sides */
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-%flex_align_v{
-  /* align centered content vertically */
-  display: flex;
-  align-items: center;
+%container_image
+{
+  img
+  {
+    display: inline-block;
+    max-width: 100%;
+  }
 }

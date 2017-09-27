@@ -8,9 +8,14 @@ var gulp           = require('gulp'),
 	rename           = require('gulp-rename'),
 	concat           = require('gulp-concat'),
 	livereload       = require('gulp-livereload'),
+
 	svgSprite        = require("gulp-svg-sprite"),
 	svg2png          = require('gulp-svg2png'),
 	image            = require('gulp-image'),
+
+  iconfont         = require('gulp-iconfont'),
+  iconfontCss      = require('gulp-iconfont-css'),
+
 	ttf2eot          = require('gulp-ttf2eot'),
 	ttf2woff         = require('gulp-ttf2woff');
 
@@ -25,7 +30,6 @@ gulp.task('styles', function() {
 		}))
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(gulp.dest('dist/assets/css'))
-    .pipe(gulp.dest('dist/assets/css'))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(cleancss({
       compatibility: 'ie8'
@@ -37,7 +41,7 @@ gulp.task('styles', function() {
 //scripts
 gulp.task('scripts', function() {
   return gulp.src(['app/scripts/plugins/*.js', 'app/scripts/app.js'])
-    .pipe(concat('pp_parking.js'))
+    .pipe(concat('pp.js'))
     .pipe(gulp.dest('dist/assets/js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
@@ -53,6 +57,28 @@ gulp.task('templates', function() {
     }))
     .pipe(gulp.dest('dist/'))
 });
+
+
+// iconfonts
+gulp.task('iconfont', function(){
+  gulp.src(['app/fonticons/*.svg'])
+    .pipe(iconfontCss({
+      fontName: 'ppIconsFont',
+      fontPath: '',
+      path: 'app/styles/templates/iconsTemplate.scss',
+      targetPath: '../../../app/styles/utilities/icons.scss'
+    }))
+    .pipe(iconfont({
+      fontName: 'ppIconsFont',
+      normalize: true,
+      prependUnicode: true,
+      formats: ['svg', 'ttf', 'eot', 'woff', 'woff2']
+     }))
+    .pipe(gulp.dest('dist/assets/fonts'))
+    .pipe(livereload());
+});
+
+
 
 //svg and png sprites
 gulp.task('svgSprite', function () {
@@ -119,6 +145,9 @@ gulp.task('live', function() {
   //watch .js files
   gulp.watch('app/scripts/**/*.js', ['scripts']);
 
+  //watch font icon files
+  gulp.watch('app/fonticons/*.svg', ['iconfont']);
+
 	//svg and png sprites
   gulp.watch('app/spritesrc/*.svg', ['sprite']);
 
@@ -128,4 +157,4 @@ gulp.task('live', function() {
 
 
 //default
-gulp.task('default', ['styles', 'templates', 'scripts', 'sprite', 'fonts', 'live']);
+gulp.task('default', ['styles', 'templates', 'scripts', 'iconfont', 'sprite', 'fonts', 'live']);
