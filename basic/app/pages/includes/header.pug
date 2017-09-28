@@ -41,7 +41,7 @@ header(role="banner")
 						span.t-red 8 800 5000 163
 						span.m-l-5.m-r-5 /
 						span 24
-							sub часа
+							sup часа
 
 					li#header-search(data-toggle="hover")
 						a(href="#").i-search
@@ -49,5 +49,34 @@ header(role="banner")
 						.dropdown
 							.dropdown_content
 								.container
-									p search
+									form
+										#header-search-input
+											label: .i-search
+											input(type="search", value="600")
+
+										#header-search-result
+											.search-result
+												span.search-result-cat Каталог:
+												a(href="#") Pisten Bully 
+													span.t-beige 600
+
+											.search-result
+												span.search-result-cat Техника с пробегом:
+												a(href="#") Pisten Bully 
+													span.t-beige 600
+													| &nbsp;2014, наработка 500 часов
+												a(href="#", title="Больше результатов") ...
+
+											.search-result
+												span.search-result-cat Спецпредложения:
+												a(href="#") Сервис 
+													span.t-beige 600
+													| - 10%
+
+											.search-result
+												span.search-result-cat Новости:
+												a(href="#") Pisten Bully 
+													span.t-beige 600
+													| - лучшие продажи года
+												a(href="#", title="Больше результатов") ...
 							.dropdown_back

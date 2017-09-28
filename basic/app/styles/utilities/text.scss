@@ -3,5 +3,6 @@
 @include font-face("DINProC", font-files("DINPro-CondBold.woff","DINPro-CondBold.ttf"), "DINPro-CondBold.eot", 800);
 
 .t-red { color: $c-red; }
+.t-beige { color: $c-beige; }
 
 .nowrap { white-space: nowrap; }
