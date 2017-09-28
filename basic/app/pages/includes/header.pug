@@ -8,13 +8,32 @@ header(role="banner")
 			.d-t-cell.align-b-middle.align-t-right
 				ul.header-nav
 					li: a(href="#") Техника
-					li: a(href="#") Услуги
+					li(data-toggle="hover")
+						a(href="#") Услуги
+
+						.dropdown
+							ul
+								li: a(href="#") Восстановительный ремонт
+								li: a(href="#") Плановое обслуживание
+								li: a(href="#") Обучение вождению и эксплуатации
+								li: a(href="#") Оригинальные запчасти
+								li: a(href="#") Сопровождение сделок купли-продажи
+								li: a(href="#") Аренда
+								li: a(href="#") Лизинг
+								li: a(href="#") Восстановление техники
+
+							.dropdown_back
+
 					li: a(href="#") События
 					li: a(href="#") Контакты
-					li: a(href="#")
+					li: a(href="tel:88005000163").nowrap
 						span.t-red 8 800 5000 163
-						span / 24
+						span.m-l-5.m-r-5 /
+						span 24
 							sub часа
 
 					li
 						a(href="#").i-search
+
+
+	//- #header-navback

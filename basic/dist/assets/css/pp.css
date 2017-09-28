@@ -55,22 +55,30 @@ header[role="banner"] a, header[role="banner"] a:hover, header[role="banner"] a:
 
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondLight.eot?1506541070');
-  src: url('../fonts/DINPro-CondLight.eot?&1506541070#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1506541070') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
+  src: url('../fonts/DINPro-CondLight.eot?1506606731');
+  src: url('../fonts/DINPro-CondLight.eot?&1506606731#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1506606731') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
   font-weight: 300;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-Cond.eot?1506541070');
-  src: url('../fonts/DINPro-Cond.eot?&1506541070#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1506541070') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
+  src: url('../fonts/DINPro-Cond.eot?1506606731');
+  src: url('../fonts/DINPro-Cond.eot?&1506606731#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1506606731') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondBold.eot?1506541070');
-  src: url('../fonts/DINPro-CondBold.eot?&1506541070#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1506541070') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
+  src: url('../fonts/DINPro-CondBold.eot?1506606731');
+  src: url('../fonts/DINPro-CondBold.eot?&1506606731#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1506606731') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
   font-weight: 800;
 }
+.t-red {
+  color: #FF0000;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
 .sprite-email {
   display: inline-block;
   vertical-align: middle;
@@ -113,8 +121,8 @@ header[role="banner"] a, header[role="banner"] a:hover, header[role="banner"] a:
 
 @font-face {
   font-family: "ppIconsFont";
-  src: url('../fonts/ppIconsFont.eot?1506541070');
-  src: url('../fonts/ppIconsFont.eot?&1506541070#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1506541070') format('woff'), url('../fonts/ppIconsFont.woff2?1506541070') format('woff2'), url('../fonts/ppIconsFont.svg?1506541070') format('svg'), url('../fonts/ppIconsFont.ttf?1506541070') format('truetype');
+  src: url('../fonts/ppIconsFont.eot?1506606731');
+  src: url('../fonts/ppIconsFont.eot?&1506606731#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1506606731') format('woff'), url('../fonts/ppIconsFont.woff2?1506606731') format('woff2'), url('../fonts/ppIconsFont.svg?1506606731') format('svg'), url('../fonts/ppIconsFont.ttf?1506606731') format('truetype');
 }
 .i-search {
   font-family: "ppIconsFont";
@@ -134,9 +142,12 @@ header[role="banner"] a, header[role="banner"] a:hover, header[role="banner"] a:
 }
 
 header[role="banner"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #222;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 2px;
   font-family: "DINProC", serif;
   font-size: 19px;
   line-height: 1.2;
@@ -145,10 +156,33 @@ header[role="banner"] {
 header[role="banner"], header[role="banner"] a {
   color: #F2D383;
 }
+header[role="banner"] a {
+  display: block;
+}
+header[role="banner"] #header-navback {
+  content: "";
+  opacity: 0;
+  background-color: #222;
+  border-top: 1px solid #fff;
+  padding: 10px;
+  position: absolute;
+  top: 66px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  height: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-out;
+}
+header[role="banner"].active #header-navback {
+  opacity: 1;
+  height: 200px;
+}
 
 #header-logo {
   display: block;
   width: 60px;
+  height: 47px;
 }
 
 ul.header-nav {
@@ -156,9 +190,68 @@ ul.header-nav {
 }
 ul.header-nav > li {
   display: inline-block;
+  margin-left: 60px;
+  vertical-align: middle;
+  position: relative;
+}
+ul.header-nav > li > a {
+  padding: 10px 10px 22px;
+  margin-top: 8px;
+  border-radius: 2px 2px 0 0;
+}
+ul.header-nav > li[data-toggle="hover"] .dropdown:hover, ul.header-nav > li[data-toggle="hover"]:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+ul.header-nav > li[data-toggle="hover"]:hover > a {
+  background-color: #fff;
+  color: #222;
 }
 ul.header-nav a.i-search {
   font-size: 22px;
+}
+
+.dropdown {
+  transition: all 0.2s linear;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 62px;
+  left: 0;
+  padding: 30px 0;
+  z-index: 1;
+}
+.dropdown, .dropdown a {
+  color: #fff;
+}
+.dropdown ul {
+  list-style: none;
+  position: relative;
+  z-index: 1;
+}
+.dropdown li {
+  display: block;
+  margin-top: 15px;
+  white-space: nowrap;
+  text-align: left;
+}
+.dropdown li a {
+  color: #fff;
+}
+.dropdown li:first-child {
+  margin-top: 0;
+}
+.dropdown .dropdown_back {
+  content: "";
+  background-color: #222;
+  border-top: 1px solid #fff;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  height: 300px;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -198,3 +291,13 @@ body {
 }
 
 /* end of ALIGN ELEMENT */
+/* MARGINS & PADDINGS */
+.m-l-5 {
+  margin-left: 5px;
+}
+
+.m-r-5 {
+  margin-right: 5px;
+}
+
+/* end of MARGINS & PADDINGS */
