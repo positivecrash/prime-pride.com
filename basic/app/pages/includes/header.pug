@@ -12,19 +12,30 @@ header(role="banner")
 						a(href="#") Услуги
 
 						.dropdown
-							ul
-								li: a(href="#") Восстановительный ремонт
-								li: a(href="#") Плановое обслуживание
-								li: a(href="#") Обучение вождению и эксплуатации
-								li: a(href="#") Оригинальные запчасти
-								li: a(href="#") Сопровождение сделок купли-продажи
-								li: a(href="#") Аренда
-								li: a(href="#") Лизинг
-								li: a(href="#") Восстановление техники
+							.dropdown_content
+								ul
+									li: a(href="#") Восстановительный ремонт
+									li: a(href="#") Плановое обслуживание
+									li: a(href="#") Обучение вождению и эксплуатации
+									li: a(href="#") Оригинальные запчасти
+									li: a(href="#") Сопровождение сделок купли-продажи
+									li: a(href="#") Аренда
+									li: a(href="#") Лизинг
+									li: a(href="#") Восстановление техники
 
 							.dropdown_back
 
-					li: a(href="#") События
+					li(data-toggle="hover")
+						a(href="#") События
+
+						.dropdown
+							.dropdown_content
+								ul
+									li: a(href="#") Ежегодные мероприятия
+									li: a(href="#") Отзывы
+
+							.dropdown_back
+
 					li: a(href="#") Контакты
 					li: a(href="tel:88005000163").nowrap
 						span.t-red 8 800 5000 163
@@ -32,8 +43,11 @@ header(role="banner")
 						span 24
 							sub часа
 
-					li
+					li#header-search(data-toggle="hover")
 						a(href="#").i-search
 
-
-	//- #header-navback
+						.dropdown
+							.dropdown_content
+								.container
+									p search
+							.dropdown_back

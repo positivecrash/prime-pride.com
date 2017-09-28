@@ -1,3 +1,5 @@
+
+/* HEADER BASIC */
 header[role="banner"]{
 	position: fixed;
 	top: 0;
@@ -16,6 +18,7 @@ header[role="banner"]{
 	&, a
 	{
 		color: $c-beige;
+		font-weight: 400;
 	}
 
 	a
@@ -24,41 +27,13 @@ header[role="banner"]{
 		display: block;
 	}
 
-
-
-	#header-navback
-	{
-		content: "";
-
-		opacity: 0;
-		
-		background-color: $c-base;
-		border-top: 1px solid #fff;
-		padding: 10px;
-
-		position: absolute;
-		top: 66px;
-		left: 0;
-		right: 0;
-		z-index: 0;
-
-		height: 0;
-		box-sizing: border-box;
-
-		transition: all 0.2s ease-out;
-	}
-
-	&.active #header-navback{
-		opacity: 1;
-		height: 200px;
-	}
-
-
 }
+/* end of HEADER BASIC */
 
 
 
 
+/* HEADER LOGO */
 #header-logo
 {
 	display: block;
@@ -67,11 +42,13 @@ header[role="banner"]{
 
 	@extend %container_image;
 }
+/* end of HEADER LOGO */
 
 
 
 
 
+/* HEADER NAVIGATION BASIC */
 
 ul.header-nav
 {
@@ -89,20 +66,6 @@ ul.header-nav
     		margin-top: 8px;
     		border-radius: 2px 2px 0 0;
 		}
-
-		&[data-toggle="hover"]
-		{
-			.dropdown:hover, &:hover .dropdown {
-			   	visibility: visible;
-				opacity: 1;
-			}
-
-			&:hover > a{
-				background-color: #fff;
-				color: $c-base;
-			}
-		}
-
 	}
 
 	a.i-search
@@ -111,7 +74,12 @@ ul.header-nav
 	}
 }
 
+/* end of HEADER NAVIGATION BASIC */
 
+
+
+
+/* HEADER NAVIGATION DROPDOWN */
 .dropdown
 {
 	transition: all 0.2s linear;
@@ -126,12 +94,13 @@ ul.header-nav
 
 	&, a { color: #fff; }
 
-	ul
+	.dropdown_content
 	{
-		list-style: none;
 		position: relative;
 		z-index: 1;
 	}
+
+	ul { list-style: none; }
 
 	li { 
 		display: block;
@@ -162,3 +131,45 @@ ul.header-nav
 		box-sizing: border-box;
 	}
 }
+
+
+ul.header-nav > li[data-toggle="hover"]{
+	.dropdown:hover, &:hover .dropdown {
+	   	visibility: visible;
+		opacity: 1;
+	}
+
+	&:hover > a{
+		background-color: #fff;
+		color: $c-base;
+	}
+}
+
+/* end of HEADER NAVIGATION DROPDOWN */
+
+
+
+
+
+/* HEADER NAVIGATION SEARCH */
+
+#header-search
+{
+	margin-left: 30px;
+	position: static;
+
+	.dropdown
+	{
+		right: 0;
+		text-align: left;
+	}
+}
+
+/* end of HEADER NAVIGATION SEARCH */
+
+
+
+
+
+/* HEADER NAVIGATION MOBILE */
+/* end of HEADER NAVIGATION MOBILE */

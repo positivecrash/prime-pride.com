@@ -141,6 +141,7 @@ header[role="banner"] a, header[role="banner"] a:hover, header[role="banner"] a:
   content: "";
 }
 
+/* HEADER BASIC */
 header[role="banner"] {
   position: fixed;
   top: 0;
@@ -155,36 +156,22 @@ header[role="banner"] {
 }
 header[role="banner"], header[role="banner"] a {
   color: #F2D383;
+  font-weight: 400;
 }
 header[role="banner"] a {
   display: block;
 }
-header[role="banner"] #header-navback {
-  content: "";
-  opacity: 0;
-  background-color: #222;
-  border-top: 1px solid #fff;
-  padding: 10px;
-  position: absolute;
-  top: 66px;
-  left: 0;
-  right: 0;
-  z-index: 0;
-  height: 0;
-  box-sizing: border-box;
-  transition: all 0.2s ease-out;
-}
-header[role="banner"].active #header-navback {
-  opacity: 1;
-  height: 200px;
-}
 
+/* end of HEADER BASIC */
+/* HEADER LOGO */
 #header-logo {
   display: block;
   width: 60px;
   height: 47px;
 }
 
+/* end of HEADER LOGO */
+/* HEADER NAVIGATION BASIC */
 ul.header-nav {
   list-style: none;
 }
@@ -199,18 +186,12 @@ ul.header-nav > li > a {
   margin-top: 8px;
   border-radius: 2px 2px 0 0;
 }
-ul.header-nav > li[data-toggle="hover"] .dropdown:hover, ul.header-nav > li[data-toggle="hover"]:hover .dropdown {
-  visibility: visible;
-  opacity: 1;
-}
-ul.header-nav > li[data-toggle="hover"]:hover > a {
-  background-color: #fff;
-  color: #222;
-}
 ul.header-nav a.i-search {
   font-size: 22px;
 }
 
+/* end of HEADER NAVIGATION BASIC */
+/* HEADER NAVIGATION DROPDOWN */
 .dropdown {
   transition: all 0.2s linear;
   visibility: hidden;
@@ -224,10 +205,12 @@ ul.header-nav a.i-search {
 .dropdown, .dropdown a {
   color: #fff;
 }
-.dropdown ul {
-  list-style: none;
+.dropdown .dropdown_content {
   position: relative;
   z-index: 1;
+}
+.dropdown ul {
+  list-style: none;
 }
 .dropdown li {
   display: block;
@@ -254,6 +237,29 @@ ul.header-nav a.i-search {
   box-sizing: border-box;
 }
 
+ul.header-nav > li[data-toggle="hover"] .dropdown:hover, ul.header-nav > li[data-toggle="hover"]:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+ul.header-nav > li[data-toggle="hover"]:hover > a {
+  background-color: #fff;
+  color: #222;
+}
+
+/* end of HEADER NAVIGATION DROPDOWN */
+/* HEADER NAVIGATION SEARCH */
+#header-search {
+  margin-left: 30px;
+  position: static;
+}
+#header-search .dropdown {
+  right: 0;
+  text-align: left;
+}
+
+/* end of HEADER NAVIGATION SEARCH */
+/* HEADER NAVIGATION MOBILE */
+/* end of HEADER NAVIGATION MOBILE */
 html, body {
   position: relative;
   height: 100%;
