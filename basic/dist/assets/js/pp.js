@@ -562,7 +562,9 @@ References:
 jQuery(document).ready(function($){
 	
 
-	/* SET EQUAL HEIGHT FOR SUBMENU'S BACK */
+	/* HEADER */
+
+	/* Set equal height for submenu's back */
 	if ( $('header[role="banner"] .dropdown').length > 0 )
 	{
 		var dd_h = 0;
@@ -575,5 +577,20 @@ jQuery(document).ready(function($){
 		$('header[role="banner"] .dropdown .dropdown_back').height(dd_h);
 	}
 
+
+	/* Mobile navigation toggler */
+	if ( $('#header-mobileTog').length > 0 )
+	{
+		 $('#header-mobileTog').on('click', function(e){
+		 	e.preventDefault();
+		 	e.stopPropagation();
+
+		 	$('header[role=banner]').toggleClass('opened');
+		 });
+	}
+
+
+
+	/* end of HEADER */
 
 });

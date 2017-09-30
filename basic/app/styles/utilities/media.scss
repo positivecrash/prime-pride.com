@@ -1,6 +1,6 @@
 @mixin min_mobile
 {
-	@media screen and (min-width: #{$point-mobile}) 
+	@media screen and (min-width: #{$point-mobile + 1}) 
 	{
 		@content;
 	}
@@ -9,7 +9,7 @@
 
 @mixin min_tablet
 {
-	@media screen and (min-width: #{$point-tablet}) 
+	@media screen and (min-width: #{$point-tablet + 1}) 
 	{
 		@content;
 	}
@@ -17,6 +17,33 @@
 
 @mixin min_desktop_s{
 	@media screen and (min-width: #{$point-desktop-s + 1})
+	{
+		@content;
+	}
+}
+
+
+
+
+@mixin max_mobile
+{
+	@media screen and (max-width: #{$point-mobile}) 
+	{
+		@content;
+	}
+}
+
+
+@mixin max_tablet
+{
+	@media screen and (max-width: #{$point-tablet}) 
+	{
+		@content;
+	}
+}
+
+@mixin max_desktop_s{
+	@media screen and (max-width: #{$point-desktop-s})
 	{
 		@content;
 	}

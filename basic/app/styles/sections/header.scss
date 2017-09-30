@@ -55,11 +55,11 @@ header[role="banner"]{
 
 /* HEADER NAVIGATION BASIC */
 
-ul.header-nav
+#header-nav
 {
-	list-style: none;
+	ul { list-style: none; }
 
-	& > li 
+	& > ul > li 
 	{
 		display: inline-block;
 		margin-left: 60px;
@@ -143,21 +143,24 @@ ul.header-nav
 		right: 0;
 		z-index: 0;
 
-		height: 300px;
+		height: 100%;
 		box-sizing: border-box;
 	}
 }
 
 
-ul.header-nav > li[data-toggle="hover"]{
+@include min_tablet()
+{
+	#header-nav > ul > li[data-toggle="hover"]{
 
-	.dropdown:hover, &:hover .dropdown {
-		animation: 0.2s DDfadeIn 0.4s ease-out forwards;
-	}
+		.dropdown:hover, &:hover .dropdown {
+			animation: 0.2s DDfadeIn 0.4s ease-out forwards;
+		}
 
-	&:hover > a{
-		background-color: #fff;
-		color: $c-base;
+		&:hover > a{
+			background-color: #fff;
+			color: $c-base;
+		}
 	}
 }
 
@@ -172,7 +175,7 @@ ul.header-nav > li[data-toggle="hover"]{
 #header-search
 {
 	margin-left: 30px;
-	position: static;
+	position: static !important;
 
 	.dropdown
 	{
@@ -258,4 +261,104 @@ ul.header-nav > li[data-toggle="hover"]{
 
 
 /* HEADER NAVIGATION MOBILE */
+#header-mobileTog
+{
+	display: none;
+
+	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	padding: 4px;
+
+	border: 1px solid $c-beige;
+
+	span
+	{
+		display: block;
+		height: 1px;
+		background-color: $c-beige;
+		width: 100%;
+
+		margin-top: 5px;
+
+		transition: all .3s ease-in-out;
+
+		&:first-child { margin-top: 4px; }
+	}
+}
+
+
+header.opened
+{
+	#header-mobileTog span
+	{
+		&:nth-child(2){ opacity: 0; }
+  		&:nth-child(1) {
+  			margin-top: 0;
+  			transform: translateY(10px) rotate(45deg);
+  		}
+  		&:nth-child(3) {
+			    margin-top: 13px;
+  			transform: translateY(-10px) rotate(-45deg);
+  		}
+  	}
+}
+
+
+
+
+@include max_tablet()
+{
+	#header-mobileTog { display: inline-block; }
+
+	#header-nav
+	{
+		display: none;
+
+		position: absolute;
+	    top: 55px;
+	    left: 0;
+	    right: 0;
+        bottom: 0;
+	    background: $c-base;
+	    text-align: center;
+	    overflow-y: auto;
+	    border-top: 1px solid #fff;
+
+	    ul > li{
+	    	display: block;
+    		
+    		max-width: 500px;
+    		margin-left: auto;
+    		margin-right: auto;
+	    }
+
+	    .dropdown{
+	    	display: none;
+	    }
+	}
+
+	header[role=banner]
+	{
+		padding-top: 4px;
+		padding-bottom: 4px;
+		
+		&.opened { bottom: 0; }
+	}
+
+	header.opened #header-nav { display: block; }
+
+
+	#header-search
+	{
+		& > a.i-search, .dropdown_back { display: none; }
+		.dropdown
+		{
+			display: block;
+			visibility: visible;
+			opacity: 1;
+			position: static;
+		}
+	}
+}
 /* end of HEADER NAVIGATION MOBILE */

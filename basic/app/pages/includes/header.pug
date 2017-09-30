@@ -6,77 +6,82 @@ header(role="banner")
 					img(alt="Prime-Pride", src="assets/i/pp-logo.png", srcset="assets/i/pp-logo-x2.png")
 
 			.d-t-cell.align-b-middle.align-t-right
-				ul.header-nav
-					li: a(href="#") Техника
-					li(data-toggle="hover")
-						a(href="#") Услуги
+				a(href="#")#header-mobileTog
+					span
+					span
+					span
+				#header-nav
+					ul
+						li: a(href="#") Техника
+						li(data-toggle="hover")
+							a(href="#") Услуги
 
-						.dropdown
-							.dropdown_content
-								ul
-									li: a(href="#") Восстановительный ремонт
-									li: a(href="#") Плановое обслуживание
-									li: a(href="#") Обучение вождению и эксплуатации
-									li: a(href="#") Оригинальные запчасти
-									li: a(href="#") Сопровождение сделок купли-продажи
-									li: a(href="#") Аренда
-									li: a(href="#") Лизинг
-									li: a(href="#") Восстановление техники
+							.dropdown
+								.dropdown_content
+									ul
+										li: a(href="#") Восстановительный ремонт
+										li: a(href="#") Плановое обслуживание
+										li: a(href="#") Обучение вождению и эксплуатации
+										li: a(href="#") Оригинальные запчасти
+										li: a(href="#") Сопровождение сделок купли-продажи
+										li: a(href="#") Аренда
+										li: a(href="#") Лизинг
+										li: a(href="#") Восстановление техники
 
-							.dropdown_back
+								.dropdown_back
 
-					li(data-toggle="hover")
-						a(href="#") События
+						li(data-toggle="hover")
+							a(href="#") События
 
-						.dropdown
-							.dropdown_content
-								ul
-									li: a(href="#") Ежегодные мероприятия
-									li: a(href="#") Отзывы
+							.dropdown
+								.dropdown_content
+									ul
+										li: a(href="#") Ежегодные мероприятия
+										li: a(href="#") Отзывы
 
-							.dropdown_back
+								.dropdown_back
 
-					li: a(href="#") Контакты
-					li: a(href="tel:88005000163").nowrap
-						span.t-red 8 800 5000 163
-						span.m-l-5.m-r-5 /
-						span 24
-							sup часа
+						li: a(href="#") Контакты
+						li: a(href="tel:88005000163").nowrap
+							span.t-red 8 800 5000 163
+							span.m-l-5.m-r-5 /
+							span 24
+								sup часа
 
-					li#header-search(data-toggle="hover")
-						a(href="#").i-search
+						li#header-search(data-toggle="hover")
+							a(href="#").i-search
 
-						.dropdown
-							.dropdown_content
-								.container
-									form
-										#header-search-input
-											label: .i-search
-											input(type="search", value="600")
+							.dropdown
+								.dropdown_content
+									.container
+										form
+											#header-search-input
+												label: .i-search
+												input(type="search", value="", placeholder="Введите здесь ваш запрос...")
 
-										#header-search-result
-											.search-result
-												span.search-result-cat Каталог:
-												a(href="#") Pisten Bully 
-													span.t-beige 600
+											#header-search-result
+												.search-result
+													span.search-result-cat Каталог:
+													a(href="#") Pisten Bully 
+														span.t-beige 600
 
-											.search-result
-												span.search-result-cat Техника с пробегом:
-												a(href="#") Pisten Bully 
-													span.t-beige 600
-													| &nbsp;2014, наработка 500 часов
-												a(href="#", title="Больше результатов") ...
+												.search-result
+													span.search-result-cat Техника с пробегом:
+													a(href="#") Pisten Bully 
+														span.t-beige 600
+														| &nbsp;2014, наработка 500 часов
+													a(href="#", title="Больше результатов") ...
 
-											.search-result
-												span.search-result-cat Спецпредложения:
-												a(href="#") Сервис 
-													span.t-beige 600
-													| - 10%
+												.search-result
+													span.search-result-cat Спецпредложения:
+													a(href="#") Сервис 
+														span.t-beige 600
+														| - 10%
 
-											.search-result
-												span.search-result-cat Новости:
-												a(href="#") Pisten Bully 
-													span.t-beige 600
-													| - лучшие продажи года
-												a(href="#", title="Больше результатов") ...
-							.dropdown_back
+												.search-result
+													span.search-result-cat Новости:
+													a(href="#") Pisten Bully 
+														span.t-beige 600
+														| - лучшие продажи года
+													a(href="#", title="Больше результатов") ...
+								.dropdown_back

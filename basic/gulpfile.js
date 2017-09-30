@@ -56,6 +56,7 @@ gulp.task('templates', function() {
       pretty: true
     }))
     .pipe(gulp.dest('dist/'))
+    .pipe(livereload());
 });
 
 
@@ -112,7 +113,8 @@ gulp.task('svgSprite', function () {
 gulp.task('pngSprite', ['svgSprite'], function() {
   gulp.src('dist/assets/i/sprite.svg')
     .pipe(svg2png())
-    .pipe(gulp.dest('dist/assets/i'));
+    .pipe(gulp.dest('dist/assets/i'))
+    .pipe(livereload());
 });
 
 gulp.task('sprite', ['pngSprite']);
@@ -133,8 +135,8 @@ gulp.task('fonts', function(){
 
 
 //watch
-gulp.task('live', function() {
-	livereload.listen();
+gulp.task('watch', function() {
+	// livereload.listen({ start: true });
 
 	//watch .scss files
 	gulp.watch('app/styles/**/*.scss', ['styles']);
@@ -157,4 +159,4 @@ gulp.task('live', function() {
 
 
 //default
-gulp.task('default', ['styles', 'templates', 'scripts', 'iconfont', 'sprite', 'fonts', 'live']);
+gulp.task('default', ['styles', 'templates', 'scripts', 'iconfont', 'sprite', 'fonts', 'watch']);
