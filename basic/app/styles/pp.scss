@@ -13,6 +13,10 @@
 
 @import "sections/header";
 
+@import "plugins/anyslide";
+
+@import "pages/index";
+
 
 
 html, body{
@@ -27,6 +31,10 @@ body{
   font-family: $font-family-base;
 }
 
+main[role="main"]
+{
+  padding-top: 64px;  //for Fixed header, so we won't loose the top of content
+}
 
 
 /* CONTAINERS */

@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i&amp;amp;subset=cyrillic,cyrillic-ext,latin-ext" type="text/css" media="all">
     <link href="assets/css/pp.min.css?v=1" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer="defer"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" defer="defer"></script>
     <script src="assets/js/pp.min.js?v=1" defer="defer"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -83,7 +83,26 @@
         </div>
       </div>
     </header>
-    <main role="main"></main>
+    <main role="main">
+      <div id="index-slider-wrap"><img id="index-slider--logo" alt="" src="assets/i/pp-logo-big.png" srcset="assets/i/pp-logo-big-x2.png">
+        <div id="index-slider">
+          <div class="js-slider-viewport">
+            <div class="slide index-slide--vid"><video autoplay muted loop>
+<source src="assets/i/indexbanner/PistenbullyTirol.mp4" type="video/mp4">
+</video>
+            </div>
+            <div class="slide index-slide--img" style="background-image: url('assets/i/indexbanner/1.jpg');"></div>
+            <div class="slide index-slide--img" style="background-image: url('assets/i/indexbanner/2.jpg');"></div>
+          </div>
+        </div>
+      </div>
+      <div id="index-brands">
+        <div class="container">
+          <div id="index-brands--logos"><span class="sprite-PistenBully"></span><span class="sprite-Reform"></span></div>
+          <div id="index-brands--title">генеральное представительство</div>
+        </div>
+      </div>
+    </main>
     <footer role="contentinfo"></footer>
   </body>
 </html>

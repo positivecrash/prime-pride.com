@@ -5,3 +5,22 @@ block head
 
 block content
 	main(role="main")
+		#index-slider-wrap
+			img#index-slider--logo(alt="", src="assets/i/pp-logo-big.png", srcset="assets/i/pp-logo-big-x2.png")
+
+			#index-slider
+				.js-slider-viewport
+					.slide.index-slide--vid
+						<video autoplay muted loop>
+							<source src="assets/i/indexbanner/PistenbullyTirol.mp4" type="video/mp4">
+						</video>
+					.slide.index-slide--img(style="background-image: url('assets/i/indexbanner/1.jpg')")
+					.slide.index-slide--img(style="background-image: url('assets/i/indexbanner/2.jpg')")
+
+
+		#index-brands
+			.container
+				#index-brands--logos
+					span.sprite-PistenBully
+					span.sprite-Reform
+				#index-brands--title генеральное представительство

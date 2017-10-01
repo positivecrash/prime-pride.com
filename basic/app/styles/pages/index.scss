@@ -1,0 +1,104 @@
+/* INDEX SLIDER */
+
+#index-slider-wrap
+{
+	position: relative;
+	height: 480px;
+	overflow: hidden;
+}
+
+#index-slider--logo
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: image-width('pp-logo-big.png');
+	height: image-height('pp-logo-big.png');
+	margin-left: - image-width('pp-logo-big.png')/2;
+	margin-top: - image-height('pp-logo-big.png')/2;
+
+	z-index: 1;
+}
+
+
+#index-slider
+{
+	background-color: $c-darktur;
+	z-index: 0;
+
+	.anyslide-loader { display: none !important; }
+
+	&, .slide
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.index-slide--img
+	{
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.index-slide--vid
+	{
+		video
+		{
+			position: absolute;
+			right: 0; 
+  			bottom: 0;
+		    min-width: 100%;
+		    min-height: 100%;
+		    width: auto;
+		    height: auto;
+		    z-index: -100;
+		}
+	}
+}
+
+/* end of INDEX SLIDER */
+
+
+
+
+/* BRANDS */
+#index-brands
+{
+	padding: 50px 0;
+	text-align: center;
+
+	span
+	{
+		display: inline-block;
+		margin-right: 40px;
+		margin-bottom: 10px;
+
+		&:last-child
+		{
+			margin-right: 0;
+		}
+	}
+}
+
+#index-brands--title
+{
+	display: inline-block;
+
+	margin-top: 10px;
+
+	border-width: 1px 0;
+	border-style: dashed;
+	border-color: $c-gray;
+
+	padding: 12px 12px 10px;
+
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 1;
+	letter-spacing: 6px;
+	font-weight: 300;
+}
+/* end of BRANDS */
