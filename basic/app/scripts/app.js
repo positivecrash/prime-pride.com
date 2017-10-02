@@ -59,8 +59,15 @@ jQuery(document).ready(function($){
 			loadFirst: 'img',
 			autoplay: true,
 			loop: true,
-			autoHover: false
+			autoHover: false,
+			pause: 12000
 		});
+	}
+
+
+	if ( $('#index-items').length > 0 )
+	{
+		$('#index-items').datahover();
 	}
 
 	/* end of INDEX PAGE */

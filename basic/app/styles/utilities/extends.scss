@@ -1,9 +1,13 @@
-%width_base
+%container_base
 {
   box-sizing: border-box;
-  width:100%;
-  max-width: $width-base-max - $padding-side*2;
   margin: 0 auto;
+  width:100%;
+}
+
+%width_base
+{
+  max-width: $width-base-max - $padding-side*2;
 
   padding-left: $padding-side;
   padding-right: $padding-side;
@@ -32,4 +36,12 @@
  /* align content vertically */
   display: flex;
   align-items: center;
+}
+
+%text_title
+{
+  font-family: $font-family-second;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
 }

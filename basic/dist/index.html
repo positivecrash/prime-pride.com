@@ -7,8 +7,10 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i&amp;amp;subset=cyrillic,cyrillic-ext,latin-ext" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" type="text/css" media="all">
     <link href="assets/css/pp.min.css?v=1" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" defer="defer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js" defer="defer"></script>
     <script src="assets/js/pp.min.js?v=1" defer="defer"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -53,7 +55,7 @@
                   </div>
                 </li>
                 <li><a href="#">Контакты</a></li>
-                <li><a class="nowrap" href="tel:88005000163"><span class="t-red">8 800 5000 163</span><span class="m-l-5 m-r-5">/</span><span>24<sup>часа</sup></span></a></li>
+                <li><a class="nowrap" href="tel:88005000163"><span class="t-white">8 800 5000 163</span><span class="m-l-5 m-r-5">/</span><span>24<sup>часа</sup></span></a></li>
                 <li id="header-search" data-toggle="hover"><a class="i-search" href="#"></a>
                   <div class="dropdown">
                     <div class="dropdown_content">
@@ -88,19 +90,95 @@
         <div id="index-slider">
           <div class="js-slider-viewport">
             <div class="slide index-slide--vid"><video autoplay muted loop>
-<source src="assets/i/indexbanner/PistenbullyTirol.mp4" type="video/mp4">
+<source src="assets/i/tmp/PistenbullyTirol.mp4" type="video/mp4">
 </video>
             </div>
-            <div class="slide index-slide--img" style="background-image: url('assets/i/indexbanner/1.jpg');"></div>
-            <div class="slide index-slide--img" style="background-image: url('assets/i/indexbanner/2.jpg');"></div>
+            <div class="slide index-slide--img" style="background-image: url('assets/i/tmp/1.jpg');"></div>
+            <div class="slide index-slide--img" style="background-image: url('assets/i/tmp/2.jpg');"></div>
           </div>
         </div>
       </div>
-      <div id="index-brands">
-        <div class="container">
+      <div class="index-sec" id="index-brands">
+        <div class="container-narrow">
           <div id="index-brands--logos"><span class="sprite-PistenBully"></span><span class="sprite-Reform"></span></div>
           <div id="index-brands--title">генеральное представительство</div>
         </div>
+      </div>
+      <div class="index-sec" id="index-num">
+        <h2 class="title-zigzag"><span>Прайм Прайд это:</span></h2>
+        <div class="container-narrow">
+          <div class="d-t">
+            <div class="d-t-cell align-b-middle">
+              <div class="index-num--n"><span class="index-num--text">187</span><span class="sprite-diamond"></span></div><span class="index-num--t index-num--text">клиентов</span>
+            </div>
+            <div class="d-t-cell align-b-middle">
+              <div class="index-num--n"><span class="index-num--text">327</span><span class="sprite-diamond"></span></div><span class="index-num--t index-num--text">машин</span>
+            </div>
+            <div class="d-t-cell align-b-middle">
+              <div class="index-num--n"><span class="index-num--text">116 000</span><span class="sprite-diamond"></span></div><span class="index-num--t index-num--text">м/ч безотказной работы</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="index-sec" id="index-items">
+        <h2 class="title-zigzag"><span>Легендарная европейская техника</span></h2>
+        <div class="container-narrow">
+          <div id="index-items--controls">
+            <div class="row">
+              <div class="col-sm-4"><a class="data-hover--active" href="#" data-hover="#index-items--1">Снегоуплотнительная</a></div>
+              <div class="col-sm-4"><a href="#" data-hover="#index-items--2">Муниципальная</a></div>
+              <div class="col-sm-4"><a href="#" data-hover="#index-items--3">Сельское хозяйство</a></div>
+              <div class="col-sm-4"><a href="#" data-hover="#index-items--4">Вездеходы в специсполнении</a></div>
+              <div class="col-sm-4"><a href="#" data-hover="#index-items--5">Восcтановленная техника </a></div>
+              <div class="col-sm-4"><a href="#" data-hover="#index-items--6">Дополнительное оборудование</a></div>
+            </div>
+          </div>
+          <div id="index-items--img"><a class="data-hover--content" href="#" id="index-items--1"><img alt="" src="assets/i/tmp/index-items-1.jpg"></a><a class="data-hover--content" href="#" id="index-items--2"><img alt="" src="assets/i/tmp/index-items-2.jpg"></a><a class="data-hover--content" href="#" id="index-items--3"><img alt="" src="assets/i/tmp/index-items-3.jpg"></a><a class="data-hover--content" href="#" id="index-items--4"><img alt="" src="assets/i/tmp/index-items-4.jpg"></a><a class="data-hover--content" href="#" id="index-items--5"><img alt="" src="assets/i/tmp/index-items-5.jpg"></a><a class="data-hover--content" href="#" id="index-items--6"><img alt="" src="assets/i/tmp/index-items-6.jpg"></a></div>
+        </div>
+      </div>
+      <div class="index-sec" id="index-services">
+        <h2 class="title-zigzag"><span>Услуги</span></h2>
+        <div class="container-narrow">
+          <div class="row">
+            <div class="col-sm-6 col-md-4"><a class="service-link" href="#"><span class="sprite-service-1"></span><span class="service-link--text">Восстановительный ремонт</span></a></div>
+            <div class="col-sm-6 col-md-4"><a class="service-link" href="#"><span class="sprite-service-2"></span><span class="service-link--text">Плановое обслуживание</span></a></div>
+            <div class="col-sm-6 col-md-4"><a class="service-link" href="#"><span class="sprite-service-3"></span><span class="service-link--text">обучение  управлению и эксплуатации</span></a></div>
+            <div class="col-sm-6 col-md-4"><a class="service-link" href="#"><span class="sprite-service-4"></span><span class="service-link--text">Оригинальные запчасти</span></a></div>
+            <div class="col-sm-6 col-md-4"><a class="service-link" href="#"><span class="sprite-service-5"></span><span class="service-link--text">Сопровождение сделок купли-продажи</span></a></div>
+            <div class="col-sm-6 col-md-4"><a class="service-link" href="#"><span class="sprite-service-6"></span><span class="service-link--text">АРЕНДА</span></a></div>
+            <div class="col-sm-6 col-md-4"><a class="service-link" href="#"><span class="sprite-service-7"></span><span class="service-link--text">Лизинг</span></a></div>
+            <div class="col-sm-6 col-md-4"><a class="service-link" href="#"><span class="sprite-service-8"></span><span class="service-link--text">восстановление техники</span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="index-sec">
+        <h2 class="title-zigzag"><span>Отзывы</span></h2>
+        <div id="index-feedbacks">
+          <div class="container-narrow">
+            <div class="row">
+              <div class="col-sm-4"><a class="feedback-preview" href="assets/i/tmp/feedback.jpg" data-fancybox="gallery"><img alt="" src="assets/i/tmp/feedback-sm.jpg"><span>OOO “розахутор”</span></a></div>
+              <div class="col-sm-4"><a class="feedback-preview" href="assets/i/tmp/feedback.jpg" data-fancybox="gallery"><img alt="" src="assets/i/tmp/feedback-sm.jpg"><span>OOO “горнолыжный комплекс “аджигардак”</span></a></div>
+              <div class="col-sm-4"><a class="feedback-preview" href="assets/i/tmp/feedback.jpg" data-fancybox="gallery"><img alt="" src="assets/i/tmp/feedback-sm.jpg"><span>Oгбу “рцспзвс”</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="index-morelink"><a href="#">больше отзывов&nbsp;&nbsp;&nbsp;>></a></div>
+      </div>
+      <div class="index-sec">
+        <h2 class="title-zigzag"><span>События</span></h2>
+        <div id="index-events">
+          <div class="container-narrow">
+            <div class="row">
+              <div class="col-sm-4"><a class="eventgrid-item" href="#">
+                  <div class="eventgrid-item--name"><span>ярмарка 13 / 08 2017</span></div><span class="eventgrid-item--cat">PISTENBULLY & REFORM</span></a></div>
+              <div class="col-sm-4"><a class="eventgrid-item" href="#">
+                  <div class="eventgrid-item--name"><span>ЛЫЖНый САЛОН 2017</span></div><span class="eventgrid-item--cat">отчёт об участии</span></a></div>
+              <div class="col-sm-4"><a class="eventgrid-item" href="#">
+                  <div class="eventgrid-item--name"><span>WINTER SHAPE CAMP</span></div><span class="eventgrid-item--cat">организатор меропиятия</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="index-morelink"><a href="#">больше событий&nbsp;&nbsp;&nbsp;>></a></div>
       </div>
     </main>
     <footer role="contentinfo"></footer>

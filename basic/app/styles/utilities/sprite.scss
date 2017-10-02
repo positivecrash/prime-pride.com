@@ -1,7 +1,17 @@
 $icons: (
-    sprite: (width: 171.7px, height: 67px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
+    sprite: (width: 265.1px, height: 1225px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
     PistenBully: (width: 161.8px, height: 38.8px, backgroundX: 0px, backgroundY: 0px),
     Reform: (width: 171.7px, height: 27.4px, backgroundX: 0px, backgroundY: -39px),
+    diamond: (width: 265.1px, height: 93px, backgroundX: 0px, backgroundY: -67px),
+    service-1: (width: 153.4px, height: 126.3px, backgroundX: 0px, backgroundY: -160px),
+    service-2: (width: 125.1px, height: 126.4px, backgroundX: 0px, backgroundY: -287px),
+    service-3: (width: 134.2px, height: 126.4px, backgroundX: 0px, backgroundY: -414px),
+    service-4: (width: 128.1px, height: 126.4px, backgroundX: 0px, backgroundY: -541px),
+    service-5: (width: 109.7px, height: 125.6px, backgroundX: 0px, backgroundY: -668px),
+    service-6: (width: 128.7px, height: 120.9px, backgroundX: 0px, backgroundY: -794px),
+    service-7: (width: 142.6px, height: 126.4px, backgroundX: 0px, backgroundY: -915px),
+    service-8: (width: 121.8px, height: 126.4px, backgroundX: 0px, backgroundY: -1042px),
+    serviceBack: (width: 215.2px, height: 56px, backgroundX: 0px, backgroundY: -1169px),
 );
 
 $sprite: map-get($icons, sprite);
@@ -26,4 +36,34 @@ $sprite: map-get($icons, sprite);
 }
 .sprite-Reform{
 	@include get-sprite(Reform);
+}
+.sprite-diamond{
+	@include get-sprite(diamond);
+}
+.sprite-service-1{
+	@include get-sprite(service-1);
+}
+.sprite-service-2{
+	@include get-sprite(service-2);
+}
+.sprite-service-3{
+	@include get-sprite(service-3);
+}
+.sprite-service-4{
+	@include get-sprite(service-4);
+}
+.sprite-service-5{
+	@include get-sprite(service-5);
+}
+.sprite-service-6{
+	@include get-sprite(service-6);
+}
+.sprite-service-7{
+	@include get-sprite(service-7);
+}
+.sprite-service-8{
+	@include get-sprite(service-8);
+}
+.sprite-serviceBack{
+	@include get-sprite(serviceBack);
 }

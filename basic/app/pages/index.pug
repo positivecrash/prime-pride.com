@@ -12,15 +12,173 @@ block content
 				.js-slider-viewport
 					.slide.index-slide--vid
 						<video autoplay muted loop>
-							<source src="assets/i/indexbanner/PistenbullyTirol.mp4" type="video/mp4">
+							<source src="assets/i/tmp/PistenbullyTirol.mp4" type="video/mp4">
 						</video>
-					.slide.index-slide--img(style="background-image: url('assets/i/indexbanner/1.jpg')")
-					.slide.index-slide--img(style="background-image: url('assets/i/indexbanner/2.jpg')")
+					.slide.index-slide--img(style="background-image: url('assets/i/tmp/1.jpg')")
+					.slide.index-slide--img(style="background-image: url('assets/i/tmp/2.jpg')")
 
 
-		#index-brands
-			.container
+		#index-brands.index-sec
+			.container-narrow
 				#index-brands--logos
 					span.sprite-PistenBully
 					span.sprite-Reform
 				#index-brands--title генеральное представительство
+
+
+		#index-num.index-sec
+			h2.title-zigzag: span Прайм Прайд это:
+
+			.container-narrow
+				.d-t
+					.d-t-cell.align-b-middle
+						.index-num--n
+							span.index-num--text 187
+							span.sprite-diamond
+
+						span.index-num--t.index-num--text клиентов
+
+					.d-t-cell.align-b-middle
+						.index-num--n
+							span.index-num--text 327
+							span.sprite-diamond
+
+						span.index-num--t.index-num--text машин
+
+					.d-t-cell.align-b-middle
+						.index-num--n
+							span.index-num--text 116 000
+							span.sprite-diamond
+
+						span.index-num--t.index-num--text м/ч безотказной работы
+
+
+		#index-items.index-sec
+			h2.title-zigzag: span Легендарная европейская техника
+
+			.container-narrow
+				#index-items--controls
+					.row
+						.col-sm-4
+							a(href="#", data-hover="#index-items--1").data-hover--active Снегоуплотнительная
+						.col-sm-4: a(href="#", data-hover="#index-items--2") Муниципальная
+						.col-sm-4: a(href="#", data-hover="#index-items--3") Сельское хозяйство
+						.col-sm-4: a(href="#", data-hover="#index-items--4") Вездеходы в специсполнении
+						.col-sm-4: a(href="#", data-hover="#index-items--5") Восcтановленная техника 
+						.col-sm-4: a(href="#", data-hover="#index-items--6") Дополнительное оборудование
+
+				#index-items--img
+					a(href="#")#index-items--1.data-hover--content
+						img(alt="", src="assets/i/tmp/index-items-1.jpg")
+
+					a(href="#")#index-items--2.data-hover--content
+						img(alt="", src="assets/i/tmp/index-items-2.jpg")
+
+					a(href="#")#index-items--3.data-hover--content
+						img(alt="", src="assets/i/tmp/index-items-3.jpg")
+
+					a(href="#")#index-items--4.data-hover--content
+						img(alt="", src="assets/i/tmp/index-items-4.jpg")
+
+					a(href="#")#index-items--5.data-hover--content
+						img(alt="", src="assets/i/tmp/index-items-5.jpg")
+
+					a(href="#")#index-items--6.data-hover--content
+						img(alt="", src="assets/i/tmp/index-items-6.jpg")
+
+
+		#index-services.index-sec
+			h2.title-zigzag: span Услуги
+
+			.container-narrow
+				.row
+					.col-sm-6.col-md-4
+						a(href="#").service-link
+							span.sprite-service-1
+							span.service-link--text Восстановительный ремонт
+
+					.col-sm-6.col-md-4
+						a(href="#").service-link
+							span.sprite-service-2
+							span.service-link--text Плановое обслуживание
+
+					.col-sm-6.col-md-4
+						a(href="#").service-link
+							span.sprite-service-3
+							span.service-link--text обучение  управлению и эксплуатации
+
+					.col-sm-6.col-md-4
+						a(href="#").service-link
+							span.sprite-service-4
+							span.service-link--text Оригинальные запчасти
+
+					.col-sm-6.col-md-4
+						a(href="#").service-link
+							span.sprite-service-5
+							span.service-link--text Сопровождение сделок купли-продажи
+
+					.col-sm-6.col-md-4
+						a(href="#").service-link
+							span.sprite-service-6
+							span.service-link--text АРЕНДА
+
+					.col-sm-6.col-md-4
+						a(href="#").service-link
+							span.sprite-service-7
+							span.service-link--text Лизинг
+
+					.col-sm-6.col-md-4
+						a(href="#").service-link
+							span.sprite-service-8
+							span.service-link--text восстановление техники
+
+
+		.index-sec
+			h2.title-zigzag: span Отзывы
+
+			#index-feedbacks
+				.container-narrow
+					.row
+						.col-sm-4
+							a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+								img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+								span OOO “розахутор”
+
+						.col-sm-4
+							a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+								img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+								span OOO “горнолыжный комплекс “аджигардак”
+
+						.col-sm-4
+							a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+								img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+								span Oгбу “рцспзвс”
+
+			.index-morelink
+				a(href="#") больше отзывов&nbsp;&nbsp;&nbsp;>>
+
+
+		.index-sec
+			h2.title-zigzag: span События
+
+			#index-events
+				.container-narrow
+					.row
+						.col-sm-4
+							a(href="#").eventgrid-item
+								.eventgrid-item--name: span ярмарка 13 / 08 2017
+								span.eventgrid-item--cat PISTENBULLY & REFORM
+
+						.col-sm-4
+							a(href="#").eventgrid-item
+								.eventgrid-item--name: span ЛЫЖНый САЛОН 2017
+								span.eventgrid-item--cat отчёт об участии
+
+						.col-sm-4
+							a(href="#").eventgrid-item
+								.eventgrid-item--name: span WINTER SHAPE CAMP
+								span.eventgrid-item--cat организатор меропиятия
+
+
+			.index-morelink
+				a(href="#") больше событий&nbsp;&nbsp;&nbsp;>>

@@ -266,7 +266,6 @@
 
         if ( slider.play )
           show(index);
-
         
       }, slider.config.pause);
 

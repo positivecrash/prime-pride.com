@@ -4,5 +4,78 @@
 
 .t-red { color: $c-red; }
 .t-beige { color: $c-beige; }
+.t-white { color: #fff; }
 
 .nowrap { white-space: nowrap; }
+
+
+#{headings()}
+{
+	@extend %text_title;
+	line-height: 1.2;
+}
+
+h2
+{
+	font-size: 55px;
+}
+
+
+
+.title-zigzag
+{
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-top: 6px;
+	padding-bottom: 8px;
+	margin-bottom: 40px;
+
+	span
+	{
+		position: relative;
+		display: inline-block;
+		padding: 0 20px;
+		background-color: #fff;
+
+		&:before, &:after
+		{
+			content: "";
+
+			border-style: solid;
+			border-color: $c-gray-2;
+
+			width: 2000px;
+			height: 62px;
+
+			position: absolute;
+			top: 50%;
+			margin-top: -31px;
+
+			background-image: image-url('patterns/zigzag.svg');
+			background-repeat: repeat-x;
+		}
+
+		&:before
+		{
+			left: -2000px;
+			background-position: 100% 50%;
+			border-width: 0 1px 0 0;
+		}
+
+		&:after
+		{
+			right: -2000px;
+			background-position: 0 50%;
+			border-width: 0 0 0 1px;
+		}
+	}
+
+}
+
+
+#{$modernizr-nosvg} .title-zigzag span
+{
+	&:before, &:after{
+		background-image: image-url('patterns/zigzag.png');
+	}
+}

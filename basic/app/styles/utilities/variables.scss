@@ -1,4 +1,4 @@
-$point-mobile: 640px;
+$point-mobile: 420px;
 $point-tablet: 960px;
 $point-desktop-s: 1000px;
 
@@ -15,6 +15,7 @@ $c-beige-dark: #8D734A;
 $c-red: #FF0000;
 $c-darktur: #1D4046;
 $c-gray: #8A8A8D;
+$c-gray-2: #BDBBBB;
 
 $c-text: $c-base;
 
@@ -23,3 +24,11 @@ $c-text: $c-base;
 //fonts, types, text
 $font-family-base:  'Fira Sans', 'Roboto', Arial, sans-serif;
 $font-family-second: 'DINProC', serif;
+
+
+
+//Modernizr plugin classes
+$modernizr-nosvg: '.no-svg';
+$modernizr-svg: '.svg';
+$modernizr-cssanimations: '.cssanimations';
+$modernizr-nocssanimations: '.no-cssanimations';

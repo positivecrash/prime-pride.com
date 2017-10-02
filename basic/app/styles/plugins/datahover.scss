@@ -1,0 +1,33 @@
+@keyframes datahoverfadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+.data-hover--content
+{
+	opacity: 0;
+	visibility: hidden;
+
+	display: none;
+
+	&.data-hover--active
+	{
+		display: block;
+		animation: 0.6s datahoverfadeIn 0.2s ease-in-out forwards;
+	}
+}
+
+#{$modernizr-nocssanimations} .data-hover--content{
+	&, &.data-hover--active
+	{
+		opacity: 1;
+		visibility: visible;
+	}
+}
