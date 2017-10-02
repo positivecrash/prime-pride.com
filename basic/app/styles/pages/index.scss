@@ -502,7 +502,7 @@ $serviceBack: map-get($icons, serviceBack);
 
 
 #index-bottomlinks{
-	padding-top: 102px;
+	padding-top: 45px;
 
 
 	.container-narrow
@@ -514,14 +514,92 @@ $serviceBack: map-get($icons, serviceBack);
 		{
 			content:"";
 
-			background-image: image-url('index-bottom.png');
-			width: image-width('index-bottom.png');
-			height: image-height('index-bottom.png');
+			background-image: image-url('index-bottom-x2.png');
+			background-repeat: no-repeat;
+			width: image-width('index-bottom-x2.png')/2;
+			height: image-height('index-bottom-x2.png')/2;
+			background-size: 100%;
 
 			position: absolute;
 			bottom: 0;
-			left: -662px;
+			left: -528px;
 			z-index: -1;
 		}
+	}
+}
+
+.index-bottomlinks-btn
+{
+	display: block;
+	border: 1px solid #fff;
+
+	font-size: 36px;
+	@extend %text_title;
+	color: #fff;
+	line-height: 1;
+	font-weight: 300;
+
+	padding: 5px 10px;
+
+	transition: 0.3s all ease-out;
+}
+
+
+#index-bottomlinks--fan
+{
+	width: 230px;
+	position: absolute;
+    top: 80px;
+    left: 48px;
+
+    line-height: 1;
+	font-weight: 300;
+
+    &, a{
+    	@extend %text_title;
+		color: #fff;
+	}
+
+	.index-bottomlinks-btn
+	{
+		background-color: rgba($c-base, .75);
+
+		&:hover
+		{
+			background-color: rgba($c-base, .9);
+		}
+	}
+}
+
+#index-bottomlinks--fan-links
+{
+	white-space: nowrap;
+	margin-top: 10px;
+
+	a, span{
+		margin-left: 5px;
+
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+}
+
+#index-bottomlinks--brand
+{
+	width: 230px;
+	position: absolute;
+    top: 230px;
+    left: 426px;
+
+    @media screen and (max-width: 675px)
+	{
+		left: 48px;
+	}
+
+	.index-bottomlinks-btn:hover
+	{
+		color: $c-beige;
+		border-color: $c-beige;
 	}
 }
