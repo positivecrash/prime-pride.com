@@ -36,6 +36,7 @@ body{
 main[role="main"]
 {
   padding-top: 64px;  //for Fixed header, so we won't loose the top of content
+  overflow-x: hidden;
 }
 
 

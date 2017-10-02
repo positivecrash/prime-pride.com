@@ -74,20 +74,20 @@ h1, h2, h3, h4, h5, h6, #index-num, #index-items--controls a, .service-link, .fe
 
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondLight.eot?1506972566');
-  src: url('../fonts/DINPro-CondLight.eot?&1506972566#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1506972566') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
+  src: url('../fonts/DINPro-CondLight.eot?1506978633');
+  src: url('../fonts/DINPro-CondLight.eot?&1506978633#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1506978633') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
   font-weight: 300;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-Cond.eot?1506972565');
-  src: url('../fonts/DINPro-Cond.eot?&1506972565#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1506972565') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
+  src: url('../fonts/DINPro-Cond.eot?1506978632');
+  src: url('../fonts/DINPro-Cond.eot?&1506978632#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1506978632') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondBold.eot?1506972565');
-  src: url('../fonts/DINPro-CondBold.eot?&1506972565#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1506972565') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
+  src: url('../fonts/DINPro-CondBold.eot?1506978632');
+  src: url('../fonts/DINPro-CondBold.eot?&1506978632#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1506978632') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
   font-weight: 800;
 }
 .t-red {
@@ -276,8 +276,8 @@ h2 {
 
 @font-face {
   font-family: "ppIconsFont";
-  src: url('../fonts/ppIconsFont.eot?1506972566');
-  src: url('../fonts/ppIconsFont.eot?&1506972566#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1506972566') format('woff'), url('../fonts/ppIconsFont.woff2?1506972564') format('woff2'), url('../fonts/ppIconsFont.svg?1506972564') format('svg'), url('../fonts/ppIconsFont.ttf?1506972564') format('truetype');
+  src: url('../fonts/ppIconsFont.eot?1506978633');
+  src: url('../fonts/ppIconsFont.eot?&1506978633#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1506978633') format('woff'), url('../fonts/ppIconsFont.woff2?1506978632') format('woff2'), url('../fonts/ppIconsFont.svg?1506978631') format('svg'), url('../fonts/ppIconsFont.ttf?1506978631') format('truetype');
 }
 .i-search {
   font-family: "ppIconsFont";
@@ -2770,18 +2770,42 @@ html {
   display: block;
   border: 1px solid #222;
 }
+.eventgrid-item:hover .eventgrid-item--name {
+  color: #F2D383;
+}
+.eventgrid-item:hover .eventgrid-item--name:after {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
 
 .eventgrid-item--name {
   box-sizing: border-box;
   height: 250px;
   overflow: hidden;
-  padding: 50px;
+  padding: 40px;
   color: #8D734A;
   font-size: 40px;
+  transition: 0.3s color ease-out;
+  position: relative;
 }
 .eventgrid-item--name span {
   display: block;
   width: 100%;
+}
+.eventgrid-item--name:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #222;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  transition: 0.3s all ease-out;
 }
 
 .eventgrid-item--cat {
@@ -2790,8 +2814,31 @@ html {
   font-size: 16px;
   line-height: 1;
   display: block;
-  padding: 50px;
+  padding: 40px;
   width: 100%;
+}
+
+#index-events .col-sm-4 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#index-bottomlinks {
+  padding-top: 102px;
+}
+#index-bottomlinks .container-narrow {
+  position: relative;
+  height: 300px;
+}
+#index-bottomlinks .container-narrow:before {
+  content: "";
+  background-image: url('../i/index-bottom.png?1506978923');
+  width: 2362px;
+  height: 814px;
+  position: absolute;
+  bottom: 0;
+  left: -662px;
+  z-index: -1;
 }
 
 html, body {
@@ -2808,6 +2855,7 @@ body {
 
 main[role="main"] {
   padding-top: 64px;
+  overflow-x: hidden;
 }
 
 /* CONTAINERS */
