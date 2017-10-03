@@ -20,6 +20,11 @@ h2
 	font-size: 55px;
 }
 
+a
+{
+	@extend %link_noline;
+}
+
 
 
 .title-zigzag

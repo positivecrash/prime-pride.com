@@ -40,8 +40,17 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == search {
+	@if $filename == flickr {
 		$char: "\E001";
+	}
+	@if $filename == instagram {
+		$char: "\E002";
+	}
+	@if $filename == search {
+		$char: "\E003";
+	}
+	@if $filename == youtube {
+		$char: "\E004";
 	}
 
 	@return $char;
@@ -53,7 +62,19 @@
 	}
 }
 
+.i-flickr {
+	@include icon(flickr);
+	@extend %icon-styles;
+}
+.i-instagram {
+	@include icon(instagram);
+	@extend %icon-styles;
+}
 .i-search {
 	@include icon(search);
+	@extend %icon-styles;
+}
+.i-youtube {
+	@include icon(youtube);
 	@extend %icon-styles;
 }

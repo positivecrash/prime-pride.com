@@ -48,3 +48,14 @@
 		@content;
 	}
 }
+
+
+
+
+
+@mixin b_sm {
+	@media screen and (min-width: #{$bootstrap-sm})
+	{
+		@content;
+	}
+}
