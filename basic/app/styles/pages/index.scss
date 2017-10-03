@@ -106,7 +106,7 @@
 /* INDEX SECTIONS */
 .index-sec
 {
-	margin-top: 70px;
+	margin-top: 50px;
 
 	&:first-child{
 		margin-top: 0;
@@ -168,7 +168,7 @@
 	padding: 12px 12px 10px;
 
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 1.2;
 	letter-spacing: 6px;
 	font-weight: 300;
@@ -279,7 +279,7 @@ $diamond: map-get($icons, diamond);
 		background-color: $c-base;
 		
 		@extend %text_title;
-		font-size: 16px;
+		font-size: 15px;
 		line-height: 1;
 
 		&.data-hover--active
@@ -340,7 +340,7 @@ $serviceBack: map-get($icons, serviceBack);
 	height: map-get($serviceBack, height);
 	vertical-align: middle;
 
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.5;
 
 
@@ -399,20 +399,22 @@ $serviceBack: map-get($icons, serviceBack);
 .feedback-preview
 {
 	display: block;
-	max-width: 180px;
-	margin: 0 auto;
+	// max-width: 180px;
+	// margin: 0 auto;
 
 	@extend %text_title;
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
-	font-size: 16px;
+	font-size: 19px;
 	line-height: 1.2;
 
 	transition: 0.2s color ease-out;
 
 	img, span{
-		display: inline-block;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	img{
@@ -450,6 +452,7 @@ $serviceBack: map-get($icons, serviceBack);
 		background-color: $c-base;
 		color: $c-beige;
 		transition: 0.2s all ease-out;
+		font-size: 17px;
 
 		@extend %text_title;
 
@@ -526,7 +529,7 @@ $serviceBack: map-get($icons, serviceBack);
 {
 	background-color: $c-base;
 	color: #fff;
-	font-size: 16px;
+	font-size: 19px;
 	line-height: 1;
 
 	display: block;
@@ -607,7 +610,7 @@ $serviceBack: map-get($icons, serviceBack);
 	display: block;
 	border: 1px solid #fff;
 
-	font-size: 36px;
+	font-size: 30px;
 	@extend %text_title;
 	color: #fff;
 	line-height: 1;
@@ -616,6 +619,11 @@ $serviceBack: map-get($icons, serviceBack);
 	padding: 5px 10px;
 
 	transition: 0.3s all ease-out;
+
+	&:hover
+	{
+		background-color: rgba($c-base, .75);
+	}
 }
 
 
@@ -633,22 +641,13 @@ $serviceBack: map-get($icons, serviceBack);
     	@extend %text_title;
 		color: #fff;
 	}
-
-	.index-bottomlinks-btn
-	{
-		background-color: rgba($c-base, .75);
-
-		&:hover
-		{
-			background-color: rgba($c-base, .9);
-		}
-	}
 }
 
 #index-bottomlinks--fan-links
 {
 	white-space: nowrap;
 	margin-top: 10px;
+	font-size: 11px;
 
 	a, span{
 		margin-left: 5px;
@@ -669,11 +668,5 @@ $serviceBack: map-get($icons, serviceBack);
     @media screen and (max-width: 675px)
 	{
 		left: 48px;
-	}
-
-	.index-bottomlinks-btn:hover
-	{
-		color: $c-beige;
-		border-color: $c-beige;
 	}
 }

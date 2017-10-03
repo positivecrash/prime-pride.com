@@ -10,11 +10,9 @@ header[role="banner"]{
 	background-color: $c-base;
 	padding-top: 2px;
 
-	font-family: $font-family-second;
+	@extend %text_title;
 	font-size: 19px;
 	line-height: 1.2;
-
-	text-transform: uppercase;
 
 	&, a
 	{
@@ -63,7 +61,7 @@ header[role="banner"]{
 	& > ul > li 
 	{
 		display: inline-block;
-		margin-left: 60px;
+		margin-left: 50px;
 		vertical-align: middle;
 		position: relative;
 

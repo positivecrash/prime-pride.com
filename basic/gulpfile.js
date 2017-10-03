@@ -89,9 +89,6 @@ gulp.task('svgSprite', function () {
     .pipe(svgSprite({
         "mode": {
             "css": {
-                "spacing": {
-                    "padding": 2
-                },
                 "dest": "./",
                 "layout": "vertical",
                 "sprite": "sprite.svg",
@@ -104,6 +101,11 @@ gulp.task('svgSprite', function () {
                 }
             }
         }
+        // "shape": {
+        //     "spacing": {
+        //         "padding": 1
+        //     }
+        // }
     }))
     .pipe(gulp.dest('dist/assets/i'));
 

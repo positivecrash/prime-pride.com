@@ -65,28 +65,29 @@ a, header[role="banner"] a, a:hover, header[role="banner"] a:hover, a:focus, hea
           align-items: center;
 }
 
-h1, h2, h3, h4, h5, h6, .footer-nav, #index-num, #index-items--controls a, .service-link, .feedback-preview, .index-morelink a, .eventgrid-item, .index-bottomlinks-btn, #index-bottomlinks--fan, #index-bottomlinks--fan a {
+h1, h2, h3, h4, h5, h6, header[role="banner"], .footer-nav, #index-num, #index-items--controls a, .service-link, .feedback-preview, .index-morelink a, .eventgrid-item, .index-bottomlinks-btn, #index-bottomlinks--fan, #index-bottomlinks--fan a, #catalog-breadcrumbs {
   font-family: "DINProC", serif;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondLight.eot?1507018626');
-  src: url('../fonts/DINPro-CondLight.eot?&1507018626#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1507018626') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
+  src: url('../fonts/DINPro-CondLight.eot?1507071206');
+  src: url('../fonts/DINPro-CondLight.eot?&1507071206#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1507071206') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
   font-weight: 300;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-Cond.eot?1507018626');
-  src: url('../fonts/DINPro-Cond.eot?&1507018626#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1507018626') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
+  src: url('../fonts/DINPro-Cond.eot?1507071206');
+  src: url('../fonts/DINPro-Cond.eot?&1507071206#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1507071206') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondBold.eot?1507018626');
-  src: url('../fonts/DINPro-CondBold.eot?&1507018626#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1507018626') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
+  src: url('../fonts/DINPro-CondBold.eot?1507071206');
+  src: url('../fonts/DINPro-CondBold.eot?&1507071206#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1507071206') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
   font-weight: 800;
 }
 .t-red {
@@ -123,6 +124,7 @@ a {
   padding-top: 6px;
   padding-bottom: 8px;
   margin-bottom: 40px;
+  font-size: 55px;
 }
 .title-zigzag span {
   position: relative;
@@ -190,7 +192,7 @@ a {
 .sprite-service-1 {
   display: inline-block;
   vertical-align: middle;
-  width: 153.4px;
+  width: 153.5px;
   height: 126.3px;
   background-image: url("../i/sprite.svg");
   background-position: 0px -160px;
@@ -279,8 +281,8 @@ a {
 
 @font-face {
   font-family: "ppIconsFont";
-  src: url('../fonts/ppIconsFont.eot?1507018626');
-  src: url('../fonts/ppIconsFont.eot?&1507018626#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1507018626') format('woff'), url('../fonts/ppIconsFont.woff2?1507018625') format('woff2'), url('../fonts/ppIconsFont.svg?1507018625') format('svg'), url('../fonts/ppIconsFont.ttf?1507018625') format('truetype');
+  src: url('../fonts/ppIconsFont.eot?1507071206');
+  src: url('../fonts/ppIconsFont.eot?&1507071206#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1507071206') format('woff'), url('../fonts/ppIconsFont.woff2?1507071206') format('woff2'), url('../fonts/ppIconsFont.svg?1507071205') format('svg'), url('../fonts/ppIconsFont.ttf?1507071206') format('truetype');
 }
 .i-arrLeft, .i-arrRight, .i-arrUp, .i-flickr, .i-instagram, .i-search, .i-youtube {
   font-family: "ppIconsFont";
@@ -332,10 +334,8 @@ header[role="banner"] {
   z-index: 9999;
   background-color: #222;
   padding-top: 2px;
-  font-family: "DINProC", serif;
   font-size: 19px;
   line-height: 1.2;
-  text-transform: uppercase;
 }
 header[role="banner"], header[role="banner"] a {
   color: #F2D383;
@@ -364,7 +364,7 @@ header[role="banner"] sup {
 }
 #header-nav > ul > li {
   display: inline-block;
-  margin-left: 60px;
+  margin-left: 50px;
   vertical-align: middle;
   position: relative;
 }
@@ -635,6 +635,7 @@ footer[role='contentinfo'] .col-sm-6 {
   margin-bottom: 30px;
   text-align: left;
   font-weight: 400;
+  font-size: 19px;
 }
 .footer-nav li {
   display: block;
@@ -2629,7 +2630,7 @@ html {
 /* end of INDEX SLIDER */
 /* INDEX SECTIONS */
 .index-sec {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .index-sec:first-child {
   margin-top: 0;
@@ -2673,7 +2674,7 @@ html {
   border-color: #8A8A8D;
   padding: 12px 12px 10px;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.2;
   letter-spacing: 6px;
   font-weight: 300;
@@ -2750,7 +2751,7 @@ html {
   padding: 8px 10px;
   color: #fff;
   background-color: #222;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1;
 }
 #index-items--controls a.data-hover--active {
@@ -2789,7 +2790,7 @@ html {
   width: 215.2px;
   height: 56px;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
 }
 .service-link--text:before, .service-link--text:after {
@@ -2835,17 +2836,17 @@ html {
 
 .feedback-preview {
   display: block;
-  max-width: 180px;
-  margin: 0 auto;
   color: #fff;
   text-decoration: none;
   text-align: center;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.2;
   transition: 0.2s color ease-out;
 }
 .feedback-preview img, .feedback-preview span {
-  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .feedback-preview img {
   max-width: 100%;
@@ -2873,6 +2874,7 @@ html {
   background-color: #222;
   color: #F2D383;
   transition: 0.2s all ease-out;
+  font-size: 17px;
 }
 .index-morelink a:hover {
   background-color: #8D734A;
@@ -2925,7 +2927,7 @@ html {
 .eventgrid-item--cat {
   background-color: #222;
   color: #fff;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1;
   display: block;
   padding: 40px;
@@ -2980,12 +2982,15 @@ html {
 .index-bottomlinks-btn {
   display: block;
   border: 1px solid #fff;
-  font-size: 36px;
+  font-size: 30px;
   color: #fff;
   line-height: 1;
   font-weight: 300;
   padding: 5px 10px;
   transition: 0.3s all ease-out;
+}
+.index-bottomlinks-btn:hover {
+  background-color: rgba(34, 34, 34, 0.75);
 }
 
 #index-bottomlinks--fan {
@@ -2999,16 +3004,11 @@ html {
 #index-bottomlinks--fan, #index-bottomlinks--fan a {
   color: #fff;
 }
-#index-bottomlinks--fan .index-bottomlinks-btn {
-  background-color: rgba(34, 34, 34, 0.75);
-}
-#index-bottomlinks--fan .index-bottomlinks-btn:hover {
-  background-color: rgba(34, 34, 34, 0.9);
-}
 
 #index-bottomlinks--fan-links {
   white-space: nowrap;
   margin-top: 10px;
+  font-size: 11px;
 }
 #index-bottomlinks--fan-links a, #index-bottomlinks--fan-links span {
   margin-left: 5px;
@@ -3028,9 +3028,27 @@ html {
     left: 48px;
   }
 }
-#index-bottomlinks--brand .index-bottomlinks-btn:hover {
-  color: #F2D383;
-  border-color: #F2D383;
+
+#catalog-top {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+#catalog-breadcrumbs {
+  text-align: left;
+  font-size: 16px;
+}
+#catalog-breadcrumbs a {
+  color: #222;
+}
+#catalog-breadcrumbs a:hover {
+  color: #8D734A;
+}
+#catalog-breadcrumbs a, #catalog-breadcrumbs span {
+  margin-right: 5px;
+}
+#catalog-breadcrumbs a:last-child, #catalog-breadcrumbs span:last-child {
+  margin-right: 0;
 }
 
 html, body {
@@ -3105,9 +3123,4 @@ main[role="main"] {
 
 /* end of MARGINS & PADDINGS */
 /* OVEWRITE */
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 /* end of OVEWRITE */

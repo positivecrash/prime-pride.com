@@ -1,0 +1,31 @@
+#catalog-top
+	{
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+
+
+#catalog-breadcrumbs
+	{
+		@extend %text_title;
+		text-align: left;
+		font-size: 16px;
+
+		a{
+			color: $c-text;
+
+			&:hover
+			{
+				color: $c-beige-dark;
+			}
+		}
+
+		a, span {
+			margin-right: 5px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
