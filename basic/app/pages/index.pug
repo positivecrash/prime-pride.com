@@ -17,6 +17,10 @@ block content
 					.slide.index-slide--img(style="background-image: url('assets/i/tmp/1.jpg')")
 					.slide.index-slide--img(style="background-image: url('assets/i/tmp/2.jpg')")
 
+				.js-slider-controls
+					a(href="#").prev: span.i-arrLeft
+					a(href="#").next: span.i-arrRight
+
 
 		#index-brands.index-sec
 			.container-narrow
@@ -33,21 +37,21 @@ block content
 				.d-t
 					.d-t-cell.align-b-middle
 						.index-num--n
-							span.index-num--text 187
+							span.index-num--text.js-countto(data-countTo="187") 0
 							span.sprite-diamond
 
 						span.index-num--t.index-num--text клиентов
 
 					.d-t-cell.align-b-middle
 						.index-num--n
-							span.index-num--text 327
+							span.index-num--text.js-countto(data-countTo="327") 0
 							span.sprite-diamond
 
 						span.index-num--t.index-num--text машин
 
 					.d-t-cell.align-b-middle
 						.index-num--n
-							span.index-num--text 116 000
+							span.index-num--text.js-countto(data-countTo="116000") 0
 							span.sprite-diamond
 
 						span.index-num--t.index-num--text м/ч безотказной работы
@@ -200,4 +204,5 @@ block content
 				#index-bottomlinks--brand
 					a.index-bottomlinks-btn(href="#") ИСТОРИЯ БРЕНДОВ
 
+				a(href="#").i-arrUp.js-scrollUp
 

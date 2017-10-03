@@ -17,7 +17,7 @@
 	margin-left: - image-width('pp-logo-big.png')/2;
 	margin-top: - image-height('pp-logo-big.png')/2;
 
-	z-index: 1;
+	z-index: 2;
 }
 
 
@@ -55,6 +55,45 @@
 		    width: auto;
 		    height: auto;
 		    z-index: -100;
+		}
+	}
+
+	.js-slider-controls
+	{
+		position: absolute;
+		z-index: 1;
+		left: $padding-side;
+		right: $padding-side;
+		top: 50%;
+		margin-top: -25px;
+
+		a{
+			color: $c-beige;
+			font-size: 50px;
+			line-height: 1;
+
+			position: absolute;
+			top: 0;
+
+			&:hover
+			{
+				color: #fff;
+			}
+		}
+
+		.prev
+		{
+			left: 0;
+		}
+
+		.next
+		{
+			right: 0;
+		}
+
+		@media screen and (max-width: 524px) 
+		{
+			display: none;
 		}
 	}
 }
@@ -206,6 +245,14 @@ $diamond: map-get($icons, diamond);
 	{
 		position: relative;
 		z-index: 1;
+
+		opacity: 0;
+
+		&.countto-start
+		{
+			opacity: 1;
+			transition: 0.8s opacity ease-out;
+		}
 	}
 }
 
@@ -487,6 +534,9 @@ $serviceBack: map-get($icons, serviceBack);
 
 	@extend %flex-alignv;
 	width: 100%;
+
+	box-sizing: border-box;
+	height: 112px;
 }
 
 
@@ -525,6 +575,29 @@ $serviceBack: map-get($icons, serviceBack);
 			bottom: 0;
 			left: -528px;
 			z-index: -1;
+		}
+	}
+
+
+	.i-arrUp
+	{
+		font-size: 34px;
+		line-height: 1;
+		color: $c-base;
+
+		position: absolute;
+	    top: 128px;
+    	left: 583px;
+
+		&:hover{
+			color: $c-beige;
+		}
+
+		@media screen and (max-width: 675px)
+		{
+			left: 50%;
+			top: 0;
+			margin-left: -17px;
 		}
 	}
 }

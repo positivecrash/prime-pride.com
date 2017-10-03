@@ -72,4 +72,26 @@ jQuery(document).ready(function($){
 
 	/* end of INDEX PAGE */
 
+
+
+	/* COUNT NUMBERS EFFECT */
+
+	$('.js-countto').one('inview', function(event, isInView){
+        if (isInView)
+            $(this).countTo();
+    });
+
+	/* end of COUNT NUMBERS EFFECT */
+
+
+
+	/* SCROLL PAGE UP */
+	$('.js-scrollUp').on('click', function(e){
+		e.preventDefault();
+	 	e.stopPropagation();
+		 	
+	    $('html, body').animate({scrollTop: $('main[role="main"]').offset().top }, 1000);
+	  });
+	/* end of SCROLL PAGE UP */
+
 });

@@ -23,6 +23,7 @@ h2
 a
 {
 	@extend %link_noline;
+	transition: 0.3s color ease-out;
 }
 
 
