@@ -1,17 +1,18 @@
 $icons: (
-    sprite: (width: 265.1px, height: 1225px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
+    sprite: (width: 2143px, height: 1274px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
     PistenBully: (width: 161.8px, height: 38.8px, backgroundX: 0px, backgroundY: 0px),
-    Reform: (width: 171.7px, height: 27.4px, backgroundX: 0px, backgroundY: -39px),
-    diamond: (width: 265.1px, height: 93px, backgroundX: 0px, backgroundY: -67px),
-    service-1: (width: 153.5px, height: 126.3px, backgroundX: 0px, backgroundY: -160px),
-    service-2: (width: 125.1px, height: 126.4px, backgroundX: 0px, backgroundY: -287px),
-    service-3: (width: 134.2px, height: 126.4px, backgroundX: 0px, backgroundY: -414px),
-    service-4: (width: 128.1px, height: 126.4px, backgroundX: 0px, backgroundY: -541px),
-    service-5: (width: 109.7px, height: 125.6px, backgroundX: 0px, backgroundY: -668px),
-    service-6: (width: 128.7px, height: 120.9px, backgroundX: 0px, backgroundY: -794px),
-    service-7: (width: 142.6px, height: 126.4px, backgroundX: 0px, backgroundY: -915px),
-    service-8: (width: 121.8px, height: 126.4px, backgroundX: 0px, backgroundY: -1042px),
-    serviceBack: (width: 215.2px, height: 56px, backgroundX: 0px, backgroundY: -1169px),
+    Reform: (width: 171.7px, height: 27.4px, backgroundX: -162px, backgroundY: -39px),
+    compareBack: (width: 278.5px, height: 48.2px, backgroundX: -334px, backgroundY: -67px),
+    diamond: (width: 265.1px, height: 93px, backgroundX: -613px, backgroundY: -116px),
+    service-1: (width: 153.5px, height: 126.3px, backgroundX: -879px, backgroundY: -209px),
+    service-2: (width: 125.1px, height: 126.4px, backgroundX: -1033px, backgroundY: -336px),
+    service-3: (width: 134.2px, height: 126.4px, backgroundX: -1159px, backgroundY: -463px),
+    service-4: (width: 128.1px, height: 126.4px, backgroundX: -1294px, backgroundY: -590px),
+    service-5: (width: 109.7px, height: 125.6px, backgroundX: -1423px, backgroundY: -717px),
+    service-6: (width: 128.7px, height: 120.9px, backgroundX: -1533px, backgroundY: -843px),
+    service-7: (width: 142.6px, height: 126.4px, backgroundX: -1662px, backgroundY: -964px),
+    service-8: (width: 121.8px, height: 126.4px, backgroundX: -1805px, backgroundY: -1091px),
+    serviceBack: (width: 215.2px, height: 56px, backgroundX: -1927px, backgroundY: -1218px),
 );
 
 $sprite: map-get($icons, sprite);
@@ -36,6 +37,9 @@ $sprite: map-get($icons, sprite);
 }
 .sprite-Reform{
 	@include get-sprite(Reform);
+}
+.sprite-compareBack{
+	@include get-sprite(compareBack);
 }
 .sprite-diamond{
 	@include get-sprite(diamond);

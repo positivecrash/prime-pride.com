@@ -1,0 +1,67 @@
+#catalog-top
+	{
+		padding-bottom: 14px;
+
+		@extend %text_title;
+		font-size: 18px;
+
+		a{
+			color: $c-text;
+
+			&:hover
+			{
+				color: $c-beige-dark;
+			}
+		}
+
+	}
+
+
+#catalog-breadcrumbs, #catalog-compare
+	{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+
+
+#catalog-breadcrumbs
+	{
+		text-align: left;
+
+		a, span {
+			margin-right: 5px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+
+
+#catalog-compare
+	{
+		position: relative;
+
+		$compareBack: map-get($icons, compareBack);
+		width: map-get($compareBack, width);
+		height: map-get($compareBack, height);
+
+		&:after
+		{
+			content:"";
+			@include get-sprite(compareBack);
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+		}
+
+		a{
+			position: relative;
+			z-index: 1;
+			display: block;
+			text-align: center;
+			margin-top: 8px;
+		}
+	}

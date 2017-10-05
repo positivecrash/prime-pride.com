@@ -54,10 +54,13 @@ footer[role='contentinfo']
 
 #footer-socials
 {
+	font-size: 26px;
+	line-height: 1;
+
   a
   {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 40px;
     color: $c-beige;
 
     &:last-child

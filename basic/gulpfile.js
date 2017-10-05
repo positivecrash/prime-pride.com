@@ -90,7 +90,7 @@ gulp.task('svgSprite', function () {
         "mode": {
             "css": {
                 "dest": "./",
-                "layout": "vertical",
+                "layout": "diagonal",
                 "sprite": "sprite.svg",
                 "bust": false,
                 "render": {

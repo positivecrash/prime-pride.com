@@ -65,7 +65,7 @@ a, header[role="banner"] a, a:hover, header[role="banner"] a:hover, a:focus, hea
           align-items: center;
 }
 
-h1, h2, h3, h4, h5, h6, header[role="banner"], .footer-nav, #index-num, #index-items--controls a, .service-link, .feedback-preview, .index-morelink a, .eventgrid-item, .index-bottomlinks-btn, #index-bottomlinks--fan, #index-bottomlinks--fan a, #catalog-breadcrumbs {
+h1, h2, h3, h4, h5, h6, header[role="banner"], .footer-nav, #index-num, #index-items--controls a, .service-link, .feedback-preview, .index-morelink a, .eventgrid-item, .index-bottomlinks-btn, #index-bottomlinks--fan, #index-bottomlinks--fan a, #catalog-top {
   font-family: "DINProC", serif;
   text-transform: uppercase;
   text-align: center;
@@ -74,20 +74,20 @@ h1, h2, h3, h4, h5, h6, header[role="banner"], .footer-nav, #index-num, #index-i
 
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondLight.eot?1507071206');
-  src: url('../fonts/DINPro-CondLight.eot?&1507071206#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1507071206') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
+  src: url('../fonts/DINPro-CondLight.eot?1507181113');
+  src: url('../fonts/DINPro-CondLight.eot?&1507181113#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1507181113') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
   font-weight: 300;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-Cond.eot?1507071206');
-  src: url('../fonts/DINPro-Cond.eot?&1507071206#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1507071206') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
+  src: url('../fonts/DINPro-Cond.eot?1507181113');
+  src: url('../fonts/DINPro-Cond.eot?&1507181113#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1507181113') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondBold.eot?1507071206');
-  src: url('../fonts/DINPro-CondBold.eot?&1507071206#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1507071206') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
+  src: url('../fonts/DINPro-CondBold.eot?1507181113');
+  src: url('../fonts/DINPro-CondBold.eot?&1507181113#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1507181113') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
   font-weight: 800;
 }
 .t-red {
@@ -175,7 +175,17 @@ a {
   width: 171.7px;
   height: 27.4px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -39px;
+  background-position: -162px -39px;
+  background-repeat: no-repeat;
+}
+
+.sprite-compareBack {
+  display: inline-block;
+  vertical-align: middle;
+  width: 278.5px;
+  height: 48.2px;
+  background-image: url("../i/sprite.svg");
+  background-position: -334px -67px;
   background-repeat: no-repeat;
 }
 
@@ -185,7 +195,7 @@ a {
   width: 265.1px;
   height: 93px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -67px;
+  background-position: -613px -116px;
   background-repeat: no-repeat;
 }
 
@@ -195,7 +205,7 @@ a {
   width: 153.5px;
   height: 126.3px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -160px;
+  background-position: -879px -209px;
   background-repeat: no-repeat;
 }
 
@@ -205,7 +215,7 @@ a {
   width: 125.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -287px;
+  background-position: -1033px -336px;
   background-repeat: no-repeat;
 }
 
@@ -215,7 +225,7 @@ a {
   width: 134.2px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -414px;
+  background-position: -1159px -463px;
   background-repeat: no-repeat;
 }
 
@@ -225,7 +235,7 @@ a {
   width: 128.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -541px;
+  background-position: -1294px -590px;
   background-repeat: no-repeat;
 }
 
@@ -235,7 +245,7 @@ a {
   width: 109.7px;
   height: 125.6px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -668px;
+  background-position: -1423px -717px;
   background-repeat: no-repeat;
 }
 
@@ -245,7 +255,7 @@ a {
   width: 128.7px;
   height: 120.9px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -794px;
+  background-position: -1533px -843px;
   background-repeat: no-repeat;
 }
 
@@ -255,7 +265,7 @@ a {
   width: 142.6px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -915px;
+  background-position: -1662px -964px;
   background-repeat: no-repeat;
 }
 
@@ -265,7 +275,7 @@ a {
   width: 121.8px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -1042px;
+  background-position: -1805px -1091px;
   background-repeat: no-repeat;
 }
 
@@ -275,14 +285,14 @@ a {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -1169px;
+  background-position: -1927px -1218px;
   background-repeat: no-repeat;
 }
 
 @font-face {
   font-family: "ppIconsFont";
-  src: url('../fonts/ppIconsFont.eot?1507071206');
-  src: url('../fonts/ppIconsFont.eot?&1507071206#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1507071206') format('woff'), url('../fonts/ppIconsFont.woff2?1507071206') format('woff2'), url('../fonts/ppIconsFont.svg?1507071205') format('svg'), url('../fonts/ppIconsFont.ttf?1507071206') format('truetype');
+  src: url('../fonts/ppIconsFont.eot?1507181113');
+  src: url('../fonts/ppIconsFont.eot?&1507181113#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1507181113') format('woff'), url('../fonts/ppIconsFont.woff2?1507181113') format('woff2'), url('../fonts/ppIconsFont.svg?1507181112') format('svg'), url('../fonts/ppIconsFont.ttf?1507181113') format('truetype');
 }
 .i-arrLeft, .i-arrRight, .i-arrUp, .i-flickr, .i-instagram, .i-search, .i-youtube {
   font-family: "ppIconsFont";
@@ -645,9 +655,13 @@ footer[role='contentinfo'] .col-sm-6 {
   margin-bottom: 0;
 }
 
+#footer-socials {
+  font-size: 26px;
+  line-height: 1;
+}
 #footer-socials a {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 40px;
   color: #F2D383;
 }
 #footer-socials a:last-child {
@@ -2803,7 +2817,7 @@ html {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: 0px -1169px;
+  background-position: -1927px -1218px;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
@@ -3030,25 +3044,56 @@ html {
 }
 
 #catalog-top {
-  padding-top: 14px;
   padding-bottom: 14px;
+  font-size: 18px;
+}
+#catalog-top a {
+  color: #222;
+}
+#catalog-top a:hover {
+  color: #8D734A;
+}
+
+#catalog-breadcrumbs, #catalog-compare {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #catalog-breadcrumbs {
   text-align: left;
-  font-size: 16px;
-}
-#catalog-breadcrumbs a {
-  color: #222;
-}
-#catalog-breadcrumbs a:hover {
-  color: #8D734A;
 }
 #catalog-breadcrumbs a, #catalog-breadcrumbs span {
   margin-right: 5px;
 }
 #catalog-breadcrumbs a:last-child, #catalog-breadcrumbs span:last-child {
   margin-right: 0;
+}
+
+#catalog-compare {
+  position: relative;
+  width: 278.5px;
+  height: 48.2px;
+}
+#catalog-compare:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 278.5px;
+  height: 48.2px;
+  background-image: url("../i/sprite.svg");
+  background-position: -334px -67px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+#catalog-compare a {
+  position: relative;
+  z-index: 1;
+  display: block;
+  text-align: center;
+  margin-top: 8px;
 }
 
 html, body {
@@ -3073,6 +3118,11 @@ main[role="main"] {
   padding-left: 10px;
   padding-right: 10px;
   max-width: 800px;
+}
+
+.fullw {
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* end of CONTAINERS */

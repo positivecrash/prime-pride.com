@@ -19,7 +19,7 @@
 @import "plugins/datahover";
 
 @import "pages/index";
-@import "pages/shop";
+@import "pages/catalog";
 
 
 
@@ -63,6 +63,12 @@ main[role="main"]
   padding-right: $padding-side;
 
   max-width: 800px;
+}
+
+.fullw
+{
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* end of CONTAINERS */
