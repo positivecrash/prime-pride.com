@@ -14,6 +14,36 @@
 			}
 		}
 
+
+		@media screen and (max-width: 700px) 
+		{
+			.d-t, #catalog-breadcrumbs, #catalog-compare
+			{
+				display: block;
+			}
+
+			#catalog-compare
+			{
+				height: auto;
+
+				a
+				{
+					text-align: left;
+					margin-top: 4px;
+				}
+
+				&:after
+				{
+					display: none;
+				}
+			}
+
+			.d-t
+			{
+				padding: 10px 0;
+			}
+		}
+
 	}
 
 
@@ -63,5 +93,50 @@
 			display: block;
 			text-align: center;
 			margin-top: 8px;
+		}
+	}
+
+
+#catalog-brands
+	{
+		text-align: center;
+		padding: 0 0 40px;
+
+		span[class*='sprite-']
+		{
+			transform: scale(0.8);
+		}
+	}
+
+
+
+#catalog-items
+	{
+		.col-sm-3, .col-sm-4
+		{
+			& > div{
+				background-color: #222;
+				height: 200px;
+			}
+		}
+
+
+		.row{
+			margin-top: 30px;
+
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+
+		@include b_xs(){
+			.col-sm-3, .col-sm-4
+			{
+				margin-bottom: 30px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
 		}
 	}

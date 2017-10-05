@@ -40,9 +40,9 @@ input, select {
 }
 
 .container {
-  max-width: 980px;
-  padding-left: 10px;
-  padding-right: 10px;
+  max-width: 970px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 a, header[role="banner"] a, a:hover, header[role="banner"] a:hover, a:focus, header[role="banner"] a:focus, a:visited, header[role="banner"] a:visited {
@@ -74,20 +74,20 @@ h1, h2, h3, h4, h5, h6, header[role="banner"], .footer-nav, #index-num, #index-i
 
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondLight.eot?1507181113');
-  src: url('../fonts/DINPro-CondLight.eot?&1507181113#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1507181113') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
+  src: url('../fonts/DINPro-CondLight.eot?1507224395');
+  src: url('../fonts/DINPro-CondLight.eot?&1507224395#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1507224395') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
   font-weight: 300;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-Cond.eot?1507181113');
-  src: url('../fonts/DINPro-Cond.eot?&1507181113#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1507181113') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
+  src: url('../fonts/DINPro-Cond.eot?1507224395');
+  src: url('../fonts/DINPro-Cond.eot?&1507224395#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1507224395') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondBold.eot?1507181113');
-  src: url('../fonts/DINPro-CondBold.eot?&1507181113#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1507181113') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
+  src: url('../fonts/DINPro-CondBold.eot?1507224395');
+  src: url('../fonts/DINPro-CondBold.eot?&1507224395#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1507224395') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
   font-weight: 800;
 }
 .t-red {
@@ -291,8 +291,8 @@ a {
 
 @font-face {
   font-family: "ppIconsFont";
-  src: url('../fonts/ppIconsFont.eot?1507181113');
-  src: url('../fonts/ppIconsFont.eot?&1507181113#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1507181113') format('woff'), url('../fonts/ppIconsFont.woff2?1507181113') format('woff2'), url('../fonts/ppIconsFont.svg?1507181112') format('svg'), url('../fonts/ppIconsFont.ttf?1507181113') format('truetype');
+  src: url('../fonts/ppIconsFont.eot?1507224395');
+  src: url('../fonts/ppIconsFont.eot?&1507224395#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1507224395') format('woff'), url('../fonts/ppIconsFont.woff2?1507224395') format('woff2'), url('../fonts/ppIconsFont.svg?1507224394') format('svg'), url('../fonts/ppIconsFont.ttf?1507224395') format('truetype');
 }
 .i-arrLeft, .i-arrRight, .i-arrUp, .i-flickr, .i-instagram, .i-search, .i-youtube {
   font-family: "ppIconsFont";
@@ -620,6 +620,7 @@ footer[role='contentinfo'] {
   font-weight: 300;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 80px;
 }
 footer[role='contentinfo'] a {
   color: #fff;
@@ -2614,8 +2615,8 @@ html {
 #index-slider .js-slider-controls {
   position: absolute;
   z-index: 1;
-  left: 10px;
-  right: 10px;
+  left: 15px;
+  right: 15px;
   top: 50%;
   margin-top: -25px;
 }
@@ -3053,6 +3054,24 @@ html {
 #catalog-top a:hover {
   color: #8D734A;
 }
+@media screen and (max-width: 700px) {
+  #catalog-top .d-t, #catalog-top #catalog-breadcrumbs, #catalog-top #catalog-compare {
+    display: block;
+  }
+  #catalog-top #catalog-compare {
+    height: auto;
+  }
+  #catalog-top #catalog-compare a {
+    text-align: left;
+    margin-top: 4px;
+  }
+  #catalog-top #catalog-compare:after {
+    display: none;
+  }
+  #catalog-top .d-t {
+    padding: 10px 0;
+  }
+}
 
 #catalog-breadcrumbs, #catalog-compare {
   display: table-cell;
@@ -3096,6 +3115,34 @@ html {
   margin-top: 8px;
 }
 
+#catalog-brands {
+  text-align: center;
+  padding: 0 0 40px;
+}
+#catalog-brands span[class*='sprite-'] {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#catalog-items .col-sm-3 > div, #catalog-items .col-sm-4 > div {
+  background-color: #222;
+  height: 200px;
+}
+#catalog-items .row {
+  margin-top: 30px;
+}
+#catalog-items .row:first-child {
+  margin-top: 0;
+}
+@media screen and (max-width: 576px) {
+  #catalog-items .col-sm-3, #catalog-items .col-sm-4 {
+    margin-bottom: 30px;
+  }
+  #catalog-items .col-sm-3:last-child, #catalog-items .col-sm-4:last-child {
+    margin-bottom: 0;
+  }
+}
+
 html, body {
   position: relative;
   height: 100%;
@@ -3115,8 +3162,8 @@ main[role="main"] {
 
 /* CONTAINERS */
 .container-narrow {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   max-width: 800px;
 }
 
