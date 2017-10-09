@@ -3,6 +3,42 @@ extends extends/layout.pug
 block head
 	- var pageTitle = 'Каталог техники PistenBully Россия'
 
+
+mixin item(title)
+	a(href="#").catalog-item
+		.catalog-item--label: span.sprite-PistenBullySm
+		.catalog-item--preview: img(alt="", src="assets/i/tmp/item-1.jpg")
+		h3.catalog-item--title.catalog-item--section= title
+		.catalog-item--section
+			p параметр 1 - 1,420 kg
+			p параметр 2 - 44 hp.
+			p [ подробнее ]
+		.catalog-items-list--price.catalog-item--section от 450 000 euro
+		//- a(href="#"): span.sprite-compareIco
+
+
+mixin item2(title)
+	a(href="#").catalog-item
+		.catalog-item--label: span.sprite-ReformSm
+		.catalog-item--preview: img(alt="", src="assets/i/tmp/item-2.jpg")
+		h3.catalog-item--title.catalog-item--section= title
+		.catalog-item--section
+			p параметр 1 - 1,420 kg
+			p параметр 2 - 44 hp.
+			p [ подробнее ]
+		.catalog-items-list--price.catalog-item--section от 450 000 euro
+		//- a(href="#"): span.sprite-compareIcon
+
+mixin itemRow()
+	.row
+		.col-md-4
+			+item('600 POLAR SCR')
+		.col-md-4
+			+item2('Пассажирская кабина на 5 чел.')
+		.col-md-4
+			+item('600 E+')
+
+
 block content
 	main(role="main")
 		#catalog-top
@@ -12,8 +48,8 @@ block content
 						a(href="#") техника
 						span ›
 						span снегоуплотнительная
-					#catalog-compare
-						a(href="#") сравнение техники [ 0 ]
+					//- #catalog-compare
+					//- 	a(href="#") сравнение техники [ 0 ]
 
 		h1.title-zigzag: span снегоуплотнительная
 
@@ -24,13 +60,44 @@ block content
 		#catalog-items
 			.container
 				.row
-					.col-sm-3: div
+					.col-sm-3
+						#catalog-filtr
+
+							.catalog-filtr--sec
+								h4 выбрать производителя
+								a.active(href="#") Pistenbully
+								a(href="#") Reform
+
+							.catalog-filtr--sec
+								h4 выбрать модель
+								.form-select
+									select
+										option 600 SCR
+										option 600 POLAR SCR
+										option 600 E+
+
+							.catalog-filtr--sec
+								h4 Выбрать категорию
+								a.active(href="#") Переднее навесное оборудование
+								a(href="#") Заднее навесное оборудование
+								a.active(href="#") Кабины
+								a(href="#") Траки
+								a(href="#") Snowsat
+								a.active(href="#") Лебедка
+
+							.catalog-filtr--sec
+								a.btn-lined(href="#") снять фильтр
+
+
 					#catalog-items--list.col-sm-9
-						.row
-							.col-sm-4: div
-							.col-sm-4: div
-							.col-sm-4: div
-						.row
-							.col-sm-4: div
-							.col-sm-4: div
-							.col-sm-4: div
+						+itemRow()
+						+itemRow()
+						.paging
+							span.paging--control <
+							.paging--pages
+								a.active(href="#") 1
+								a(href="#") 2
+								a(href="#") 3
+								a(href="#") 4
+								a(href="#") 5
+							a(href="#").paging--control >

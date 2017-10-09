@@ -1,0 +1,80 @@
+.form-select
+	{
+		position: relative;
+  		box-sizing: border-box;
+
+		display: inline-block;
+		overflow: hidden;
+      	white-space: nowrap;
+
+        background-color: #fff;
+        border: 1px solid $c-gray-4;
+
+        
+
+        select
+        {
+        	appearance: none;
+        	box-shadow: none;
+		    border: none;
+		    outline: none;
+		    background-color: transparent;
+		    background-image: none;
+		    position: relative;
+		    z-index: 1;
+
+		    box-sizing: border-box;
+		    width: 100%;
+		    padding: 8px 26px 8px 10px;
+
+
+		    &, &:focus{
+		      outline: none;
+		    }
+
+		    &::-ms-expand { display: none; } /*ie fix*/
+
+
+		    @extend %text_title;
+	        text-align: left;
+
+	        font-size: 18px;
+	        line-height: 1;
+
+        }
+
+        &:after
+        {
+        	content:"";
+        	position: absolute;
+        	z-index: 0;
+   			top: 50%;
+   			right: 10px;
+   			margin-top: -4px;
+
+   			width: 0;
+			height: 0;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-top: 8px solid $c-gray-4;
+        }
+	}
+
+
+
+a.btn-lined
+	{
+		@extend %text_title;
+		font-size: 18px;
+        line-height: 1;
+
+        padding: 8px 10px;
+
+        border: 1px solid $c-beige-dark;
+        color: $c-beige-dark;
+
+        &:hover{
+        	color: $c-beige;
+        	border-color: $c-beige;
+        }
+	}

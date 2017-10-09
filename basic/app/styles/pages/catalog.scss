@@ -57,6 +57,7 @@
 
 #catalog-breadcrumbs
 	{
+		padding-top: 20px; // tmp to delete if compare is added
 		text-align: left;
 
 		a, span {
@@ -112,30 +113,275 @@
 
 #catalog-items
 	{
-		.col-sm-3, .col-sm-4
-		{
-			& > div{
-				background-color: #222;
-				height: 200px;
-			}
-		}
-
+		// TEST for grid
+		// .col-sm-3, .col-sm-4
+		// {
+		// 	& > div{
+		// 		background-color: #222;
+		// 		height: 200px;
+		// 	}
+		// }
 
 		.row{
-			margin-top: 30px;
 
-			&:first-child{
-				margin-top: 0;
+			margin-right: -5px;
+			margin-left: -5px;
+
+			div[class *= 'col-']
+			{
+				padding-right: 5px;
+				padding-left: 5px;
+			}
+		}
+	}
+
+
+#catalog-items--list
+	{
+		.row{
+
+			div[class *= 'col-']
+			{
+				margin-top: 9px;
+			}
+
+			@include b_md_min(){
+				&:first-child{
+					div[class *= 'col-']
+					{
+						margin-top: 0;
+					}
+				}
+			}
+
+
+		}
+	}
+
+
+.catalog-item
+	{
+		outline: 1px solid $c-gray-3;
+		padding: 9px;
+		margin: 4px; // because of outline 4px at hover
+		display: block;
+		position: relative;
+
+		&, a
+		{
+			color: $c-base;
+		}
+
+
+		transition: all 0.1s ease-out;
+		&:hover{
+			outline: 4px solid $c-beige-dark;
+		}
+	}
+
+
+.catalog-item--preview
+	{
+		&, img
+		{
+			display: block;
+		}
+
+		margin: 0 auto 9px;
+
+		img
+		{
+			max-width: 100%;
+			margin: 0 auto;
+		}
+	}
+
+
+.catalog-item--section
+	{
+		border-top: 1px solid $c-gray-3;
+		padding: 9px 0;
+		font-weight: 300;
+		text-align: center;
+	}
+
+
+.catalog-item--title
+	{
+		@extend %text_title;
+		font-size: 25px;
+		line-height: 1.2;
+		box-sizing: border-box;
+
+		a
+		{
+			display: block;
+		}
+	}
+
+
+.catalog-items-list--price
+	{
+		border-color: $c-beige;
+		text-transform: none;
+		color: $c-beige-dark;
+
+		@extend %text_title;
+		font-size: 19px;
+	}
+
+
+.catalog-item--label
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		background-color: $c-base;
+		color: $c-red;
+
+		display: inline-block;
+		padding: 5px 10px;
+		text-align: center;
+	}
+
+
+
+
+
+/*FILTR*/
+#catalog-filtr
+	{
+		background-color: $c-base;
+		color: $c-beige;
+		padding: 14px 0;
+		margin: 3px; // because of outline 4px at hover
+
+
+		@extend %text_title;
+		text-align: left;
+
+		font-size: 16px;
+		line-height: 1.2;
+
+		a
+		{
+			color: #fff;
+			display: block;
+			padding: 8px 21px 8px 10px;
+
+			&.active
+			{
+				background-color: $c-beige-dark;
+				position: relative;
+
+				&:after
+				{
+					content:"";
+					@include get-sprite(closeFiltr);
+					position: absolute;
+					top: 8px;
+					right: 8px;
+				}
 			}
 		}
 
-		@include b_xs(){
-			.col-sm-3, .col-sm-4
-			{
-				margin-bottom: 30px;
+		h4
+		{
+			text-align: left;
+			font-weight: 400;
+			padding: 8px 10px;
+		}
 
-				&:last-child{
-					margin-bottom: 0;
+
+		.form-select
+		{
+			border: 0;
+			display: block;
+		}
+
+		a.btn-lined
+		{
+			color: $c-gray-5;
+			border-color: $c-gray-4;
+        	
+        	&:hover{
+        		color: $c-beige;
+        	}
+		}
+	}
+
+
+
+
+.catalog-filtr--sec
+	{
+		border-top: 1px solid $c-gray-4;
+		margin-top: 9px;
+		padding: 9px 14px 0;
+
+		&:first-child
+		{
+			border-top: 0;
+			padding-top: 0;
+			margin-top: 0;
+		}
+	}
+
+
+
+/* PAGING */
+
+.paging
+	{
+		text-align: center;
+		margin: 25px 0;
+
+		@extend %text_title;
+		
+		font-size: 25px;
+		line-height: 1.2;
+		font-weight: 300;
+
+		a, span
+		{
+			color: $c-gray-3;
+		}
+
+		a:hover{
+			color: $c-beige;
+
+			&:before{
+				color: $c-gray-3;
+			}
+		}
+	}
+
+.paging--pages
+	{
+		display: inline-block;
+		margin: 0 25px;
+
+		a{
+			padding-left: 16px;
+			margin-left: 10px;
+			position: relative;
+
+			&:before{
+				content:"·";
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			&:first-child{
+				margin-left: 0;
+			}
+
+			&.active
+			{
+				&, & + a:before, &:hover, &:hover:before{
+					color: #000;
 				}
 			}
 		}

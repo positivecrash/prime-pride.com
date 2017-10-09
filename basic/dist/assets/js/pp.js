@@ -2544,6 +2544,31 @@ References:
 jQuery(document).ready(function($){
 
 	var $w = $(window);
+
+
+	/* BASIC */
+
+	/* set equal height */
+
+	function set_height(source, set, outer){
+		var counter = 0;
+
+		$(source).each(function(){
+			if ( outer ){
+				if ( $(this).outerHeight(true) > counter )
+					counter = $(this).outerHeight(true);
+			}
+			else
+			{
+				if ( $(this).height() > counter )
+					counter = $(this).height();
+			}
+		});
+
+		$(set).height(counter);
+	}
+
+	/* end of BASIC */
 	
 
 	/* HEADER */
@@ -2552,16 +2577,7 @@ jQuery(document).ready(function($){
 
 	/* Set equal height for submenu's back */
 	if ( $('header[role="banner"] .dropdown').length > 0 )
-	{
-		var dd_h = 0;
-
-		$('header[role="banner"] .dropdown').each(function(){
-			if ( $(this).outerHeight(true) > dd_h )
-				dd_h = $(this).outerHeight(true);
-		});
-
-		$('header[role="banner"] .dropdown .dropdown_back').height(dd_h);
-	}
+		set_height('header[role="banner"] .dropdown', 'header[role="banner"] .dropdown .dropdown_back', true);
 
 
 	/* Mobile navigation toggler */
@@ -2613,28 +2629,44 @@ jQuery(document).ready(function($){
 		$('#index-items').datahover();
 	}
 
-	/* end of INDEX PAGE */
 
 
-
-	/* COUNT NUMBERS EFFECT */
+	/* Count Numbers Effect */
 
 	$('.js-countto').one('inview', function(event, isInView){
         if (isInView)
             $(this).countTo();
     });
 
-	/* end of COUNT NUMBERS EFFECT */
 
 
 
-	/* SCROLL PAGE UP */
+	/* Scroll Page Up */
 	$('.js-scrollUp').on('click', function(e){
 		e.preventDefault();
 	 	e.stopPropagation();
 		 	
 	    $('html, body').animate({scrollTop: $('main[role="main"]').offset().top }, 1000);
 	  });
-	/* end of SCROLL PAGE UP */
+
+
+	/* end of INDEX PAGE */
+
+
+
+	/* CATALOG */
+
+	/* Set equal height for title of item */
+	var catItemTitle = '#catalog-items--list .catalog-item--title';
+
+	if ( $(catItemTitle).length > 0 ){
+		set_height(catItemTitle, catItemTitle, false);
+
+		$w.on('resize', function(){
+			set_height(catItemTitle, catItemTitle, false);
+		});
+	}
+
+	/* end of CATALOG */
 
 });

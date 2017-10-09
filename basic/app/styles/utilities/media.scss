@@ -67,3 +67,19 @@
 		@content;
 	}
 }
+
+
+@mixin b_md {
+	@media screen and (max-width: #{$bootstrap-md})
+	{
+		@content;
+	}
+}
+
+
+@mixin b_md_min {
+	@media screen and (min-width: #{$bootstrap-md})
+	{
+		@content;
+	}
+}

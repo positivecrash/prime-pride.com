@@ -1,18 +1,22 @@
 $icons: (
-    sprite: (width: 2143px, height: 1274px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
+    sprite: (width: 2324px, height: 1337px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
     PistenBully: (width: 161.8px, height: 38.8px, backgroundX: 0px, backgroundY: 0px),
-    Reform: (width: 171.7px, height: 27.4px, backgroundX: -162px, backgroundY: -39px),
-    compareBack: (width: 278.5px, height: 48.2px, backgroundX: -334px, backgroundY: -67px),
-    diamond: (width: 265.1px, height: 93px, backgroundX: -613px, backgroundY: -116px),
-    service-1: (width: 153.5px, height: 126.3px, backgroundX: -879px, backgroundY: -209px),
-    service-2: (width: 125.1px, height: 126.4px, backgroundX: -1033px, backgroundY: -336px),
-    service-3: (width: 134.2px, height: 126.4px, backgroundX: -1159px, backgroundY: -463px),
-    service-4: (width: 128.1px, height: 126.4px, backgroundX: -1294px, backgroundY: -590px),
-    service-5: (width: 109.7px, height: 125.6px, backgroundX: -1423px, backgroundY: -717px),
-    service-6: (width: 128.7px, height: 120.9px, backgroundX: -1533px, backgroundY: -843px),
-    service-7: (width: 142.6px, height: 126.4px, backgroundX: -1662px, backgroundY: -964px),
-    service-8: (width: 121.8px, height: 126.4px, backgroundX: -1805px, backgroundY: -1091px),
-    serviceBack: (width: 215.2px, height: 56px, backgroundX: -1927px, backgroundY: -1218px),
+    PistenBullySm: (width: 60.7px, height: 14.6px, backgroundX: -162px, backgroundY: -39px),
+    Reform: (width: 171.7px, height: 27.4px, backgroundX: -223px, backgroundY: -54px),
+    ReformSm: (width: 60.7px, height: 9.7px, backgroundX: -395px, backgroundY: -82px),
+    closeFiltr: (width: 10.7px, height: 10.7px, backgroundX: -456px, backgroundY: -92px),
+    compareBack: (width: 278.5px, height: 48.2px, backgroundX: -467px, backgroundY: -103px),
+    compareIcon: (width: 48px, height: 27px, backgroundX: -746px, backgroundY: -152px),
+    diamond: (width: 265.1px, height: 93px, backgroundX: -794px, backgroundY: -179px),
+    service-1: (width: 153.5px, height: 126.3px, backgroundX: -1060px, backgroundY: -272px),
+    service-2: (width: 125.1px, height: 126.4px, backgroundX: -1214px, backgroundY: -399px),
+    service-3: (width: 134.2px, height: 126.4px, backgroundX: -1340px, backgroundY: -526px),
+    service-4: (width: 128.1px, height: 126.4px, backgroundX: -1475px, backgroundY: -653px),
+    service-5: (width: 109.7px, height: 125.6px, backgroundX: -1604px, backgroundY: -780px),
+    service-6: (width: 128.7px, height: 120.9px, backgroundX: -1714px, backgroundY: -906px),
+    service-7: (width: 142.6px, height: 126.4px, backgroundX: -1843px, backgroundY: -1027px),
+    service-8: (width: 121.8px, height: 126.4px, backgroundX: -1986px, backgroundY: -1154px),
+    serviceBack: (width: 215.2px, height: 56px, backgroundX: -2108px, backgroundY: -1281px),
 );
 
 $sprite: map-get($icons, sprite);
@@ -35,11 +39,23 @@ $sprite: map-get($icons, sprite);
 .sprite-PistenBully{
 	@include get-sprite(PistenBully);
 }
+.sprite-PistenBullySm{
+	@include get-sprite(PistenBullySm);
+}
 .sprite-Reform{
 	@include get-sprite(Reform);
 }
+.sprite-ReformSm{
+	@include get-sprite(ReformSm);
+}
+.sprite-closeFiltr{
+	@include get-sprite(closeFiltr);
+}
 .sprite-compareBack{
 	@include get-sprite(compareBack);
+}
+.sprite-compareIcon{
+	@include get-sprite(compareIcon);
 }
 .sprite-diamond{
 	@include get-sprite(diamond);
