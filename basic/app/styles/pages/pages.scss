@@ -1,0 +1,38 @@
+.contacts
+	{
+		h3, h4{
+			text-align: left;
+		}
+
+		h3{
+			color: $c-beige-3;
+			margin-bottom: 12px;
+		}
+
+		h4{
+			color: $c-beige-dark;
+			margin-bottom: 4px;
+		}
+
+		img{
+			display: block;
+			max-width: 100%;
+			margin-bottom: 12px;
+		}
+
+		.contacts--data
+		{
+			margin-top: 20px;
+		}
+
+		p{
+			font-size: 14px;
+			line-height: 1.2;
+			font-weight: 300;
+			margin-bottom: 6px;
+		}
+
+		div[class *= 'col-']{
+			margin-bottom: $margin-section;
+		}
+	}
