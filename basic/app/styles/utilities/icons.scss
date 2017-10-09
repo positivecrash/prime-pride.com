@@ -43,23 +43,29 @@
 	@if $filename == arrLeft {
 		$char: "\E001";
 	}
-	@if $filename == arrRight {
+	@if $filename == arrLeftSimple {
 		$char: "\E002";
 	}
-	@if $filename == arrUp {
+	@if $filename == arrRight {
 		$char: "\E003";
 	}
-	@if $filename == flickr {
+	@if $filename == arrRightSimple {
 		$char: "\E004";
 	}
-	@if $filename == instagram {
+	@if $filename == arrUp {
 		$char: "\E005";
 	}
-	@if $filename == search {
+	@if $filename == flickr {
 		$char: "\E006";
 	}
-	@if $filename == youtube {
+	@if $filename == instagram {
 		$char: "\E007";
+	}
+	@if $filename == search {
+		$char: "\E008";
+	}
+	@if $filename == youtube {
+		$char: "\E009";
 	}
 
 	@return $char;
@@ -75,8 +81,16 @@
 	@include icon(arrLeft);
 	@extend %icon-styles;
 }
+.i-arrLeftSimple {
+	@include icon(arrLeftSimple);
+	@extend %icon-styles;
+}
 .i-arrRight {
 	@include icon(arrRight);
+	@extend %icon-styles;
+}
+.i-arrRightSimple {
+	@include icon(arrRightSimple);
 	@extend %icon-styles;
 }
 .i-arrUp {

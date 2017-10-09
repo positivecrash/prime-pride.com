@@ -124,6 +124,16 @@ jQuery(document).ready(function($){
 		});
 	}
 
+
+	/* Item slide */
+	if ( $('.anyslide-img').length > 0 )
+	{
+		$('.anyslide-img').AnySlide({
+			loadFirst: 'img',
+			loop: true
+		});
+	}
+
 	/* end of CATALOG */
 
 });

@@ -141,11 +141,15 @@
 
             var $o = $(this);
 
-            //check if the object is already on cache
+            //check if the object is already in cache
             if($o.prop('complete'))
             {
-              contentShow(1000);
-              setup();
+              itemsLoaded++;
+
+              if ( itemsLoaded == itemslen ){
+                contentShow(500);
+                setup();
+              }
             }
             else
             {
@@ -153,7 +157,7 @@
                 itemsLoaded++;
 
                 if ( itemsLoaded == itemslen ){
-                  contentShow();
+                  contentShow(500);
                   setup();
                 }
               });
@@ -214,6 +218,8 @@
     var show = function(index) {
 
       setActiveIndex(index);
+
+      console.log('show index' + index);
 
       if ( slider.hascontent ){
         showContent(index);
@@ -537,7 +543,7 @@
 
         if ( slider.activeslide == 0 ){
           if ( slider.config.loop )
-            prevSlide = slider.length-1;
+            prevSlide = slider.length - 1;
           else
             return;
         }
@@ -545,9 +551,7 @@
           prevSlide = slider.activeslide - 1;
         }
 
-
         show(prevSlide);
-
 
       });
 
@@ -556,6 +560,8 @@
 
         e.preventDefault();
         e.stopPropagation();
+
+        // console.log('Click next');
 
 
         var nextSlide = 0;
@@ -2664,6 +2670,16 @@ jQuery(document).ready(function($){
 
 		$w.on('resize', function(){
 			set_height(catItemTitle, catItemTitle, false);
+		});
+	}
+
+
+	/* Item slide */
+	if ( $('.anyslide-img').length > 0 )
+	{
+		$('.anyslide-img').AnySlide({
+			loadFirst: 'img',
+			loop: true
 		});
 	}
 

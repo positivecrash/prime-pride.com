@@ -41,15 +41,12 @@ $color-loader: #222;
 
 
 .js-slider-viewport{
-  opacity: 0;
-  animation: 0.6s fadeIn 0.5s ease-in-out forwards;
-
+ 
   .slide{
-    opacity: 1;
-    animation: 0.4s fadeOut ease-in-out forwards;
+    display: none;
 
     &.active{
-      animation: 0.6s fadeIn ease-in-out forwards;
+      display: block;
     }
   }
 }
@@ -78,27 +75,6 @@ $color-loader: #222;
     }
   }
 
-
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
 
 
 @keyframes spin{
