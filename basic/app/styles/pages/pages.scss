@@ -41,5 +41,43 @@
 
 .anyslide-img
 	{
-		
+		position: relative;
+
+		.anyslide-content{
+			padding: 0 80px;
+			text-align: center;
+
+			img{
+				display: inline-block;
+				max-width: 100%;
+			}
+		}
+
+		.js-slider-controls{
+			font-size: 48px;
+			line-height: 1;
+			display: none;
+
+			a{
+				color: $c-gray-2;
+
+				position: absolute;
+				top: 50%;
+				margin-top: -24px;
+				// transition: 0.2s all ease-out;
+
+				&.prev { left: 0; }
+				&.next { right: 0; }
+
+				&:hover{
+					color: $c-base;
+				}
+			}
+		}
+
+		&.anyslide-loaded{
+			.js-slider-controls{
+				display: block;
+			}
+		}
 	}

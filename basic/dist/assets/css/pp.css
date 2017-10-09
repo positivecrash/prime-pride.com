@@ -74,20 +74,20 @@ h1, h2, h3, h4, h5, h6, .form-select select, a.btn-lined, header[role="banner"],
 
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondLight.eot?1507544033');
-  src: url('../fonts/DINPro-CondLight.eot?&1507544033#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1507544033') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
+  src: url('../fonts/DINPro-CondLight.eot?1507547322');
+  src: url('../fonts/DINPro-CondLight.eot?&1507547322#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1507547322') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
   font-weight: 300;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-Cond.eot?1507544033');
-  src: url('../fonts/DINPro-Cond.eot?&1507544033#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1507544033') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
+  src: url('../fonts/DINPro-Cond.eot?1507547322');
+  src: url('../fonts/DINPro-Cond.eot?&1507547322#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1507547322') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondBold.eot?1507544033');
-  src: url('../fonts/DINPro-CondBold.eot?&1507544033#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1507544033') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
+  src: url('../fonts/DINPro-CondBold.eot?1507547322');
+  src: url('../fonts/DINPro-CondBold.eot?&1507547322#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1507547322') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
   font-weight: 800;
 }
 .t-red {
@@ -348,8 +348,8 @@ hr {
 
 @font-face {
   font-family: "ppIconsFont";
-  src: url('../fonts/ppIconsFont.eot?1507544033');
-  src: url('../fonts/ppIconsFont.eot?&1507544033#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1507544033') format('woff'), url('../fonts/ppIconsFont.woff2?1507544033') format('woff2'), url('../fonts/ppIconsFont.svg?1507544033') format('svg'), url('../fonts/ppIconsFont.ttf?1507544033') format('truetype');
+  src: url('../fonts/ppIconsFont.eot?1507547322');
+  src: url('../fonts/ppIconsFont.eot?&1507547322#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1507547322') format('woff'), url('../fonts/ppIconsFont.woff2?1507547322') format('woff2'), url('../fonts/ppIconsFont.svg?1507547321') format('svg'), url('../fonts/ppIconsFont.ttf?1507547322') format('truetype');
 }
 .i-arrLeft, .i-arrLeftSimple, .i-arrRight, .i-arrRightSimple, .i-arrUp, .i-flickr, .i-instagram, .i-search, .i-youtube {
   font-family: "ppIconsFont";
@@ -841,6 +841,14 @@ footer[role='contentinfo'] .col-sm-6 {
   display: block;
 }
 
+.cssanimations .js-slider-viewport .slide {
+  opacity: 0;
+}
+.cssanimations .js-slider-viewport .slide.active {
+  -webkit-animation: 0.2s fadeIn ease-in-out forwards;
+          animation: 0.2s fadeIn ease-in-out forwards;
+}
+
 .anyslide-loader {
   width: 50px;
   height: 50px;
@@ -864,6 +872,43 @@ footer[role='contentinfo'] .col-sm-6 {
           animation: spin 1s infinite;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -874,7 +919,6 @@ footer[role='contentinfo'] .col-sm-6 {
             transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -2690,42 +2734,6 @@ html {
   -webkit-animation: 0.6s fadeIn ease-in-out forwards;
           animation: 0.6s fadeIn ease-in-out forwards;
 }
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeOut {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
 #index-slider, #index-slider .slide {
   position: absolute;
   top: 0;
@@ -3484,6 +3492,41 @@ html {
 }
 .contacts div[class*='col-'] {
   margin-bottom: 30px;
+}
+
+.anyslide-img {
+  position: relative;
+}
+.anyslide-img .anyslide-content {
+  padding: 0 80px;
+  text-align: center;
+}
+.anyslide-img .anyslide-content img {
+  display: inline-block;
+  max-width: 100%;
+}
+.anyslide-img .js-slider-controls {
+  font-size: 48px;
+  line-height: 1;
+  display: none;
+}
+.anyslide-img .js-slider-controls a {
+  color: #BDBBBB;
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+}
+.anyslide-img .js-slider-controls a.prev {
+  left: 0;
+}
+.anyslide-img .js-slider-controls a.next {
+  right: 0;
+}
+.anyslide-img .js-slider-controls a:hover {
+  color: #222;
+}
+.anyslide-img.anyslide-loaded .js-slider-controls {
+  display: block;
 }
 
 html, body {
