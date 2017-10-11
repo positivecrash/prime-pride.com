@@ -1,3 +1,8 @@
+$(".js-accordion--tab").on('click', function(e){
+  e.preventDefault();
+  e.stopPropagation();
+  $(this).next('.js-accordion--tabContent').toggle(400);
+});
 /**
  * AnySlide v 1.0
  * Copyright 2017 Anastasiia Bakai (positivecrash)
@@ -2598,16 +2603,16 @@ jQuery(document).ready(function($){
 
 
 	/* Set padding for main in case of there is wrong in styles */
-	if ( $header.length > 0 )
-	{
-		var $main = $('main[role="main"]');
+	// if ( $header.length > 0 )
+	// {
+	// 	var $main = $('main[role="main"]');
 
-		$main.css('padding-top', $header.outerHeight());
+	// 	$main.css('padding-top', $header.outerHeight());
 
-		$w.on('resize', function(){
-			$main.css('padding-top', $header.outerHeight());
-		});
-	}
+	// 	$w.on('resize', function(){
+	// 		$main.css('padding-top', $header.outerHeight());
+	// 	});
+	// }
 
 
 	/* end of HEADER */

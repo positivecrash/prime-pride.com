@@ -40,32 +40,35 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == arrLeft {
+	@if $filename == arrDown {
 		$char: "\E001";
 	}
-	@if $filename == arrLeftSimple {
+	@if $filename == arrLeft {
 		$char: "\E002";
 	}
-	@if $filename == arrRight {
+	@if $filename == arrLeftSimple {
 		$char: "\E003";
 	}
-	@if $filename == arrRightSimple {
+	@if $filename == arrRight {
 		$char: "\E004";
 	}
-	@if $filename == arrUp {
+	@if $filename == arrRightSimple {
 		$char: "\E005";
 	}
-	@if $filename == flickr {
+	@if $filename == arrUp {
 		$char: "\E006";
 	}
-	@if $filename == instagram {
+	@if $filename == flickr {
 		$char: "\E007";
 	}
-	@if $filename == search {
+	@if $filename == instagram {
 		$char: "\E008";
 	}
-	@if $filename == youtube {
+	@if $filename == search {
 		$char: "\E009";
+	}
+	@if $filename == youtube {
+		$char: "\E00A";
 	}
 
 	@return $char;
@@ -77,6 +80,10 @@
 	}
 }
 
+.i-arrDown {
+	@include icon(arrDown);
+	@extend %icon-styles;
+}
 .i-arrLeft {
 	@include icon(arrLeft);
 	@extend %icon-styles;

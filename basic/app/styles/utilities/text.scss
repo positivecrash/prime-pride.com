@@ -17,22 +17,30 @@
 
 h2
 {
-	font-size: 45px;
+	font-size: 42px;
 	margin-bottom: $margin-section;
 }
 
 h3{
 	font-size: 28px;
+	margin-bottom: $margin-section/2;
 }
 
 h4{
 	font-size: 19px;
+	margin-bottom: $margin-section/2;
 }
 
 a
 {
 	@extend %link_noline;
 	transition: 0.3s color ease-out;
+	color: $c-beige-dark;
+
+	&:hover{
+		text-decoration: underline;
+		text-decoration: underline !important;
+	}
 }
 
 
@@ -105,3 +113,31 @@ hr
 		background-image: image-url('patterns/zigzag.png');
 	}
 }
+
+
+.title-light
+	{
+		color: $c-beige-dark;
+		font-weight: 400;
+	}
+
+
+.text-columned
+	{
+		column-gap: 15px;
+		column-fill: auto;
+
+		@include b_xs(){
+			column-count: 1 !important;
+		}
+	}
+
+.text-columned-2
+	{
+		column-count: 2;
+	}
+
+.text-columned-3
+	{
+		column-count: 3;
+	}

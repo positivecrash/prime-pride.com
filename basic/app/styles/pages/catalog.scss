@@ -101,7 +101,7 @@
 #catalog-brands
 	{
 		text-align: center;
-		padding: 0 0 40px;
+		padding: 0 0 $margin-section;
 
 		span[class*='sprite-']
 		{
@@ -201,7 +201,6 @@
 	{
 		border-top: 1px solid $c-gray-3;
 		padding: 9px 0;
-		font-weight: 300;
 		text-align: center;
 	}
 
@@ -342,7 +341,6 @@
 		
 		font-size: 25px;
 		line-height: 1.2;
-		font-weight: 300;
 
 		a, span
 		{
@@ -399,9 +397,5 @@
 {
 	h1.title-zigzag{
 		margin-bottom: 5px;
-	}
-
-	#catalog-brands{
-		margin-bottom: $margin-section;
 	}
 }

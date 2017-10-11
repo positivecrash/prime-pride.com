@@ -51,16 +51,16 @@ jQuery(document).ready(function($){
 
 
 	/* Set padding for main in case of there is wrong in styles */
-	if ( $header.length > 0 )
-	{
-		var $main = $('main[role="main"]');
+	// if ( $header.length > 0 )
+	// {
+	// 	var $main = $('main[role="main"]');
 
-		$main.css('padding-top', $header.outerHeight());
+	// 	$main.css('padding-top', $header.outerHeight());
 
-		$w.on('resize', function(){
-			$main.css('padding-top', $header.outerHeight());
-		});
-	}
+	// 	$w.on('resize', function(){
+	// 		$main.css('padding-top', $header.outerHeight());
+	// 	});
+	// }
 
 
 	/* end of HEADER */

@@ -33,14 +33,15 @@ html, body{
 
 body{
   background-color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
+  font-weight: 300;
   font-family: $font-family-base;
 }
 
 main[role="main"]
 {
-  padding-top: 64px;  //for Fixed header, so we won't loose the top of content
+  padding-top: 62px;  //for Fixed header, so we won't loose the top of content
   overflow-x: hidden;
 }
 
@@ -113,6 +114,16 @@ main[role="main"]
 {
 	text-align: right;
 }
+
+.align-t-center
+{
+  text-align: center;
+}
+
+.align-t-left
+{
+  text-align: left;
+}
 /* end of ALIGN ELEMENT */
 
 
@@ -123,6 +134,7 @@ main[role="main"]
 
 .m-l-5 { margin-left: 5px; }
 .m-r-5 { margin-right: 5px; }
+.m-b-5 { margin-bottom: 5px; }
 
 /* end of MARGINS & PADDINGS */
 

@@ -1,3 +1,24 @@
+.colsec
+	{
+		div[class *= 'col-']{
+			margin-bottom: $margin-section;
+		}
+	}
+
+
+.colsec-m-b
+	{
+		margin-bottom: 20px;
+	}
+
+.i-block
+	{
+		display: block;
+		max-width: 100%;
+	}
+
+
+
 .contacts
 	{
 		h3, h4{
@@ -14,26 +35,9 @@
 			margin-bottom: 4px;
 		}
 
-		img{
-			display: block;
-			max-width: 100%;
-			margin-bottom: 12px;
-		}
-
-		.contacts--data
-		{
-			margin-top: 20px;
-		}
-
 		p{
-			font-size: 14px;
 			line-height: 1.2;
-			font-weight: 300;
 			margin-bottom: 6px;
-		}
-
-		div[class *= 'col-']{
-			margin-bottom: $margin-section;
 		}
 	}
 
@@ -64,7 +68,6 @@
 				position: absolute;
 				top: 50%;
 				margin-top: -24px;
-				// transition: 0.2s all ease-out;
 
 				&.prev { left: 0; }
 				&.next { right: 0; }
@@ -81,3 +84,68 @@
 			}
 		}
 	}
+
+
+/* ACCORDION */
+.js-accordion--tabContent { display: none; }
+.js-accordion--tab
+	{
+		cursor: pointer;
+		background: $c-gray-6;
+		color: $c-beige;
+		padding: 10px 0;
+		border-bottom: 1px solid $c-gray-3;
+
+		@extend %text_title;
+
+		h3{
+			font-size: 24px;
+			margin-bottom: 0;
+		}
+	}
+
+.js-accordion--tabContent
+	{
+		background: $c-gray-2;
+		color: $c-gray-3;
+
+		.container
+			{
+				background: #fff;
+				padding-top: $margin-section;
+				padding-bottom: $margin-section;
+			}
+	}
+
+
+/* ITEM PARAMETRS */
+.product-param--wrap
+{
+	display: table;
+	width: 100%;
+}
+
+.product-param
+	{
+		display: table-row;
+	}
+
+.product-param--left, .product-param--right
+	{
+		display: table-cell;
+		padding: $margin-section/2 0;
+		border-top: 1px solid $c-gray-5;
+	}
+
+.product-param--left
+	{
+		font-weight: 700;
+		padding-right: 10px;
+		color: $c-base;
+	}
+
+.product-param--right
+	{
+		text-align: right;
+	}
+/* end of ITEM PARAMETRS */
