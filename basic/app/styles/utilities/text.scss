@@ -36,11 +36,6 @@ a
 	@extend %link_noline;
 	transition: 0.3s color ease-out;
 	color: $c-beige-dark;
-
-	&:hover{
-		text-decoration: underline;
-		text-decoration: underline !important;
-	}
 }
 
 

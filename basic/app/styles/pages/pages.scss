@@ -123,6 +123,11 @@
 {
 	display: table;
 	width: 100%;
+
+	a:hover{
+		text-decoration: underline;
+		text-decoration: underline !important;
+	}
 }
 
 .product-param
