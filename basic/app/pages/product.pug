@@ -58,7 +58,14 @@ block content
 			h4.title-light Продуманная эргономика рабочего места
 
 			.colsec-m-b
-				img.i-block(alt="", src="assets/i/tmp/itemDesc-bg.jpg")
+				//- img.i-block(alt="", src="assets/i/tmp/itemDesc-bg.jpg")
+				script(src="assets/js/kaleidoscope.min.js" defer="defer")
+				<scritpt>
+					var viewer = new Kaleidoscope.Image(
+						{source: "equirectangular-image.jpg", containerId: "#target"});
+					viewer.render();
+				</scritpt>
+
 			.row.colsec
 				.col-sm-4
 					.colsec-m-b
@@ -149,7 +156,7 @@ block content
 									a(href="#") БОКС ДЛЯ ТРАНСПОРТИРОВКИ
 
 
-		hr/
+		hr.hr-devider
 		.contacts
 			.container
 				h2 КОНТАКТЫ

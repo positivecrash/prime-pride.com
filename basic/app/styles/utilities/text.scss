@@ -104,6 +104,10 @@ hr
 		background-color: $c-gray-2;
 		border: 0;
 		margin: $margin-section 0;
+
+		&.hr-devider{
+			background-color: transparent;
+		}
 	}
 
 
