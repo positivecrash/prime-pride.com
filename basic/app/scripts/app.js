@@ -136,4 +136,7 @@ jQuery(document).ready(function($){
 
 	/* end of CATALOG */
 
+	var viewer = new Kaleidoscope.Image(
+		{source: "assets/i/tmp/pano/panno_test.png", containerId: "#test"});
+	viewer.render();
 });
