@@ -8,7 +8,7 @@ block head
 
 mixin item(title)
 	a(href="#").catalog-item
-		.catalog-item--label: span.sprite-PistenBullySm
+		//- .catalog-item--label: span.sprite-PistenBullySm
 		.catalog-item--preview: img(alt="", src="assets/i/tmp/item-1.jpg")
 		h3.catalog-item--title.catalog-item--section= title
 		.catalog-item--section
@@ -21,7 +21,7 @@ mixin item(title)
 
 mixin item2(title)
 	a(href="#").catalog-item
-		.catalog-item--label: span.sprite-ReformSm
+		//- .catalog-item--label: span.sprite-ReformSm
 		.catalog-item--preview: img(alt="", src="assets/i/tmp/item-2.jpg")
 		h3.catalog-item--title.catalog-item--section= title
 		.catalog-item--section
@@ -72,24 +72,7 @@ block content
 								a(href="#") Reform
 
 							.catalog-filtr--sec
-								h4 выбрать модель
-								.form-select
-									select
-										option 600 SCR
-										option 600 POLAR SCR
-										option 600 E+
-
-							.catalog-filtr--sec
-								h4 Выбрать категорию
-								a.active(href="#") Переднее навесное оборудование
-								a(href="#") Заднее навесное оборудование
-								a.active(href="#") Кабины
-								a(href="#") Траки
-								a(href="#") Snowsat
-								a.active(href="#") Лебедка
-
-							.catalog-filtr--sec
-								a.btn-lined(href="#") снять фильтр
+								a.btn-lined(href="#") Применить фильтр
 
 
 					#catalog-items--list.col-sm-9

@@ -12,7 +12,22 @@ header(role="banner")
 					span
 				#header-nav
 					ul
-						li: a(href="#") Техника
+						li(data-toggle="hover")
+							a(href="#") Техника
+							
+							.dropdown
+								.dropdown_content
+									ul
+										li: a(href="#") Снегоуплотнительная
+										li: a(href="#") Муниципальная
+										li: a(href="#") Сельское хозяйство
+										li: a(href="#") Вездеходы в специсполнении
+										li: a(href="#") Восстановленная техника
+										li: a(href="#") Дополнительное оборудование
+
+								.dropdown_back
+
+
 						li(data-toggle="hover")
 							a(href="#") Услуги
 
@@ -36,7 +51,7 @@ header(role="banner")
 							.dropdown
 								.dropdown_content
 									ul
-										li: a(href="#") Ежегодные мероприятия
+										li: a(href="#") События
 										li: a(href="#") Отзывы
 
 								.dropdown_back
