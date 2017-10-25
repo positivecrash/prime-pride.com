@@ -60,7 +60,6 @@
 
 
 
-
 #inside-banner--sign
 	{
 		text-align: center;
@@ -112,3 +111,12 @@
 				margin-top: - map-get($serv1Title, height) / 2;
 			}
 	}
+
+
+.sprite-serv2
+	{
+		position: absolute;
+		bottom: 0;
+	}
+
+

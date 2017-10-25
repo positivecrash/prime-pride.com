@@ -404,13 +404,23 @@ p {
   background-repeat: no-repeat;
 }
 
+.sprite-serv2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1022.4px;
+  height: 230.2px;
+  background-image: url("../i/sprite.svg");
+  background-position: -3282px -527px;
+  background-repeat: no-repeat;
+}
+
 .sprite-service-1 {
   display: inline-block;
   vertical-align: middle;
   width: 153.5px;
   height: 126.3px;
   background-image: url("../i/sprite.svg");
-  background-position: -3282px -527px;
+  background-position: -4305px -758px;
   background-repeat: no-repeat;
 }
 
@@ -420,7 +430,7 @@ p {
   width: 125.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -3436px -654px;
+  background-position: -4459px -885px;
   background-repeat: no-repeat;
 }
 
@@ -430,7 +440,7 @@ p {
   width: 134.2px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -3562px -781px;
+  background-position: -4585px -1012px;
   background-repeat: no-repeat;
 }
 
@@ -440,7 +450,7 @@ p {
   width: 128.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -3697px -908px;
+  background-position: -4720px -1139px;
   background-repeat: no-repeat;
 }
 
@@ -450,7 +460,7 @@ p {
   width: 109.7px;
   height: 125.6px;
   background-image: url("../i/sprite.svg");
-  background-position: -3826px -1035px;
+  background-position: -4849px -1266px;
   background-repeat: no-repeat;
 }
 
@@ -460,7 +470,7 @@ p {
   width: 128.7px;
   height: 120.9px;
   background-image: url("../i/sprite.svg");
-  background-position: -3936px -1161px;
+  background-position: -4959px -1392px;
   background-repeat: no-repeat;
 }
 
@@ -470,7 +480,7 @@ p {
   width: 142.6px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -4065px -1282px;
+  background-position: -5088px -1513px;
   background-repeat: no-repeat;
 }
 
@@ -480,7 +490,7 @@ p {
   width: 121.8px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -4208px -1409px;
+  background-position: -5231px -1640px;
   background-repeat: no-repeat;
 }
 
@@ -490,7 +500,7 @@ p {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: -4330px -1536px;
+  background-position: -5353px -1767px;
   background-repeat: no-repeat;
 }
 
@@ -3124,7 +3134,7 @@ html {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: -4330px -1536px;
+  background-position: -5353px -1767px;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
@@ -3826,6 +3836,11 @@ html {
   background-position: -3158px -456px;
   background-repeat: no-repeat;
   margin-top: -35.5px;
+}
+
+.sprite-serv2 {
+  position: absolute;
+  bottom: 0;
 }
 
 html, body {
