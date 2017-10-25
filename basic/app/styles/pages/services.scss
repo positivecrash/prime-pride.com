@@ -1,0 +1,114 @@
+#inside-banner
+	{
+		background-color: $c-base;
+		color: #fff;
+		padding: 20px;
+		position: relative;
+	}
+
+
+#inside-banner--content
+	{
+		border: 1px solid $c-beige-dark;
+		padding: 30px;
+		box-sizing: border-box;
+		min-height: $height-banner;
+	    overflow: hidden;
+    	position: relative;
+	}
+
+
+#inside-banner--logo
+	{
+		position: absolute;
+		top: 33px;
+		right: 33px;
+		display: block;
+		width: 70px;
+
+		@include max_tablet()
+			{
+				display: none;
+			}
+	}
+
+
+#inside-banner--logoStripe
+	{
+		position: absolute;
+		left: 0;
+		top: 36%;
+
+		@include max_tablet()
+			{
+				display: none;
+			}
+	}
+
+
+#inside-banner--logoStripe-m
+	{
+		display: none;
+		text-align: center;
+		margin-top: 50px;
+
+		@include max_tablet()
+			{
+				display: block;
+			}
+	}
+
+
+
+
+#inside-banner--sign
+	{
+		text-align: center;
+	    margin-top: 50px;
+
+		img
+			{
+				display: inline-block;
+				max-width: 100%;
+				max-height: 280px;
+			}
+	}
+
+
+.sprite-serv1Left, .sprite-serv1Right
+	{
+		position: absolute;
+		left: 50%;
+		bottom: 110px;
+	}
+
+
+
+.sprite-serv1Left
+	{
+		$serv1Left: map-get($icons, serv1Left);
+		margin-left: - map-get($serv1Left, width) - 220px;
+	}
+
+
+
+.sprite-serv1Right
+	{
+	    margin-left: 220px;
+	}
+
+
+
+.title-compl--serv1
+	{
+		$serv1Title: map-get($icons, serv1Title);
+		min-height: map-get($serv1Title, height) + 20;
+		padding-left: map-get($serv1Title, width) + 30;
+		padding-right: map-get($serv1Title, width) + 30;
+
+		&:before, &:after
+			{
+				@include get-sprite(serv1Title);
+				margin-top: - map-get($serv1Title, height) / 2;
+			}
+	}

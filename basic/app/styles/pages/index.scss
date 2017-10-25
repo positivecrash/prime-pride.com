@@ -3,7 +3,7 @@
 #index-slider-wrap
 {
 	position: relative;
-	height: 550px;
+	height: $height-banner;
 	overflow: hidden;
 }
 
@@ -137,7 +137,7 @@
 /* INDEX SECTIONS */
 .index-sec
 {
-	margin-top: 50px;
+	margin-top: $margin-section;
 
 	&:first-child{
 		margin-top: 0;
@@ -219,7 +219,7 @@ $diamond: map-get($icons, diamond);
 	line-height: 1;
 
 	background: image-url('index-back-nums.svg') no-repeat 50% 100%;
-	min-height: image-height('index-back-nums.png') + 150;
+	min-height: image-height('index-back-nums.png') + 40;
 
 	.d-t
 	{

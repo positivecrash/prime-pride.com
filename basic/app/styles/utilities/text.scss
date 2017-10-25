@@ -15,10 +15,16 @@
 	line-height: 1.2;
 }
 
+h1
+{
+	font-size: 52px;
+	hyphens: auto;
+}
+
 h2
 {
 	font-size: 42px;
-	margin-bottom: $margin-section;
+	margin-bottom: $margin-section/2;
 }
 
 h3{
@@ -46,7 +52,7 @@ a
 	overflow: hidden;
 	padding-top: 6px;
 	padding-bottom: 8px;
-	margin-bottom: 40px;
+	margin-bottom: $margin-section/2;
 	font-size: 55px;
 
 	span
@@ -121,6 +127,68 @@ hr
 	}
 
 
+
+.title-compl
+	{
+		text-align: center;
+		color: $c-beige-3;
+		border-width: 1px 0;
+		border-style: solid;
+		border-color: $c-beige-dark;
+		margin-bottom: $margin-section/2;
+		padding: 10px 0;
+
+		position: relative;
+		box-sizing: border-box;
+
+		display: table;
+		width: 100%;
+
+		.title-compl--content
+			{
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+		h2, h3
+			{
+				font-weight: 400;
+				margin-bottom: 0;
+				hyphens: auto;
+			}
+
+
+		&:before, &:after
+			{
+				content: "";
+				position: absolute;
+				top: 50%;
+			}
+
+		&:before
+			{
+				left: 10px;
+			}
+
+		&:after
+			{
+				right: 10px;
+			}
+
+
+		@include max_mobile()
+			{
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+
+				&:before, &:after
+					{
+						display: none !important;
+					}
+			}
+	}
+
+
 .text-columned
 	{
 		column-gap: 15px;
@@ -139,4 +207,11 @@ hr
 .text-columned-3
 	{
 		column-count: 3;
+	}
+
+
+
+p
+	{
+		margin-bottom: $margin-section/2;
 	}

@@ -23,6 +23,7 @@
 @import "pages/index";
 @import "pages/catalog";
 @import "pages/pages";
+@import "pages/services";
 
 
 
@@ -41,7 +42,7 @@ body{
 
 main[role="main"]
 {
-  padding-top: 62px;  //for Fixed header, so we won't loose the top of content
+  padding-top: 65px;  //for Fixed header, so we won't loose the top of content
   overflow-x: hidden;
 }
 
@@ -73,6 +74,27 @@ main[role="main"]
 {
   box-sizing: border-box;
   width: 100%;
+}
+
+
+section
+{
+  margin-top: $margin-section;
+
+  &:first-child{
+    margin-top: 0;
+  }
+
+  .row
+  {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  *[class*='col-']
+  {
+    padding: 5px;
+  }
 }
 
 /* end of CONTAINERS */
