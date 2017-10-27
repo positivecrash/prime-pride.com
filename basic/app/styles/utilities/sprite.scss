@@ -1,5 +1,5 @@
 $icons: (
-    sprite: (width: 5759px, height: 1887px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
+    sprite: (width: 5888px, height: 2016px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
     PistenBully: (width: 136.2px, height: 33.1px, backgroundX: 0px, backgroundY: 0px),
     PistenBullySm: (width: 60.7px, height: 14.6px, backgroundX: -137px, backgroundY: -34px),
     Reform: (width: 171.7px, height: 27.4px, backgroundX: -198px, backgroundY: -49px),
@@ -24,6 +24,8 @@ $icons: (
     service-7: (width: 142.6px, height: 126.4px, backgroundX: -5278px, backgroundY: -1577px),
     service-8: (width: 121.8px, height: 126.4px, backgroundX: -5421px, backgroundY: -1704px),
     serviceBack: (width: 215.2px, height: 56px, backgroundX: -5543px, backgroundY: -1831px),
+    speed1: (width: 71.7px, height: 71.7px, backgroundX: -5759px, backgroundY: -1887px),
+    speed2: (width: 56.8px, height: 56.8px, backgroundX: -5831px, backgroundY: -1959px),
 );
 
 $sprite: map-get($icons, sprite);
@@ -114,4 +116,10 @@ $sprite: map-get($icons, sprite);
 }
 .sprite-serviceBack{
 	@include get-sprite(serviceBack);
+}
+.sprite-speed1{
+	@include get-sprite(speed1);
+}
+.sprite-speed2{
+	@include get-sprite(speed2);
 }

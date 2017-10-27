@@ -518,6 +518,26 @@ p {
   background-repeat: no-repeat;
 }
 
+.sprite-speed1 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 71.7px;
+  height: 71.7px;
+  background-image: url("../i/sprite.svg");
+  background-position: -5759px -1887px;
+  background-repeat: no-repeat;
+}
+
+.sprite-speed2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 56.8px;
+  height: 56.8px;
+  background-image: url("../i/sprite.svg");
+  background-position: -5831px -1959px;
+  background-repeat: no-repeat;
+}
+
 @font-face {
   font-family: "ppIconsFont";
   src: url('../fonts/ppIconsFont.eot?1509098417');
@@ -3825,6 +3845,7 @@ html {
 #inside-banner--sign {
   text-align: center;
   margin-top: 50px;
+  position: relative;
 }
 #inside-banner--sign img {
   display: inline-block;
@@ -3862,6 +3883,22 @@ html {
   margin-top: -35.5px;
 }
 
+.title-compl--serv3 {
+  min-height: 76.8px;
+  padding-left: 86.8px;
+  padding-right: 86.8px;
+}
+.title-compl--serv3:before, .title-compl--serv3:after {
+  display: inline-block;
+  vertical-align: middle;
+  width: 56.8px;
+  height: 56.8px;
+  background-image: url("../i/sprite.svg");
+  background-position: -5831px -1959px;
+  background-repeat: no-repeat;
+  margin-top: -28.4px;
+}
+
 .sprite-serv2 {
   position: absolute;
   left: 50%;
@@ -3872,6 +3909,13 @@ html {
 }
 .sprite-serv2.right {
   margin-left: 100px;
+}
+
+#inside-banner--serv3Speed {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  margin-left: 204px;
 }
 
 html, body {

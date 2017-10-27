@@ -64,6 +64,7 @@
 	{
 		text-align: center;
 	    margin-top: 50px;
+	    position: relative;
 
 		img
 			{
@@ -98,19 +99,34 @@
 
 
 
-.title-compl--serv1
+
+@mixin ServiceTitle($sprite)
 	{
-		$serv1Title: map-get($icons, serv1Title);
-		min-height: map-get($serv1Title, height) + 20;
-		padding-left: map-get($serv1Title, width) + 30;
-		padding-right: map-get($serv1Title, width) + 30;
+		$spriteP: map-get($icons, $sprite);
+		min-height: map-get($spriteP, height) + 20;
+		padding-left: map-get($spriteP, width) + 30;
+		padding-right: map-get($spriteP, width) + 30;
 
 		&:before, &:after
 			{
-				@include get-sprite(serv1Title);
-				margin-top: - map-get($serv1Title, height) / 2;
+				@include get-sprite($sprite);
+				margin-top: - map-get($spriteP, height) / 2;
 			}
 	}
+
+
+
+.title-compl--serv1
+	{
+		@include ServiceTitle(serv1Title);
+	}
+
+.title-compl--serv3
+	{
+		@include ServiceTitle(speed2);
+	}
+
+
 
 
 .sprite-serv2
@@ -131,4 +147,12 @@
 			}
 	}
 
+
+#inside-banner--serv3Speed
+	{
+		position: absolute;
+		top: 7px;
+		left: 50%;
+		margin-left: 204px;
+	}
 

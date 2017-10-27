@@ -1,0 +1,35 @@
+extends extends/layout.pug
+
+include includes/mixins.pug
+
+block head
+	- var pageTitle = 'Плановое техобслуживание - PistenBully Россия'
+
+block content
+	main(role="main")
+		#inside-banner
+			#inside-banner--content
+				h1 Обучение управлению и эксплуатации
+
+				img#inside-banner--logo(alt="", src="assets/i/pp-logo-big.png", srcset="assets/i/pp-logo-big-x2.png")
+				#inside-banner--logoStripe-m
+					span.sprite-insideBannerBrandsM
+				#inside-banner--sign
+					img(alt="", src="assets/i/services/inside-serv3.png", srcset="assets/i/services/inside-serv3-x2.png")
+					#inside-banner--serv3Speed.sprite-speed1
+				.sprite-serv2.left
+				.sprite-serv2.right
+
+			#inside-banner--logoStripe.sprite-insideBannerBrands
+
+		
+		section.container-narrow
+			.title-compl.title-compl--serv3
+				.title-compl--content
+					h2 Делимся знаниями
+
+			p Обучение вождению — это прежде всего поиск алгоритмов эксплуатации конкретного ратрака на конкретном ГЛК. Один и тот же объём работы ратракист может сделать с меньшими затратами времени и топлива, из-за чего всего за один сезон может образоваться существенная экономия. Это и есть обучение — как заставить машину делать именно то, что тебе нужно, и только то, что тебе нужно.
+			p Ратрак — довольно специфическая техника. Мы познакомим ратракистов и технического директора ГЛК с устройством машины, с её критическими точками, чтобы не допустить поломок, с её возможностями и пределами. Мы обучаем как на месте у клиента, так и можем собрать группу у нас на сервисной базе в Самаре, где мы сделаем больший упор на техническую составляющую — покажем разобранные узлы и агрегаты, обсудим причины, вызвавшие поломку, и способы предотвращения и решения этих проблем.
+
+		hr/
+		+contacts()
