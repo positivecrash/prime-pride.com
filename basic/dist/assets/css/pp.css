@@ -4027,6 +4027,10 @@ section *[class*='col-'] {
   margin-bottom: 5px;
 }
 
+.m-t-sec {
+  margin-top: 50px;
+}
+
 /* end of MARGINS & PADDINGS */
 /* OVEWRITE */
 /* end of OVEWRITE */
