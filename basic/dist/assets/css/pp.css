@@ -3918,6 +3918,10 @@ html {
   margin-left: 204px;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 html, body {
   position: relative;
   height: 100%;
