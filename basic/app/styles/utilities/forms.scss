@@ -58,6 +58,22 @@
 			border-right: 8px solid transparent;
 			border-top: 8px solid $c-gray-4;
         }
+
+        &.dark
+        	{
+        		background-color: $c-base;
+        		border-color: $c-base;
+
+        		&, select
+        			{
+        				color: #fff;
+        			}
+
+        		&:after
+        			{
+        				border-top-color: $c-beige;
+        			}
+        	}
 	}
 
 

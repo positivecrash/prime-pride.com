@@ -116,7 +116,19 @@
 .sprite-serv2
 	{
 		position: absolute;
+		left: 50%;
 		bottom: 0;
+
+		&.left
+			{
+				$serv2: map-get($icons, serv2);
+				margin-left: - map-get($serv2, width) - 100px;
+			}
+
+		&.right
+			{
+			    margin-left: 100px;
+			}
 	}
 
 

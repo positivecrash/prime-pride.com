@@ -97,6 +97,15 @@ section
   }
 }
 
+.sec-half
+  {
+    margin-top: $margin-section/2;
+
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+
 /* end of CONTAINERS */
 
 
