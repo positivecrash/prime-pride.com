@@ -274,8 +274,12 @@ hr.hr-devider {
           column-count: 3;
 }
 
-p {
+p, ul, ol {
   margin-bottom: 25px;
+}
+
+ul, ol {
+  margin-left: 15px;
 }
 
 .sprite-PistenBully {
@@ -428,13 +432,43 @@ p {
   background-repeat: no-repeat;
 }
 
+.sprite-serv6Left {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1266px;
+  height: 295px;
+  background-image: url("../i/sprite.svg");
+  background-position: -4495px -822px;
+  background-repeat: no-repeat;
+}
+
+.sprite-serv6Right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1737px;
+  height: 295px;
+  background-image: url("../i/sprite.svg");
+  background-position: -5761px -1117px;
+  background-repeat: no-repeat;
+}
+
+.sprite-serv6Title {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80.3px;
+  height: 56.8px;
+  background-image: url("../i/sprite.svg");
+  background-position: -7498px -1412px;
+  background-repeat: no-repeat;
+}
+
 .sprite-service-1 {
   display: inline-block;
   vertical-align: middle;
   width: 153.5px;
   height: 126.3px;
   background-image: url("../i/sprite.svg");
-  background-position: -4495px -822px;
+  background-position: -7579px -1469px;
   background-repeat: no-repeat;
 }
 
@@ -444,7 +478,7 @@ p {
   width: 125.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -4649px -949px;
+  background-position: -7733px -1596px;
   background-repeat: no-repeat;
 }
 
@@ -454,7 +488,7 @@ p {
   width: 134.2px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -4775px -1076px;
+  background-position: -7859px -1723px;
   background-repeat: no-repeat;
 }
 
@@ -464,7 +498,7 @@ p {
   width: 128.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -4910px -1203px;
+  background-position: -7994px -1850px;
   background-repeat: no-repeat;
 }
 
@@ -474,7 +508,7 @@ p {
   width: 109.7px;
   height: 125.6px;
   background-image: url("../i/sprite.svg");
-  background-position: -5039px -1330px;
+  background-position: -8123px -1977px;
   background-repeat: no-repeat;
 }
 
@@ -484,7 +518,7 @@ p {
   width: 128.7px;
   height: 120.9px;
   background-image: url("../i/sprite.svg");
-  background-position: -5149px -1456px;
+  background-position: -8233px -2103px;
   background-repeat: no-repeat;
 }
 
@@ -494,7 +528,7 @@ p {
   width: 142.6px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -5278px -1577px;
+  background-position: -8362px -2224px;
   background-repeat: no-repeat;
 }
 
@@ -504,7 +538,7 @@ p {
   width: 121.8px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -5421px -1704px;
+  background-position: -8505px -2351px;
   background-repeat: no-repeat;
 }
 
@@ -514,7 +548,7 @@ p {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: -5543px -1831px;
+  background-position: -8627px -2478px;
   background-repeat: no-repeat;
 }
 
@@ -524,7 +558,7 @@ p {
   width: 71.7px;
   height: 71.7px;
   background-image: url("../i/sprite.svg");
-  background-position: -5759px -1887px;
+  background-position: -8843px -2534px;
   background-repeat: no-repeat;
 }
 
@@ -534,7 +568,7 @@ p {
   width: 56.8px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -5831px -1959px;
+  background-position: -8915px -2606px;
   background-repeat: no-repeat;
 }
 
@@ -702,6 +736,8 @@ header[role="banner"] sup {
 /* HEADER NAVIGATION BASIC */
 #header-nav ul {
   list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
 }
 #header-nav > ul > li {
   display: inline-block;
@@ -2905,7 +2941,7 @@ html {
 /* INDEX SLIDER */
 #index-slider-wrap {
   position: relative;
-  height: 480px;
+  height: 460px;
   overflow: hidden;
 }
 
@@ -3178,7 +3214,7 @@ html {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: -5543px -1831px;
+  background-position: -8627px -2478px;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
@@ -3802,7 +3838,7 @@ html {
   border: 1px solid #8D734A;
   padding: 30px;
   box-sizing: border-box;
-  min-height: 480px;
+  min-height: 460px;
   overflow: hidden;
   position: relative;
 }
@@ -3850,12 +3886,16 @@ html {
 #inside-banner--sign img {
   display: inline-block;
   max-width: 100%;
-  max-height: 280px;
+  max-height: 250px;
+}
+
+.sprite-serv1Left, .sprite-serv1Right,
+.sprite-serv6Left, .sprite-serv6Right {
+  position: absolute;
+  left: 50%;
 }
 
 .sprite-serv1Left, .sprite-serv1Right {
-  position: absolute;
-  left: 50%;
   bottom: 110px;
 }
 
@@ -3865,6 +3905,14 @@ html {
 
 .sprite-serv1Right {
   margin-left: 220px;
+}
+
+.sprite-serv6Left, .sprite-serv6Right {
+  bottom: 0;
+}
+
+.sprite-serv6Left {
+  margin-left: -1266px;
 }
 
 .title-compl--serv1 {
@@ -3894,7 +3942,23 @@ html {
   width: 56.8px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -5831px -1959px;
+  background-position: -8915px -2606px;
+  background-repeat: no-repeat;
+  margin-top: -28.4px;
+}
+
+.title-compl--serv6 {
+  min-height: 76.8px;
+  padding-left: 110.3px;
+  padding-right: 110.3px;
+}
+.title-compl--serv6:before, .title-compl--serv6:after {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80.3px;
+  height: 56.8px;
+  background-image: url("../i/sprite.svg");
+  background-position: -7498px -1412px;
   background-repeat: no-repeat;
   margin-top: -28.4px;
 }

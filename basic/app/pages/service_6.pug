@@ -1,0 +1,38 @@
+extends extends/layout.pug
+
+include includes/mixins.pug
+
+block head
+	- var pageTitle = 'Аренда - PistenBully Россия'
+
+block content
+	main(role="main")
+		#inside-banner
+			#inside-banner--content
+				h1 Аренда
+
+				img#inside-banner--logo(alt="", src="assets/i/pp-logo-big.png", srcset="assets/i/pp-logo-big-x2.png")
+				#inside-banner--logoStripe-m
+					span.sprite-insideBannerBrandsM
+				#inside-banner--sign
+					img(alt="", src="assets/i/services/inside-serv6.png", srcset="assets/i/services/inside-serv6-x2.png")
+				.sprite-serv6Left
+				.sprite-serv6Right
+
+			#inside-banner--logoStripe.sprite-insideBannerBrands
+
+		
+		section.container
+			.title-compl.title-compl--serv6
+				.title-compl--content
+					h2 Долгие отношения начинаются со знакомства
+
+			p Иногда бывает выгоднее взять восстановленный ратрак в аренду, чем его же покупать. Во-первых, для небольших ГЛК покупка машины может стать непосильной финансовой нагрузкой, во-вторых, все эксплуатационные расходы по ратраку мы берём на себя, а также гарантируем его бесперебойную работу в сезон. Появляется полная прозрачность в экономике ежемесячных затрат, а так же возможность каждый год брать разные машины, сравнивать их в деле, чтобы потом выбрать идеальную для приобретения.
+			p Условия аренды всегда индивидуальны, но есть общие моменты:
+			ul
+				li минимальное время аренды: 50 мч/мес.
+				li минимальная стоимость аренды: 46 евро/мч.
+			p Стоимость аренды зависит как от модели ратрака, так и от его состояния. Впоследствии эту технику можно будет выкупить на льготных условиях.
+
+		hr/
+		+contacts()

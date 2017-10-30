@@ -212,7 +212,12 @@ hr
 
 
 
-p
+p, ul, ol
 	{
 		margin-bottom: $margin-section/2;
+	}
+
+ul, ol
+	{
+		margin-left: 15px;
 	}

@@ -56,7 +56,12 @@ header[role="banner"]{
 
 #header-nav
 {
-	ul { list-style: none; }
+	ul 
+		{
+			list-style: none;
+			margin-left: 0;
+			margin-bottom: 0;
+		}
 
 	& > ul > li 
 	{
