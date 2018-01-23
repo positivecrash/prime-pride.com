@@ -355,7 +355,8 @@ $serviceBack: map-get($icons, serviceBack);
 		color: #fff;
 
 		.service-link--text:after{
-			transform: scaleX(1);
+			background-color: $c-beige-dark;
+
 		}
 	}
 }
@@ -390,12 +391,10 @@ $serviceBack: map-get($icons, serviceBack);
 
 	&:after
 	{
-		transform: scaleX(0);
 		width: 189px;
 		height: 55px;
 		top: 0.8px;
 		left: 13px;
-		background-color: $c-beige-dark;
 		z-index: -1;
 
 		transition: 0.3s all ease-out;
