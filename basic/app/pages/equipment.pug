@@ -1,0 +1,55 @@
+extends extends/layout.pug
+
+include includes/mixins.pug
+
+block head
+	- var pageTitle = 'Легендарная европейская техника - PistenBully Россия'
+
+block content
+	main(role="main")
+		
+		#catalog-top
+			.container
+				.d-t.fullw
+					#catalog-breadcrumbs
+						a(href="#") Главная
+						span ›
+						span Легендарная европейская техника
+					//- #catalog-compare
+					//- 	a(href="#") сравнение техники [ 0 ]
+
+		h1.title-zigzag: span Легендарная европейская техника
+
+		.container-narrow
+				#index-items.index-sec
+					#index-items--controls
+						.row
+							.col-sm-4
+								a(href="#", data-hover="#index-items--1").data-hover--active Снегоуплотнительная
+							.col-sm-4: a(href="#", data-hover="#index-items--2") Муниципальная
+							.col-sm-4: a(href="#", data-hover="#index-items--3") Сельское хозяйство
+							.col-sm-4: a(href="#", data-hover="#index-items--4") Вездеходы в специсполнении
+							.col-sm-4: a(href="#", data-hover="#index-items--5") Восcтановленная техника 
+							.col-sm-4: a(href="#", data-hover="#index-items--6") Дополнительное оборудование
+
+					#index-items--img
+						a(href="#")#index-items--1.data-hover--content
+							img(alt="", src="assets/i/tmp/index-items-Snegouplotnitelnay.jpg")
+
+						a(href="#")#index-items--2.data-hover--content
+							img(alt="", src="assets/i/tmp/index-items-Munizipalnay.jpg")
+
+						a(href="#")#index-items--3.data-hover--content
+							img(alt="", src="assets/i/tmp/index-items-Selskohozaistvennaja.jpg")
+
+						a(href="#")#index-items--4.data-hover--content
+							img(alt="", src="assets/i/tmp/index-items-Vezdexody.jpg")
+
+						a(href="#")#index-items--5.data-hover--content
+							img(alt="", src="assets/i/tmp/index-items-Vostanovlenaja.jpg")
+
+						a(href="#")#index-items--6.data-hover--content
+							img(alt="", src="assets/i/tmp/index-items-Dopolnitelnoe.jpg")
+
+		hr/
+		+contacts()
