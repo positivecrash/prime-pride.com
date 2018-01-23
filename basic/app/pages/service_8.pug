@@ -1,0 +1,39 @@
+extends extends/layout.pug
+
+include includes/mixins.pug
+
+block head
+	- var pageTitle = 'Оценка состояния и восстановление | Компания "Прайм Прайд"'
+
+block content
+	main(role="main")
+		#inside-banner
+			#inside-banner--content
+				h1 Оценка состояния и восстановление
+
+				img#inside-banner--logo(alt="", src="assets/i/pp-logo-big.png", srcset="assets/i/pp-logo-big-x2.png")
+				#inside-banner--logoStripe-m
+					span.sprite-insideBannerBrandsM
+				#inside-banner--sign
+					img(alt="", src="assets/i/services/inside-serv8.png", srcset="assets/i/services/inside-serv8-x2.png")
+				.sprite-serv8Left
+				.sprite-serv8Right
+
+				.sprite-serviceCornerCurls.left
+				.sprite-serviceCornerCurls.right
+
+			#inside-banner--logoStripe.sprite-insideBannerBrands
+
+		
+		section.container
+			.title-compl.title-compl--serv5
+				.title-compl--content
+					h2 чёткое видение ситуации
+
+			p Помогаем оценить будущие вложения в технику в случае приобретения техники БУ, но можем и полностью взять на себя весь комплекс работ по восстановлению машины. В этом случае у вас будет полностью понятная смета, ясные сроки выполнения каждого из этапов работ, рассрочка оплаты, лучшие сроки доставки запчастей и лучшие цены на них. Разборку и сборку машин мы делаем по алгоритмам и схемам завода тем же инструментом и только с использованием оригинальных запчастей. Мы гарантируем, что машина, собранная нашими спецами, будет абсолютно идентична машине, восстановленной на заводе.
+			p БУ машину чаще бывает взять выгоднее, чем новую, и мы здесь помогаем реально оценить и, главное, сохранить эту выгоду. Вы понимаете реальное состояние, реальную цифру необходимых вложений, и мы здесь гарантируем, что эта цифра не будет превышена. Мы предлагаем 4 уровня восстановления, таблица ниже:
+
+			h2 Уровни восстановления машин
+
+		hr/
+		+contacts()

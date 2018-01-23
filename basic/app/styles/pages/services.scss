@@ -76,7 +76,8 @@
 
 
 .sprite-serv1Left, .sprite-serv1Right,
-.sprite-serv6Left, .sprite-serv6Right
+.sprite-serv6Left, .sprite-serv6Right,
+.sprite-serv8Left, .sprite-serv8Right
 	{
 		position: absolute;
 		left: 50%;
@@ -95,7 +96,7 @@
 	}
 
 
-.sprite-serv1Right
+.sprite-serv1Right, .sprite-serv8Right
 	{
 	    margin-left: 220px;
 	}
@@ -111,6 +112,18 @@
 	{
 		$serv6Left: map-get($icons, serv6Left);
 		margin-left: - map-get($serv6Left, width);
+	}
+
+
+.sprite-serv8Left
+	{
+		$serv8Left: map-get($icons, serv8Left);
+		margin-left: - map-get($serv8Left, width) - 220px;
+	}
+
+.sprite-serv8Left, .sprite-serv8Right
+	{
+		bottom: 150px;
 	}
 
 
