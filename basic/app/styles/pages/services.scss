@@ -26,7 +26,7 @@
 		display: block;
 		width: 70px;
 
-		@include max_tablet()
+		@include max_desktop_s()
 			{
 				display: none;
 			}
@@ -121,7 +121,7 @@
 @mixin ServiceTitle($sprite)
 	{
 		$spriteP: map-get($icons, $sprite);
-		min-height: map-get($spriteP, height) + 20;
+		min-height: map-get($spriteP, height) + 40;
 		padding-left: map-get($spriteP, width) + 30;
 		padding-right: map-get($spriteP, width) + 30;
 
@@ -137,6 +137,8 @@
 .title-compl--serv1
 	{
 		@include ServiceTitle(serv1Title);
+
+		&:after { transform: scaleX(-1); }
 	}
 
 .title-compl--serv3
@@ -144,9 +146,18 @@
 		@include ServiceTitle(speed2);
 	}
 
+.title-compl--serv5
+	{
+		@include ServiceTitle(serv5Title);
+
+		&:after { transform: scaleX(-1); }
+	}
+
 .title-compl--serv6
 	{
 		@include ServiceTitle(serv6Title);
+
+		&:after { transform: scaleX(-1); }
 	}
 
 
@@ -179,3 +190,66 @@
 		margin-left: 204px;
 	}
 
+
+.sprite-serviceCornerCurls
+	{
+		position: absolute;
+		bottom: 0;
+
+		&.left 
+			{
+				left: 0;
+				transform: scaleX(-1);
+			}
+
+		&.right 
+			{
+				right: 0;
+			}
+
+
+		@include max_desktop_s(){
+			display: none
+		}
+	}
+
+
+#inside-banner--roubleDecor
+	{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		margin-left: 500px;
+
+		&:before
+			{
+				content: "";
+				width: 1px;
+				background-color: $c-beige-dark;
+
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 50%;
+				margin-left: -0.5px;
+				z-index: 0;
+			}
+
+
+		.sprite-rouble
+			{
+				position: absolute;
+				top: 160px;
+				left: 50%;
+
+				$rouble: map-get($icons, rouble);
+				margin-left: - map-get($rouble, width)/2;
+			}
+
+
+		@media screen and (max-width: 1290px)
+		{
+			display: none;
+		}
+	}
