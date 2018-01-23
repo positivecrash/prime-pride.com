@@ -1,0 +1,36 @@
+extends extends/layout.pug
+
+include includes/mixins.pug
+
+block head
+	- var pageTitle = 'Лизинг - PistenBully Россия'
+
+block content
+	main(role="main")
+		#inside-banner
+			#inside-banner--content
+				h1 Лизинг
+
+				img#inside-banner--logo(alt="", src="assets/i/pp-logo-big.png", srcset="assets/i/pp-logo-big-x2.png")
+				#inside-banner--logoStripe-m
+					span.sprite-insideBannerBrandsM
+				#inside-banner--sign
+					img(alt="", src="assets/i/services/inside-serv7.png", srcset="assets/i/services/inside-serv7-x2.png")
+				.sprite-serv6Left
+				.sprite-serv6Right
+
+				#inside-banner--roubleDecor
+					.sprite-rouble
+
+			#inside-banner--logoStripe.sprite-insideBannerBrands
+
+		
+		section.container
+			.title-compl.title-compl--serv6
+				.title-compl--content
+					h2 Да, мы продаём машины в лизинг.
+
+			p Мы очень быстро предоставляем все документы, требуемые лизинговой компанией.
+
+		hr/
+		+contacts()
