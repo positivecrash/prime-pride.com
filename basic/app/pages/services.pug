@@ -1,5 +1,7 @@
 extends extends/layout.pug
 
+include includes/mixins.pug
+
 block head
 	- var pageTitle = 'Услуги – PistenBully Россия'
 
@@ -50,3 +52,7 @@ block content
 						a(href="#").service-link
 							span.sprite-service-8
 							span.service-link--text восстановление техники
+
+
+		hr/
+		+contacts()
