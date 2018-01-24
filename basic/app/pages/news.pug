@@ -1,0 +1,69 @@
+extends extends/layout.pug
+
+include includes/mixins.pug
+
+block head
+	- var pageTitle = 'Каталог техники PistenBully Россия'
+
+
+block content
+	main(role="main")
+		#catalog-top
+			.container
+				.d-t.fullw
+					#catalog-breadcrumbs
+						a(href="#") Главная
+						span ›
+						span События
+
+		h1.title-zigzag: span События
+
+
+		#page-news.container
+			.row
+				.col-sm-3
+					ul.news-nav
+						li.active
+							a(href="#")
+								span.news-nav__title Заголовок события
+								span.news-nav__subtitle Подзаголовок события
+								span.news-date 25.08.2017
+
+						li
+							a(href="#")
+								span.news-nav__title Заголовок события
+								span.news-nav__subtitle Подзаголовок события
+								span.news-date 25.08.2017
+
+
+						li
+							a(href="#")
+								span.news-nav__title Заголовок события
+								span.news-nav__subtitle Подзаголовок события
+								span.news-date 25.08.2017
+
+
+						li
+							a(href="#")
+								span.news-nav__title Заголовок события
+								span.news-nav__subtitle Подзаголовок события
+								span.news-date 25.08.2017
+
+				.col-sm-9
+					h2 Заголовок события
+					h3 Подзаголовок
+					p.news-date 25.08.2017
+
+					img(alt="", src="assets/i/tmp/3.jpg")
+
+					h4 Подзаголовок
+					p Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то событии / Какой-то тоекст о 
+					h4 Подзаголовок
+					p Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то событии / Какой-то тоекст о каком-то собы
+					ul
+						li Какой-то список
+						li Какой-то список
+						li Какой-то список
+
+		hr/
+		+contacts()
