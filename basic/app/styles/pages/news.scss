@@ -83,6 +83,22 @@
 				text-transform: uppercase;
 				line-height: 1.2;
 			}
+
+
+
+		li.active
+			{
+				a
+					{
+						background-color: $c-text;
+						&, span { color: #fff; }
+					}
+
+				.news-nav__title
+					{
+						color: $c-beige;
+					}
+			}
 	}
 
 
@@ -99,16 +115,60 @@
 	}
 
 
-li.active
+
+
+
+/* ARCVHIVE */
+.news-archive-nav
 	{
-		a
+		border: 1px solid $c-text;
+		font-weight: 400;
+		font-family: $font-family-second;
+		font-size: 23px;
+
+		list-style: none;
+		margin-left: 0;
+		padding: 20px;
+
+		.active a
 			{
-				background-color: $c-text;
-				&, span { color: #fff; }
+				font-weight: 600;
+				color: $c-text;
 			}
 
-		.news-nav__title
+		a
 			{
-				color: $c-beige;
+				color: $c-gray-3;
+
+				&:hover
+					{
+						// font-weight: 600;
+						color: $c-beige-dark;
+					}
+			}
+	}
+
+
+
+#page-news_archive
+	{
+		.news-nav
+			{
+				border: 0;
+
+				li
+					{
+						border-color: $c-gray-2;
+
+						a:hover
+							{
+								background-color: $c-text;
+							
+								.news-nav__title
+									{
+										color: $c-beige;
+									}
+							}
+					}
 			}
 	}

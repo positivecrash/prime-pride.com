@@ -1,0 +1,59 @@
+extends extends/layout.pug
+
+include includes/mixins.pug
+
+block head
+	- var pageTitle = 'Каталог техники PistenBully Россия'
+
+
+block content
+	main(role="main")
+		#catalog-top
+			.container
+				.d-t.fullw
+					#catalog-breadcrumbs
+						a(href="#") Главная
+						span ›
+						span События
+
+		h1.title-zigzag: span Архив
+
+
+		#page-news_archive.container
+			.row
+				.col-sm-3
+					ul.news-archive-nav
+						li.active: a(href="#") 2018
+						li: a(href="#") 2017
+						li: a(href="#") 2016
+						
+				.col-sm-9
+					ul.news-nav
+						li
+							a(href="#")
+								span.news-nav__title Заголовок события
+								span.news-nav__subtitle Подзаголовок события
+								span.news-date 25.08.2017
+
+						li
+							a(href="#")
+								span.news-nav__title Заголовок события
+								span.news-nav__subtitle Подзаголовок события
+								span.news-date 25.08.2017
+
+
+						li
+							a(href="#")
+								span.news-nav__title Заголовок события
+								span.news-nav__subtitle Подзаголовок события
+								span.news-date 25.08.2017
+
+
+						li
+							a(href="#")
+								span.news-nav__title Заголовок события
+								span.news-nav__subtitle Подзаголовок события
+								span.news-date 25.08.2017
+
+		hr/
+		+contacts()
