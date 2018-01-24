@@ -1,0 +1,28 @@
+.reviews
+	{
+		.feedback-preview
+			{
+				transition: all 0.2s linear;
+
+				img
+					{
+						border-width: 1px;
+					}
+
+				&:hover
+					{
+						color: $c-beige-dark;
+
+						img{
+						border-color: $c-beige-dark;
+						outline: 2px solid $c-beige-dark;
+					}
+				}
+			}
+
+
+		.col-sm-4
+			{
+				margin-bottom: 10px;
+			}
+	}

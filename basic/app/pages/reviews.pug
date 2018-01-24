@@ -1,0 +1,97 @@
+extends extends/layout.pug
+
+include includes/mixins.pug
+
+block head
+	- var pageTitle = 'Отзывы'
+
+
+block content
+	main(role="main")
+		#catalog-top
+			.container
+				.d-t.fullw
+					#catalog-breadcrumbs
+						a(href="#") Главная
+						span ›
+						span Отзывы
+
+		h1.title-zigzag: span Отзывы
+
+		.reviews
+			.container-narrow
+				.row
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span OOO “розахутор”
+
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span OOO “горнолыжный комплекс “аджигардак”
+
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span Oгбу “рцспзвс”
+
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span OOO “розахутор”
+
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span OOO “горнолыжный комплекс “аджигардак”
+
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span Oгбу “рцспзвс”
+
+
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span OOO “розахутор”
+
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span OOO “горнолыжный комплекс “аджигардак”
+
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span Oгбу “рцспзвс”
+
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span OOO “розахутор”
+
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span OOO “горнолыжный комплекс “аджигардак”
+
+					.col-sm-4
+						a(href="assets/i/tmp/feedback.jpg" data-fancybox="gallery").feedback-preview
+							img(alt="", src="assets/i/tmp/feedback-sm.jpg")
+							span Oгбу “рцспзвс”
+
+
+				.paging
+					span.paging--control <
+					.paging--pages
+						a.active(href="#") 1
+						a(href="#") 2
+						a(href="#") 3
+						a(href="#") 4
+						a(href="#") 5
+					a(href="#").paging--control >
+
+		hr/
+		+contacts()

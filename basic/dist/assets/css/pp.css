@@ -3623,6 +3623,9 @@ html {
   padding: 9px 0;
   text-align: center;
 }
+.catalog-item--section p {
+  margin-bottom: 0;
+}
 
 .catalog-item--title {
   font-size: 25px;
@@ -4270,6 +4273,23 @@ html {
 }
 #page-news_archive .news-nav li a:hover .news-nav__title {
   color: #F2D383;
+}
+
+.reviews .feedback-preview {
+  transition: all 0.2s linear;
+}
+.reviews .feedback-preview img {
+  border-width: 1px;
+}
+.reviews .feedback-preview:hover {
+  color: #8D734A;
+}
+.reviews .feedback-preview:hover img {
+  border-color: #8D734A;
+  outline: 2px solid #8D734A;
+}
+.reviews .col-sm-4 {
+  margin-bottom: 10px;
 }
 
 html {
