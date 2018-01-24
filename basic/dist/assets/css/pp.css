@@ -3430,18 +3430,19 @@ html {
 }
 #index-bottomlinks .container-narrow {
   position: relative;
-  height: 300px;
+  height: 349px;
 }
 #index-bottomlinks .container-narrow:before {
   content: "";
-  background-image: url('../i/index-bottom-x2.png?1506979490');
+  background-image: url('../i/index-bottom-x2.png?1516813099');
   background-repeat: no-repeat;
-  width: 1889.5px;
-  height: 651px;
+  width: 2658px;
+  height: 967px;
   background-size: 100%;
+  background-position: 0 2px;
   position: absolute;
   bottom: 0;
-  left: -528px;
+  left: -626px;
   z-index: -1;
 }
 #index-bottomlinks .i-arrUp {
@@ -3449,8 +3450,8 @@ html {
   line-height: 1;
   color: #222;
   position: absolute;
-  top: 128px;
-  left: 583px;
+  top: 142px;
+  left: 630px;
 }
 #index-bottomlinks .i-arrUp:hover {
   color: #F2D383;
@@ -3466,7 +3467,7 @@ html {
 .index-bottomlinks-btn {
   display: block;
   border: 1px solid #fff;
-  font-size: 30px;
+  font-size: 26px;
   color: #fff;
   line-height: 1;
   font-weight: 300;
@@ -3504,8 +3505,8 @@ html {
 #index-bottomlinks--brand {
   width: 230px;
   position: absolute;
-  top: 230px;
-  left: 426px;
+  top: 254px;
+  left: 512px;
 }
 @media screen and (max-width: 675px) {
   #index-bottomlinks--brand {

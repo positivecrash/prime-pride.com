@@ -574,7 +574,7 @@ $serviceBack: map-get($icons, serviceBack);
 	.container-narrow
 	{
 		position: relative;
-	    height: 300px;
+        height: 349px;
 
 		&:before
 		{
@@ -585,10 +585,11 @@ $serviceBack: map-get($icons, serviceBack);
 			width: image-width('index-bottom-x2.png')/2;
 			height: image-height('index-bottom-x2.png')/2;
 			background-size: 100%;
+			background-position: 0 2px;
 
 			position: absolute;
 			bottom: 0;
-			left: -528px;
+	        left: -626px;
 			z-index: -1;
 		}
 	}
@@ -601,8 +602,8 @@ $serviceBack: map-get($icons, serviceBack);
 		color: $c-base;
 
 		position: absolute;
-	    top: 128px;
-    	left: 583px;
+	    top: 142px;
+    	left: 630px;
 
 		&:hover{
 			color: $c-beige;
@@ -622,7 +623,7 @@ $serviceBack: map-get($icons, serviceBack);
 	display: block;
 	border: 1px solid #fff;
 
-	font-size: 30px;
+	font-size: 26px;
 	@extend %text_title;
 	color: #fff;
 	line-height: 1;
@@ -674,8 +675,8 @@ $serviceBack: map-get($icons, serviceBack);
 {
 	width: 230px;
 	position: absolute;
-    top: 230px;
-    left: 426px;
+    top: 254px;
+    left: 512px;
 
     @media screen and (max-width: 675px)
 	{
