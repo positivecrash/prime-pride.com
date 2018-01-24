@@ -474,24 +474,6 @@ $serviceBack: map-get($icons, serviceBack);
 {
 	text-align: center;
 	margin-top: 30px;
-
-	a
-	{
-		display: inline-block;
-		padding: 8px 12px;
-		background-color: $c-base;
-		color: $c-beige;
-		transition: 0.2s all ease-out;
-		font-size: 17px;
-
-		@extend %text_title;
-
-		&:hover{
-			background-color: $c-beige-dark;
-			color: #fff;
-		}
-	}
-
 }
 
 

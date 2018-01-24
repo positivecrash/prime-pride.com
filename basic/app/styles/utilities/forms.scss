@@ -94,3 +94,24 @@ a.btn-lined
         	border-color: $c-beige;
         }
 	}
+
+
+.btn-dark
+    {
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: $c-base;
+        color: $c-beige;
+        transition: 0.2s all ease-out;
+        font-size: 17px;
+
+        border: 0;
+        outline: 0;
+
+        @extend %text_title;
+
+        &:hover{
+            background-color: $c-beige-dark;
+            color: #fff;
+        }
+    }

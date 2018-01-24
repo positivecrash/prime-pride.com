@@ -66,7 +66,7 @@ a, header[role="banner"] a, a:hover, header[role="banner"] a:hover, a:focus, hea
           align-items: center;
 }
 
-h1, h2, h3, h4, h5, h6, .form-select select, a.btn-lined, header[role="banner"], .footer-nav, #index-num, #index-items--controls a, .service-link, .feedback-preview, .index-morelink a, .eventgrid-item, .index-bottomlinks-btn, #index-bottomlinks--fan, #index-bottomlinks--fan a, #catalog-top, .catalog-item--title, .catalog-items-list--price, #catalog-filtr, .paging, .js-accordion--tab {
+h1, h2, h3, h4, h5, h6, .form-select select, a.btn-lined, .btn-dark, header[role="banner"], .footer-nav, #index-num, #index-items--controls a, .service-link, .feedback-preview, .eventgrid-item, .index-bottomlinks-btn, #index-bottomlinks--fan, #index-bottomlinks--fan a, #catalog-top, .catalog-item--title, .catalog-items-list--price, #catalog-filtr, .paging, .js-accordion--tab {
   font-family: "DINProC", serif;
   text-transform: uppercase;
   text-align: center;
@@ -280,6 +280,10 @@ p, ul, ol {
 
 ul, ol {
   margin-left: 15px;
+}
+
+.t-center {
+  text-align: center;
 }
 
 .sprite-PistenBully {
@@ -748,6 +752,21 @@ a.btn-lined {
 a.btn-lined:hover {
   color: #F2D383;
   border-color: #F2D383;
+}
+
+.btn-dark {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #222;
+  color: #F2D383;
+  transition: 0.2s all ease-out;
+  font-size: 17px;
+  border: 0;
+  outline: 0;
+}
+.btn-dark:hover {
+  background-color: #8D734A;
+  color: #fff;
 }
 
 /* HEADER BASIC */
@@ -3325,18 +3344,6 @@ html {
   text-align: center;
   margin-top: 30px;
 }
-.index-morelink a {
-  display: inline-block;
-  padding: 8px 12px;
-  background-color: #222;
-  color: #F2D383;
-  transition: 0.2s all ease-out;
-  font-size: 17px;
-}
-.index-morelink a:hover {
-  background-color: #8D734A;
-  color: #fff;
-}
 
 .eventgrid-item {
   display: block;
@@ -4186,6 +4193,7 @@ html {
 .news-nav {
   list-style: none;
   border: 1px solid #222;
+  margin-left: 0;
 }
 .news-nav li {
   border-top: 1px solid #222;
