@@ -495,8 +495,8 @@ ul, ol {
 .sprite-serv8Right {
   display: inline-block;
   vertical-align: middle;
-  width: 305.5px;
-  height: 48.5px;
+  width: 241.1px;
+  height: 51px;
   background-image: url("../i/sprite.svg");
   background-position: -8059px -1643px;
   background-repeat: no-repeat;
@@ -508,7 +508,7 @@ ul, ol {
   width: 153.5px;
   height: 126.3px;
   background-image: url("../i/sprite.svg");
-  background-position: -8365px -1692px;
+  background-position: -8301px -1694px;
   background-repeat: no-repeat;
 }
 
@@ -518,7 +518,7 @@ ul, ol {
   width: 125.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -8519px -1819px;
+  background-position: -8455px -1821px;
   background-repeat: no-repeat;
 }
 
@@ -528,7 +528,7 @@ ul, ol {
   width: 134.2px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -8645px -1946px;
+  background-position: -8581px -1948px;
   background-repeat: no-repeat;
 }
 
@@ -538,7 +538,7 @@ ul, ol {
   width: 128.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -8780px -2073px;
+  background-position: -8716px -2075px;
   background-repeat: no-repeat;
 }
 
@@ -548,7 +548,7 @@ ul, ol {
   width: 109.7px;
   height: 125.6px;
   background-image: url("../i/sprite.svg");
-  background-position: -8909px -2200px;
+  background-position: -8845px -2202px;
   background-repeat: no-repeat;
 }
 
@@ -558,7 +558,7 @@ ul, ol {
   width: 128.7px;
   height: 120.9px;
   background-image: url("../i/sprite.svg");
-  background-position: -9019px -2326px;
+  background-position: -8955px -2328px;
   background-repeat: no-repeat;
 }
 
@@ -568,7 +568,7 @@ ul, ol {
   width: 142.6px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -9148px -2447px;
+  background-position: -9084px -2449px;
   background-repeat: no-repeat;
 }
 
@@ -578,7 +578,7 @@ ul, ol {
   width: 121.8px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -9291px -2574px;
+  background-position: -9227px -2576px;
   background-repeat: no-repeat;
 }
 
@@ -588,7 +588,7 @@ ul, ol {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: -9413px -2701px;
+  background-position: -9349px -2703px;
   background-repeat: no-repeat;
 }
 
@@ -598,7 +598,7 @@ ul, ol {
   width: 192.4px;
   height: 183.1px;
   background-image: url("../i/sprite.svg");
-  background-position: -9629px -2757px;
+  background-position: -9565px -2759px;
   background-repeat: no-repeat;
 }
 
@@ -608,7 +608,7 @@ ul, ol {
   width: 71.7px;
   height: 71.7px;
   background-image: url("../i/sprite.svg");
-  background-position: -9822px -2941px;
+  background-position: -9758px -2943px;
   background-repeat: no-repeat;
 }
 
@@ -618,7 +618,7 @@ ul, ol {
   width: 56.8px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -9894px -3013px;
+  background-position: -9830px -3015px;
   background-repeat: no-repeat;
 }
 
@@ -3263,7 +3263,7 @@ html {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: -9413px -2701px;
+  background-position: -9349px -2703px;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
@@ -4016,7 +4016,7 @@ html {
   width: 56.8px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -9894px -3013px;
+  background-position: -9830px -3015px;
   background-repeat: no-repeat;
   margin-top: -28.4px;
 }
