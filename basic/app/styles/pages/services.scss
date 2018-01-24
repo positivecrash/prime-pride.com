@@ -123,7 +123,23 @@
 
 .sprite-serv8Left, .sprite-serv8Right
 	{
-		bottom: 150px;
+		bottom: 128px;
+	}
+
+
+.inside-banner__serv8
+	{
+		h1 
+			{
+				max-width: 420px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+		.sprite-serviceCornerCurls
+			{
+				// background-color: $c-base;
+			}
 	}
 
 
@@ -142,6 +158,17 @@
 			{
 				@include get-sprite($sprite);
 				margin-top: - map-get($spriteP, height) / 2;
+			}
+
+		@media screen and (max-width: #{$point-tablet})
+			{
+				padding-left: 0;
+				padding-right: 0;
+
+				&:before, &:after
+					{
+						display: none;
+					}
 			}
 	}
 
