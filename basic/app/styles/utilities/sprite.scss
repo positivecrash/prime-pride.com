@@ -1,5 +1,5 @@
 $icons: (
-    sprite: (width: 9887px, height: 3072px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
+    sprite: (width: 11456px, height: 3449px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
     PistenBully: (width: 136.2px, height: 33.1px, backgroundX: 0px, backgroundY: 0px),
     PistenBullySm: (width: 60.7px, height: 14.6px, backgroundX: -137px, backgroundY: -34px),
     Reform: (width: 171.7px, height: 27.4px, backgroundX: -198px, backgroundY: -49px),
@@ -16,24 +16,26 @@ $icons: (
     serv1Right: (width: 798.5px, height: 54.3px, backgroundX: -2604px, backgroundY: -520px),
     serv1Title: (width: 123.7px, height: 71px, backgroundX: -3403px, backgroundY: -575px),
     serv2: (width: 1022.4px, height: 230.2px, backgroundX: -3527px, backgroundY: -646px),
-    serv5Title: (width: 182.5px, height: 67.3px, backgroundX: -4550px, backgroundY: -877px),
-    serv6Left: (width: 1266px, height: 295px, backgroundX: -4733px, backgroundY: -945px),
-    serv6Right: (width: 1737px, height: 295px, backgroundX: -5999px, backgroundY: -1240px),
-    serv6Title: (width: 80.3px, height: 56.8px, backgroundX: -7736px, backgroundY: -1535px),
-    serv8Left: (width: 241.1px, height: 51px, backgroundX: -7817px, backgroundY: -1592px),
-    serv8Right: (width: 241.1px, height: 51px, backgroundX: -8059px, backgroundY: -1643px),
-    service-1: (width: 153.5px, height: 126.3px, backgroundX: -8301px, backgroundY: -1694px),
-    service-2: (width: 125.1px, height: 126.4px, backgroundX: -8455px, backgroundY: -1821px),
-    service-3: (width: 134.2px, height: 126.4px, backgroundX: -8581px, backgroundY: -1948px),
-    service-4: (width: 128.1px, height: 126.4px, backgroundX: -8716px, backgroundY: -2075px),
-    service-5: (width: 109.7px, height: 125.6px, backgroundX: -8845px, backgroundY: -2202px),
-    service-6: (width: 128.7px, height: 120.9px, backgroundX: -8955px, backgroundY: -2328px),
-    service-7: (width: 142.6px, height: 126.4px, backgroundX: -9084px, backgroundY: -2449px),
-    service-8: (width: 121.8px, height: 126.4px, backgroundX: -9227px, backgroundY: -2576px),
-    serviceBack: (width: 215.2px, height: 56px, backgroundX: -9349px, backgroundY: -2703px),
-    serviceCornerCurls: (width: 192.4px, height: 183.1px, backgroundX: -9565px, backgroundY: -2759px),
-    speed1: (width: 71.7px, height: 71.7px, backgroundX: -9758px, backgroundY: -2943px),
-    speed2: (width: 56.8px, height: 56.8px, backgroundX: -9830px, backgroundY: -3015px),
+    serv4Left: (width: 783px, height: 183.7px, backgroundX: -4550px, backgroundY: -877px),
+    serv4Right: (width: 785.4px, height: 193px, backgroundX: -5333px, backgroundY: -1061px),
+    serv5Title: (width: 182.5px, height: 67.3px, backgroundX: -6119px, backgroundY: -1254px),
+    serv6Left: (width: 1266px, height: 295px, backgroundX: -6302px, backgroundY: -1322px),
+    serv6Right: (width: 1737px, height: 295px, backgroundX: -7568px, backgroundY: -1617px),
+    serv6Title: (width: 80.3px, height: 56.8px, backgroundX: -9305px, backgroundY: -1912px),
+    serv8Left: (width: 241.1px, height: 51px, backgroundX: -9386px, backgroundY: -1969px),
+    serv8Right: (width: 241.1px, height: 51px, backgroundX: -9628px, backgroundY: -2020px),
+    service-1: (width: 153.5px, height: 126.3px, backgroundX: -9870px, backgroundY: -2071px),
+    service-2: (width: 125.1px, height: 126.4px, backgroundX: -10024px, backgroundY: -2198px),
+    service-3: (width: 134.2px, height: 126.4px, backgroundX: -10150px, backgroundY: -2325px),
+    service-4: (width: 128.1px, height: 126.4px, backgroundX: -10285px, backgroundY: -2452px),
+    service-5: (width: 109.7px, height: 125.6px, backgroundX: -10414px, backgroundY: -2579px),
+    service-6: (width: 128.7px, height: 120.9px, backgroundX: -10524px, backgroundY: -2705px),
+    service-7: (width: 142.6px, height: 126.4px, backgroundX: -10653px, backgroundY: -2826px),
+    service-8: (width: 121.8px, height: 126.4px, backgroundX: -10796px, backgroundY: -2953px),
+    serviceBack: (width: 215.2px, height: 56px, backgroundX: -10918px, backgroundY: -3080px),
+    serviceCornerCurls: (width: 192.4px, height: 183.1px, backgroundX: -11134px, backgroundY: -3136px),
+    speed1: (width: 71.7px, height: 71.7px, backgroundX: -11327px, backgroundY: -3320px),
+    speed2: (width: 56.8px, height: 56.8px, backgroundX: -11399px, backgroundY: -3392px),
 );
 
 $sprite: map-get($icons, sprite);
@@ -100,6 +102,12 @@ $sprite: map-get($icons, sprite);
 }
 .sprite-serv2{
 	@include get-sprite(serv2);
+}
+.sprite-serv4Left{
+	@include get-sprite(serv4Left);
+}
+.sprite-serv4Right{
+	@include get-sprite(serv4Right);
 }
 .sprite-serv5Title{
 	@include get-sprite(serv5Title);

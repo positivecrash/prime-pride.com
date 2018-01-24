@@ -1,0 +1,65 @@
+extends extends/layout.pug
+
+include includes/mixins.pug
+
+block head
+	- var pageTitle = 'Оригинальные запчасти - PistenBully Россия'
+
+block content
+	main(role="main")
+		#inside-banner
+			#inside-banner--content
+				h1 Оригинальные запчасти
+
+				img#inside-banner--logo(alt="", src="assets/i/pp-logo-big.png", srcset="assets/i/pp-logo-big-x2.png")
+				#inside-banner--logoStripe-m
+					span.sprite-insideBannerBrandsM
+				#inside-banner--sign
+					img(alt="", src="assets/i/services/inside-serv4.png", srcset="assets/i/services/inside-serv4-x2.png")
+				.sprite-serv4Left
+				.sprite-serv4Right
+
+			#inside-banner--logoStripe.sprite-insideBannerBrands
+
+		
+		section.container
+			.title-compl.title-compl--serv1
+				.title-compl--content
+					h2 Нет, это совсем не дорого.
+
+			p Оригинальные запчасти — это не обязательно долго и дорого. Выбор в пользу ОЗЧ позволяет быть уверенным в качестве как самих запчастей, и в том, что они идеально агрегируются с другими запчастями и узлами машины, им не нужна подгонка, переходники и дошлифовка напильником. Они не сломаются под нагрузкой, потому что рассчитаны под неё и проверены, не испортят другие части машины.У нашей компании как у официального дистрибьютора имеется гарантированная поддержка производителя, поэтому в РФ ОЗЧ стоят столько же, сколько в Германии, не смотря на доставку и растаможку. Срок поставки от трёх дней, потому что огромный ассотримент всегда есть в наличии на складе. Запчасти, которых нет в наличии, приезжают примерно за 2 недели.
+			p Ниже можно скачать каталоги запчастей на технику и самостоятельно составить список необходимых вам деталей. Отправьте его нам электропочтой, и цену, условия оплаты и сроки поставки мы сообщим в ответном письме.
+
+
+		section.container
+			h2.t-beige-dark Схемы запчастей
+
+			.sec-half
+				.row
+					.col-sm-4
+						.form-select.dark.fullw
+							select
+								option Выберите бренд
+								option PistenBully
+								option Reform
+					.col-sm-4
+						.form-select.dark.fullw
+							select
+								option Модель
+								option 500
+								option 600
+					.col-sm-4
+						.form-select.dark.fullw
+							select
+								option Год выпуска
+								option 2016
+								option 2017
+
+			.sec-half
+				.align-t-center
+					a(href="#")
+						span.sprite-downlTable
+
+
+		hr/
+		+contacts()

@@ -446,13 +446,33 @@ ul, ol {
   background-repeat: no-repeat;
 }
 
+.sprite-serv4Left {
+  display: inline-block;
+  vertical-align: middle;
+  width: 783px;
+  height: 183.7px;
+  background-image: url("../i/sprite.svg");
+  background-position: -4550px -877px;
+  background-repeat: no-repeat;
+}
+
+.sprite-serv4Right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 785.4px;
+  height: 193px;
+  background-image: url("../i/sprite.svg");
+  background-position: -5333px -1061px;
+  background-repeat: no-repeat;
+}
+
 .sprite-serv5Title {
   display: inline-block;
   vertical-align: middle;
   width: 182.5px;
   height: 67.3px;
   background-image: url("../i/sprite.svg");
-  background-position: -4550px -877px;
+  background-position: -6119px -1254px;
   background-repeat: no-repeat;
 }
 
@@ -462,7 +482,7 @@ ul, ol {
   width: 1266px;
   height: 295px;
   background-image: url("../i/sprite.svg");
-  background-position: -4733px -945px;
+  background-position: -6302px -1322px;
   background-repeat: no-repeat;
 }
 
@@ -472,7 +492,7 @@ ul, ol {
   width: 1737px;
   height: 295px;
   background-image: url("../i/sprite.svg");
-  background-position: -5999px -1240px;
+  background-position: -7568px -1617px;
   background-repeat: no-repeat;
 }
 
@@ -482,7 +502,7 @@ ul, ol {
   width: 80.3px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -7736px -1535px;
+  background-position: -9305px -1912px;
   background-repeat: no-repeat;
 }
 
@@ -492,7 +512,7 @@ ul, ol {
   width: 241.1px;
   height: 51px;
   background-image: url("../i/sprite.svg");
-  background-position: -7817px -1592px;
+  background-position: -9386px -1969px;
   background-repeat: no-repeat;
 }
 
@@ -502,7 +522,7 @@ ul, ol {
   width: 241.1px;
   height: 51px;
   background-image: url("../i/sprite.svg");
-  background-position: -8059px -1643px;
+  background-position: -9628px -2020px;
   background-repeat: no-repeat;
 }
 
@@ -512,7 +532,7 @@ ul, ol {
   width: 153.5px;
   height: 126.3px;
   background-image: url("../i/sprite.svg");
-  background-position: -8301px -1694px;
+  background-position: -9870px -2071px;
   background-repeat: no-repeat;
 }
 
@@ -522,7 +542,7 @@ ul, ol {
   width: 125.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -8455px -1821px;
+  background-position: -10024px -2198px;
   background-repeat: no-repeat;
 }
 
@@ -532,7 +552,7 @@ ul, ol {
   width: 134.2px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -8581px -1948px;
+  background-position: -10150px -2325px;
   background-repeat: no-repeat;
 }
 
@@ -542,7 +562,7 @@ ul, ol {
   width: 128.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -8716px -2075px;
+  background-position: -10285px -2452px;
   background-repeat: no-repeat;
 }
 
@@ -552,7 +572,7 @@ ul, ol {
   width: 109.7px;
   height: 125.6px;
   background-image: url("../i/sprite.svg");
-  background-position: -8845px -2202px;
+  background-position: -10414px -2579px;
   background-repeat: no-repeat;
 }
 
@@ -562,7 +582,7 @@ ul, ol {
   width: 128.7px;
   height: 120.9px;
   background-image: url("../i/sprite.svg");
-  background-position: -8955px -2328px;
+  background-position: -10524px -2705px;
   background-repeat: no-repeat;
 }
 
@@ -572,7 +592,7 @@ ul, ol {
   width: 142.6px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -9084px -2449px;
+  background-position: -10653px -2826px;
   background-repeat: no-repeat;
 }
 
@@ -582,7 +602,7 @@ ul, ol {
   width: 121.8px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -9227px -2576px;
+  background-position: -10796px -2953px;
   background-repeat: no-repeat;
 }
 
@@ -592,7 +612,7 @@ ul, ol {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: -9349px -2703px;
+  background-position: -10918px -3080px;
   background-repeat: no-repeat;
 }
 
@@ -602,7 +622,7 @@ ul, ol {
   width: 192.4px;
   height: 183.1px;
   background-image: url("../i/sprite.svg");
-  background-position: -9565px -2759px;
+  background-position: -11134px -3136px;
   background-repeat: no-repeat;
 }
 
@@ -612,7 +632,7 @@ ul, ol {
   width: 71.7px;
   height: 71.7px;
   background-image: url("../i/sprite.svg");
-  background-position: -9758px -2943px;
+  background-position: -11327px -3320px;
   background-repeat: no-repeat;
 }
 
@@ -622,7 +642,7 @@ ul, ol {
   width: 56.8px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -9830px -3015px;
+  background-position: -11399px -3392px;
   background-repeat: no-repeat;
 }
 
@@ -3282,7 +3302,7 @@ html {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: -9349px -2703px;
+  background-position: -10918px -3080px;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
@@ -3947,13 +3967,18 @@ html {
 
 .sprite-serv1Left, .sprite-serv1Right,
 .sprite-serv6Left, .sprite-serv6Right,
-.sprite-serv8Left, .sprite-serv8Right {
+.sprite-serv8Left, .sprite-serv8Right,
+.sprite-serv4Left, .sprite-serv4Right {
   position: absolute;
   left: 50%;
 }
 
 .sprite-serv1Left, .sprite-serv1Right {
   bottom: 110px;
+}
+
+.sprite-serv4Left, .sprite-serv4Right {
+  bottom: 88px;
 }
 
 .sprite-serv1Left {
@@ -3974,6 +3999,14 @@ html {
 
 .sprite-serv8Left {
   margin-left: -461.1px;
+}
+
+.sprite-serv4Left {
+  margin-left: -923px;
+}
+
+.sprite-serv4Right {
+  margin-left: 140px;
 }
 
 .sprite-serv8Left, .sprite-serv8Right {
@@ -4026,7 +4059,7 @@ html {
   width: 56.8px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -9830px -3015px;
+  background-position: -11399px -3392px;
   background-repeat: no-repeat;
   margin-top: -28.4px;
 }
@@ -4051,7 +4084,7 @@ html {
   width: 182.5px;
   height: 67.3px;
   background-image: url("../i/sprite.svg");
-  background-position: -4550px -877px;
+  background-position: -6119px -1254px;
   background-repeat: no-repeat;
   margin-top: -33.65px;
 }
@@ -4080,7 +4113,7 @@ html {
   width: 80.3px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -7736px -1535px;
+  background-position: -9305px -1912px;
   background-repeat: no-repeat;
   margin-top: -28.4px;
 }
