@@ -52,6 +52,12 @@ jQuery(document).ready(function($){
 
 
 
+	$('.a-dontClick').on('click', function(e){
+		e.preventDefault();
+	 	e.stopPropagation();
+	});
+
+
 	/* Set padding for main in case of there is wrong in styles */
 	// if ( $header.length > 0 )
 	// {
