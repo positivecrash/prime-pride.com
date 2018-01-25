@@ -3980,6 +3980,14 @@ html {
   text-align: right;
 }
 
+#product-dopParam {
+  max-width: 550px;
+  margin: 0 auto;
+}
+#product-dopParam .product-param--left, #product-dopParam .product-param--right {
+  padding: 10px 0;
+}
+
 /* end of ITEM PARAMETRS */
 #inside-banner {
   background-color: #222;
@@ -4553,7 +4561,7 @@ section *[class*='col-'] {
 }
 
 .lineobj > * {
-  margin-right: 60px;
+  margin-right: 100px;
   margin-bottom: 20px;
 }
 .lineobj > *:last-child {
