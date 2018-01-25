@@ -102,18 +102,67 @@
 			font-size: 24px;
 			margin-bottom: 0;
 		}
+
+
+		position: relative;
+
+		&:before, &:after
+			{
+				content:"";
+
+				@include get-sprite(arr);
+				position: absolute;
+				top: 50%;
+
+				transition: all 0.2s linear;
+			}
+
+		&:before
+			{
+				left: 40px;
+			}
+
+		&:after
+			{
+				right: 40px;
+			}
+
+
+		&.opened
+			{
+				&:before, &:after
+					{
+						transform: scaleY(-1); 
+					}
+			}
+
+
+		@include max_tablet(){
+			&:before, &:after
+				{
+					display: none;
+				}
+		}
 	}
+
 
 .js-accordion--tabContent
 	{
 		background: $c-gray-2;
 		color: $c-gray-3;
 
+		display: none;
+
 		.container
 			{
 				background: #fff;
 				padding-top: $margin-section;
 				padding-bottom: $margin-section;
+			}
+
+		&.opened
+			{
+				display: block;
 			}
 	}
 
