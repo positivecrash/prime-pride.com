@@ -3982,7 +3982,7 @@ html {
 
 #product-dopParam {
   max-width: 550px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 #product-dopParam .product-param--left, #product-dopParam .product-param--right {
   padding: 10px 0;
