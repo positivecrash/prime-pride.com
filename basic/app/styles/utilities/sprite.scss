@@ -1,5 +1,5 @@
 $icons: (
-    sprite: (width: 11456px, height: 3449px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
+    sprite: (width: 11898px, height: 3572px, pngPath: '../i/sprite.png', svgPath: '../i/sprite.svg'),
     PistenBully: (width: 136.2px, height: 33.1px, backgroundX: 0px, backgroundY: 0px),
     PistenBullySm: (width: 60.7px, height: 14.6px, backgroundX: -137px, backgroundY: -34px),
     Reform: (width: 171.7px, height: 27.4px, backgroundX: -198px, backgroundY: -49px),
@@ -8,34 +8,36 @@ $icons: (
     compareBack: (width: 278.5px, height: 48.2px, backgroundX: -442px, backgroundY: -98px),
     compareIcon: (width: 48px, height: 27px, backgroundX: -721px, backgroundY: -147px),
     diamond: (width: 265.1px, height: 93px, backgroundX: -769px, backgroundY: -174px),
-    downlTable: (width: 189.3px, height: 64px, backgroundX: -1035px, backgroundY: -267px),
-    insideBannerBrands: (width: 352.7px, height: 39.4px, backgroundX: -1225px, backgroundY: -331px),
-    insideBannerBrandsM: (width: 212.8px, height: 23.5px, backgroundX: -1578px, backgroundY: -371px),
-    rouble: (width: 54.1px, height: 54.1px, backgroundX: -1791px, backgroundY: -395px),
-    serv1Left: (width: 757.1px, height: 69.8px, backgroundX: -1846px, backgroundY: -450px),
-    serv1Right: (width: 798.5px, height: 54.3px, backgroundX: -2604px, backgroundY: -520px),
-    serv1Title: (width: 123.7px, height: 71px, backgroundX: -3403px, backgroundY: -575px),
-    serv2: (width: 1022.4px, height: 230.2px, backgroundX: -3527px, backgroundY: -646px),
-    serv4Left: (width: 783px, height: 183.7px, backgroundX: -4550px, backgroundY: -877px),
-    serv4Right: (width: 785.4px, height: 193px, backgroundX: -5333px, backgroundY: -1061px),
-    serv5Title: (width: 182.5px, height: 67.3px, backgroundX: -6119px, backgroundY: -1254px),
-    serv6Left: (width: 1266px, height: 295px, backgroundX: -6302px, backgroundY: -1322px),
-    serv6Right: (width: 1737px, height: 295px, backgroundX: -7568px, backgroundY: -1617px),
-    serv6Title: (width: 80.3px, height: 56.8px, backgroundX: -9305px, backgroundY: -1912px),
-    serv8Left: (width: 241.1px, height: 51px, backgroundX: -9386px, backgroundY: -1969px),
-    serv8Right: (width: 241.1px, height: 51px, backgroundX: -9628px, backgroundY: -2020px),
-    service-1: (width: 153.5px, height: 126.3px, backgroundX: -9870px, backgroundY: -2071px),
-    service-2: (width: 125.1px, height: 126.4px, backgroundX: -10024px, backgroundY: -2198px),
-    service-3: (width: 134.2px, height: 126.4px, backgroundX: -10150px, backgroundY: -2325px),
-    service-4: (width: 128.1px, height: 126.4px, backgroundX: -10285px, backgroundY: -2452px),
-    service-5: (width: 109.7px, height: 125.6px, backgroundX: -10414px, backgroundY: -2579px),
-    service-6: (width: 128.7px, height: 120.9px, backgroundX: -10524px, backgroundY: -2705px),
-    service-7: (width: 142.6px, height: 126.4px, backgroundX: -10653px, backgroundY: -2826px),
-    service-8: (width: 121.8px, height: 126.4px, backgroundX: -10796px, backgroundY: -2953px),
-    serviceBack: (width: 215.2px, height: 56px, backgroundX: -10918px, backgroundY: -3080px),
-    serviceCornerCurls: (width: 192.4px, height: 183.1px, backgroundX: -11134px, backgroundY: -3136px),
-    speed1: (width: 71.7px, height: 71.7px, backgroundX: -11327px, backgroundY: -3320px),
-    speed2: (width: 56.8px, height: 56.8px, backgroundX: -11399px, backgroundY: -3392px),
+    downlPage: (width: 233.5px, height: 43px, backgroundX: -1035px, backgroundY: -267px),
+    downlPageB: (width: 251.5px, height: 80px, backgroundX: -1269px, backgroundY: -310px),
+    downlTable: (width: 189.3px, height: 64px, backgroundX: -1521px, backgroundY: -390px),
+    insideBannerBrands: (width: 352.7px, height: 39.4px, backgroundX: -1711px, backgroundY: -454px),
+    insideBannerBrandsM: (width: 212.8px, height: 23.5px, backgroundX: -2064px, backgroundY: -494px),
+    rouble: (width: 54.1px, height: 54.1px, backgroundX: -2277px, backgroundY: -518px),
+    serv1Left: (width: 757.1px, height: 69.8px, backgroundX: -2332px, backgroundY: -573px),
+    serv1Right: (width: 798.5px, height: 54.3px, backgroundX: -3090px, backgroundY: -643px),
+    serv1Title: (width: 123.7px, height: 71px, backgroundX: -3889px, backgroundY: -698px),
+    serv2: (width: 978.6px, height: 230.2px, backgroundX: -4013px, backgroundY: -769px),
+    serv4Left: (width: 783px, height: 183.7px, backgroundX: -4992px, backgroundY: -1000px),
+    serv4Right: (width: 785.4px, height: 193px, backgroundX: -5775px, backgroundY: -1184px),
+    serv5Title: (width: 182.5px, height: 67.3px, backgroundX: -6561px, backgroundY: -1377px),
+    serv6Left: (width: 1266px, height: 295px, backgroundX: -6744px, backgroundY: -1445px),
+    serv6Right: (width: 1737px, height: 295px, backgroundX: -8010px, backgroundY: -1740px),
+    serv6Title: (width: 80.3px, height: 56.8px, backgroundX: -9747px, backgroundY: -2035px),
+    serv8Left: (width: 241.1px, height: 51px, backgroundX: -9828px, backgroundY: -2092px),
+    serv8Right: (width: 241.1px, height: 51px, backgroundX: -10070px, backgroundY: -2143px),
+    service-1: (width: 153.5px, height: 126.3px, backgroundX: -10312px, backgroundY: -2194px),
+    service-2: (width: 125.1px, height: 126.4px, backgroundX: -10466px, backgroundY: -2321px),
+    service-3: (width: 134.2px, height: 126.4px, backgroundX: -10592px, backgroundY: -2448px),
+    service-4: (width: 128.1px, height: 126.4px, backgroundX: -10727px, backgroundY: -2575px),
+    service-5: (width: 109.7px, height: 125.6px, backgroundX: -10856px, backgroundY: -2702px),
+    service-6: (width: 128.7px, height: 120.9px, backgroundX: -10966px, backgroundY: -2828px),
+    service-7: (width: 142.6px, height: 126.4px, backgroundX: -11095px, backgroundY: -2949px),
+    service-8: (width: 121.8px, height: 126.4px, backgroundX: -11238px, backgroundY: -3076px),
+    serviceBack: (width: 215.2px, height: 56px, backgroundX: -11360px, backgroundY: -3203px),
+    serviceCornerCurls: (width: 192.4px, height: 183.1px, backgroundX: -11576px, backgroundY: -3259px),
+    speed1: (width: 71.7px, height: 71.7px, backgroundX: -11769px, backgroundY: -3443px),
+    speed2: (width: 56.8px, height: 56.8px, backgroundX: -11841px, backgroundY: -3515px),
 );
 
 $sprite: map-get($icons, sprite);
@@ -78,6 +80,12 @@ $sprite: map-get($icons, sprite);
 }
 .sprite-diamond{
 	@include get-sprite(diamond);
+}
+.sprite-downlPage{
+	@include get-sprite(downlPage);
+}
+.sprite-downlPageB{
+	@include get-sprite(downlPageB);
 }
 .sprite-downlTable{
 	@include get-sprite(downlTable);
