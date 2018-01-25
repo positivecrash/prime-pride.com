@@ -2661,6 +2661,19 @@ jQuery(document).ready(function($){
 	  });
 
 
+	/* Smooth Scroll */
+	$('.js-scroll').on('click', function(e){
+		e.preventDefault();
+	 	e.stopPropagation();
+
+	 	var scrollID = $(this).attr('href');
+
+	 	// var test = $scrollTo.html();
+	 	// console.log(test);
+		 	
+	    $('html, body').animate({scrollTop: $(scrollID).offset().top - 150 }, 1000);
+	  });
+
 	/* end of INDEX PAGE */
 
 

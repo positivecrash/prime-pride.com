@@ -420,13 +420,23 @@ ul, ol {
   background-repeat: no-repeat;
 }
 
+.sprite-question {
+  display: inline-block;
+  vertical-align: middle;
+  width: 216.2px;
+  height: 42.5px;
+  background-image: url("../i/sprite.svg");
+  background-position: -2277px -518px;
+  background-repeat: no-repeat;
+}
+
 .sprite-rouble {
   display: inline-block;
   vertical-align: middle;
   width: 54.1px;
   height: 54.1px;
   background-image: url("../i/sprite.svg");
-  background-position: -2277px -518px;
+  background-position: -2494px -561px;
   background-repeat: no-repeat;
 }
 
@@ -436,7 +446,7 @@ ul, ol {
   width: 757.1px;
   height: 69.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -2332px -573px;
+  background-position: -2549px -616px;
   background-repeat: no-repeat;
 }
 
@@ -446,7 +456,7 @@ ul, ol {
   width: 798.5px;
   height: 54.3px;
   background-image: url("../i/sprite.svg");
-  background-position: -3090px -643px;
+  background-position: -3307px -686px;
   background-repeat: no-repeat;
 }
 
@@ -456,7 +466,7 @@ ul, ol {
   width: 123.7px;
   height: 71px;
   background-image: url("../i/sprite.svg");
-  background-position: -3889px -698px;
+  background-position: -4106px -741px;
   background-repeat: no-repeat;
 }
 
@@ -466,7 +476,7 @@ ul, ol {
   width: 978.6px;
   height: 230.2px;
   background-image: url("../i/sprite.svg");
-  background-position: -4013px -769px;
+  background-position: -4230px -812px;
   background-repeat: no-repeat;
 }
 
@@ -476,7 +486,7 @@ ul, ol {
   width: 783px;
   height: 183.7px;
   background-image: url("../i/sprite.svg");
-  background-position: -4992px -1000px;
+  background-position: -5209px -1043px;
   background-repeat: no-repeat;
 }
 
@@ -486,7 +496,7 @@ ul, ol {
   width: 785.4px;
   height: 193px;
   background-image: url("../i/sprite.svg");
-  background-position: -5775px -1184px;
+  background-position: -5992px -1227px;
   background-repeat: no-repeat;
 }
 
@@ -496,7 +506,7 @@ ul, ol {
   width: 182.5px;
   height: 67.3px;
   background-image: url("../i/sprite.svg");
-  background-position: -6561px -1377px;
+  background-position: -6778px -1420px;
   background-repeat: no-repeat;
 }
 
@@ -506,7 +516,7 @@ ul, ol {
   width: 1266px;
   height: 295px;
   background-image: url("../i/sprite.svg");
-  background-position: -6744px -1445px;
+  background-position: -6961px -1488px;
   background-repeat: no-repeat;
 }
 
@@ -516,7 +526,7 @@ ul, ol {
   width: 1737px;
   height: 295px;
   background-image: url("../i/sprite.svg");
-  background-position: -8010px -1740px;
+  background-position: -8227px -1783px;
   background-repeat: no-repeat;
 }
 
@@ -526,7 +536,7 @@ ul, ol {
   width: 80.3px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -9747px -2035px;
+  background-position: -9964px -2078px;
   background-repeat: no-repeat;
 }
 
@@ -536,7 +546,7 @@ ul, ol {
   width: 241.1px;
   height: 51px;
   background-image: url("../i/sprite.svg");
-  background-position: -9828px -2092px;
+  background-position: -10045px -2135px;
   background-repeat: no-repeat;
 }
 
@@ -546,7 +556,7 @@ ul, ol {
   width: 241.1px;
   height: 51px;
   background-image: url("../i/sprite.svg");
-  background-position: -10070px -2143px;
+  background-position: -10287px -2186px;
   background-repeat: no-repeat;
 }
 
@@ -556,7 +566,7 @@ ul, ol {
   width: 153.5px;
   height: 126.3px;
   background-image: url("../i/sprite.svg");
-  background-position: -10312px -2194px;
+  background-position: -10529px -2237px;
   background-repeat: no-repeat;
 }
 
@@ -566,7 +576,7 @@ ul, ol {
   width: 125.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -10466px -2321px;
+  background-position: -10683px -2364px;
   background-repeat: no-repeat;
 }
 
@@ -576,7 +586,7 @@ ul, ol {
   width: 134.2px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -10592px -2448px;
+  background-position: -10809px -2491px;
   background-repeat: no-repeat;
 }
 
@@ -586,7 +596,7 @@ ul, ol {
   width: 128.1px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -10727px -2575px;
+  background-position: -10944px -2618px;
   background-repeat: no-repeat;
 }
 
@@ -596,7 +606,7 @@ ul, ol {
   width: 109.7px;
   height: 125.6px;
   background-image: url("../i/sprite.svg");
-  background-position: -10856px -2702px;
+  background-position: -11073px -2745px;
   background-repeat: no-repeat;
 }
 
@@ -606,7 +616,7 @@ ul, ol {
   width: 128.7px;
   height: 120.9px;
   background-image: url("../i/sprite.svg");
-  background-position: -10966px -2828px;
+  background-position: -11183px -2871px;
   background-repeat: no-repeat;
 }
 
@@ -616,7 +626,7 @@ ul, ol {
   width: 142.6px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -11095px -2949px;
+  background-position: -11312px -2992px;
   background-repeat: no-repeat;
 }
 
@@ -626,7 +636,7 @@ ul, ol {
   width: 121.8px;
   height: 126.4px;
   background-image: url("../i/sprite.svg");
-  background-position: -11238px -3076px;
+  background-position: -11455px -3119px;
   background-repeat: no-repeat;
 }
 
@@ -636,7 +646,7 @@ ul, ol {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: -11360px -3203px;
+  background-position: -11577px -3246px;
   background-repeat: no-repeat;
 }
 
@@ -646,7 +656,7 @@ ul, ol {
   width: 192.4px;
   height: 183.1px;
   background-image: url("../i/sprite.svg");
-  background-position: -11576px -3259px;
+  background-position: -11793px -3302px;
   background-repeat: no-repeat;
 }
 
@@ -656,7 +666,7 @@ ul, ol {
   width: 71.7px;
   height: 71.7px;
   background-image: url("../i/sprite.svg");
-  background-position: -11769px -3443px;
+  background-position: -11986px -3486px;
   background-repeat: no-repeat;
 }
 
@@ -666,7 +676,7 @@ ul, ol {
   width: 56.8px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -11841px -3515px;
+  background-position: -12058px -3558px;
   background-repeat: no-repeat;
 }
 
@@ -3326,7 +3336,7 @@ html {
   width: 215.2px;
   height: 56px;
   background-image: url("../i/sprite.svg");
-  background-position: -11360px -3203px;
+  background-position: -11577px -3246px;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
@@ -4055,7 +4065,7 @@ html {
   width: 123.7px;
   height: 71px;
   background-image: url("../i/sprite.svg");
-  background-position: -3889px -698px;
+  background-position: -4106px -741px;
   background-repeat: no-repeat;
   margin-top: -35.5px;
 }
@@ -4084,7 +4094,7 @@ html {
   width: 56.8px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -11841px -3515px;
+  background-position: -12058px -3558px;
   background-repeat: no-repeat;
   margin-top: -28.4px;
 }
@@ -4109,7 +4119,7 @@ html {
   width: 182.5px;
   height: 67.3px;
   background-image: url("../i/sprite.svg");
-  background-position: -6561px -1377px;
+  background-position: -6778px -1420px;
   background-repeat: no-repeat;
   margin-top: -33.65px;
 }
@@ -4138,7 +4148,7 @@ html {
   width: 80.3px;
   height: 56.8px;
   background-image: url("../i/sprite.svg");
-  background-position: -9747px -2035px;
+  background-position: -9964px -2078px;
   background-repeat: no-repeat;
   margin-top: -28.4px;
 }
@@ -4497,6 +4507,14 @@ section *[class*='col-'] {
   .sec-tree .row .sec-tree__equal_2 {
     height: 120px;
   }
+}
+
+.lineobj > * {
+  margin-right: 60px;
+  margin-bottom: 20px;
+}
+.lineobj > *:last-child {
+  margin-right: 0;
 }
 
 /* end of CONTAINERS */
