@@ -75,20 +75,20 @@ h1, h2, h3, h4, h5, h6, .form-select select, a.btn-lined, .btn-dark, header[role
 
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondLight.eot?1516913388');
-  src: url('../fonts/DINPro-CondLight.eot?&1516913388#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1516913388') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
+  src: url('../fonts/DINPro-CondLight.eot?1517344906');
+  src: url('../fonts/DINPro-CondLight.eot?&1517344906#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1517344906') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
   font-weight: 300;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-Cond.eot?1516913387');
-  src: url('../fonts/DINPro-Cond.eot?&1516913387#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1516913387') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
+  src: url('../fonts/DINPro-Cond.eot?1517344906');
+  src: url('../fonts/DINPro-Cond.eot?&1517344906#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1517344906') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondBold.eot?1516913388');
-  src: url('../fonts/DINPro-CondBold.eot?&1516913388#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1516913388') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
+  src: url('../fonts/DINPro-CondBold.eot?1517344906');
+  src: url('../fonts/DINPro-CondBold.eot?&1517344906#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1517344906') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
   font-weight: 800;
 }
 .t-red {
@@ -692,8 +692,8 @@ ul, ol {
 
 @font-face {
   font-family: "ppIconsFont";
-  src: url('../fonts/ppIconsFont.eot?1516913388');
-  src: url('../fonts/ppIconsFont.eot?&1516913388#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1516913388') format('woff'), url('../fonts/ppIconsFont.woff2?1516913387') format('woff2'), url('../fonts/ppIconsFont.svg?1516913386') format('svg'), url('../fonts/ppIconsFont.ttf?1516913387') format('truetype');
+  src: url('../fonts/ppIconsFont.eot?1517344907');
+  src: url('../fonts/ppIconsFont.eot?&1517344907#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1517344907') format('woff'), url('../fonts/ppIconsFont.woff2?1517344905') format('woff2'), url('../fonts/ppIconsFont.svg?1517344905') format('svg'), url('../fonts/ppIconsFont.ttf?1517344905') format('truetype');
 }
 .i-arrDown, .i-arrLeft, .i-arrLeftSimple, .i-arrRight, .i-arrRightSimple, .i-arrUp, .i-flickr, .i-instagram, .i-search, .i-youtube {
   font-family: "ppIconsFont";
@@ -3082,10 +3082,10 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 117px;
-  height: 108px;
-  margin-left: -58.5px;
-  margin-top: -54px;
+  width: 282px;
+  height: 259px;
+  margin-left: -141px;
+  margin-top: -129.5px;
   z-index: 2;
 }
 
@@ -3244,7 +3244,7 @@ html {
 
 .index-num--text {
   display: inline-block;
-  margin-left: -40px;
+  margin-left: -32px;
 }
 
 .no-svg #index-num {

@@ -12,10 +12,10 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: image-width('pp-logo-big.png');
-	height: image-height('pp-logo-big.png');
-	margin-left: - image-width('pp-logo-big.png')/2;
-	margin-top: - image-height('pp-logo-big.png')/2;
+	width: image-width('pp-logo-big-w.png');
+	height: image-height('pp-logo-big-w.png');
+	margin-left: - image-width('pp-logo-big-w.png')/2;
+	margin-top: - image-height('pp-logo-big-w.png')/2;
 
 	z-index: 2;
 }
@@ -238,7 +238,7 @@ $diamond: map-get($icons, diamond);
 .index-num--text
 {
 	display: inline-block;
-	margin-left: -40px;
+	margin-left: -32px;
 }
 
 
