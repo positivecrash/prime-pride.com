@@ -4396,6 +4396,7 @@ html {
 
 .reviews .feedback-preview {
   transition: all 0.2s linear;
+  color: #222;
 }
 .reviews .feedback-preview img {
   border-width: 1px;
