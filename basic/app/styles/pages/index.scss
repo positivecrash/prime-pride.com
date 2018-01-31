@@ -312,6 +312,7 @@ $diamond: map-get($icons, diamond);
 		@extend %text_title;
 		font-size: 15px;
 		line-height: 1;
+		font-weight: 400;
 
 		&.data-hover--active
 		{

@@ -75,20 +75,20 @@ h1, h2, h3, h4, h5, h6, .form-select select, a.btn-lined, .btn-dark, header[role
 
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondLight.eot?1517394089');
-  src: url('../fonts/DINPro-CondLight.eot?&1517394089#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1517394089') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
+  src: url('../fonts/DINPro-CondLight.eot?1517425317');
+  src: url('../fonts/DINPro-CondLight.eot?&1517425317#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondLight.woff?1517425317') format('woff'), url('../fonts/DINPro-CondLight.ttf?1506520884') format('truetype');
   font-weight: 300;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-Cond.eot?1517394089');
-  src: url('../fonts/DINPro-Cond.eot?&1517394089#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1517394089') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
+  src: url('../fonts/DINPro-Cond.eot?1517425316');
+  src: url('../fonts/DINPro-Cond.eot?&1517425316#iefix') format('embedded-opentype'), url('../fonts/DINPro-Cond.woff?1517425317') format('woff'), url('../fonts/DINPro-Cond.ttf?1506520834') format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: "DINProC";
-  src: url('../fonts/DINPro-CondBold.eot?1517394089');
-  src: url('../fonts/DINPro-CondBold.eot?&1517394089#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1517394089') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
+  src: url('../fonts/DINPro-CondBold.eot?1517425317');
+  src: url('../fonts/DINPro-CondBold.eot?&1517425317#iefix') format('embedded-opentype'), url('../fonts/DINPro-CondBold.woff?1517425317') format('woff'), url('../fonts/DINPro-CondBold.ttf?1506520864') format('truetype');
   font-weight: 800;
 }
 .t-red {
@@ -708,8 +708,8 @@ ul, ol {
 
 @font-face {
   font-family: "ppIconsFont";
-  src: url('../fonts/ppIconsFont.eot?1517394089');
-  src: url('../fonts/ppIconsFont.eot?&1517394089#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1517394089') format('woff'), url('../fonts/ppIconsFont.woff2?1517394088') format('woff2'), url('../fonts/ppIconsFont.svg?1517394088') format('svg'), url('../fonts/ppIconsFont.ttf?1517394088') format('truetype');
+  src: url('../fonts/ppIconsFont.eot?1517425317');
+  src: url('../fonts/ppIconsFont.eot?&1517425317#iefix') format('embedded-opentype'), url('../fonts/ppIconsFont.woff?1517425317') format('woff'), url('../fonts/ppIconsFont.woff2?1517425316') format('woff2'), url('../fonts/ppIconsFont.svg?1517425316') format('svg'), url('../fonts/ppIconsFont.ttf?1517425316') format('truetype');
 }
 .i-arrDown, .i-arrLeft, .i-arrLeftSimple, .i-arrRight, .i-arrRightSimple, .i-arrUp, .i-flickr, .i-instagram, .i-search, .i-youtube {
   font-family: "ppIconsFont";
@@ -857,7 +857,6 @@ header[role="banner"] {
   right: 0;
   z-index: 9999;
   background-color: #222;
-  padding-top: 2px;
   font-size: 19px;
   line-height: 1.2;
 }
@@ -895,9 +894,7 @@ header[role="banner"] sup {
   position: relative;
 }
 #header-nav > ul > li > a {
-  padding: 10px 10px 22px;
-  margin-top: 8px;
-  border-radius: 2px 2px 0 0;
+  padding: 20px 10px 22px;
 }
 #header-nav a.i-search {
   font-size: 22px;
@@ -946,7 +943,7 @@ header[role="banner"] sup {
 }
 .dropdown li {
   display: block;
-  margin-top: 15px;
+  padding-top: 15px;
   white-space: nowrap;
   text-align: left;
 }
@@ -975,7 +972,7 @@ header[role="banner"] sup {
     -webkit-animation: 0.2s DDfadeIn 0.4s ease-out forwards;
             animation: 0.2s DDfadeIn 0.4s ease-out forwards;
   }
-  #header-nav > ul > li[data-toggle="hover"]:hover > a {
+  #header-nav > ul > li[data-toggle="hover"]:hover > a, #header-nav > ul > li[data-toggle="hover"].active > a {
     background-color: #fff;
     color: #222;
   }
@@ -1161,6 +1158,7 @@ footer[role='contentinfo'] .col-sm-6 {
 .footer-nav {
   list-style: none;
   margin-bottom: 30px;
+  margin-left: 0;
   text-align: left;
   font-weight: 400;
   font-size: 19px;
@@ -3313,6 +3311,7 @@ html {
   background-color: #222;
   font-size: 15px;
   line-height: 1;
+  font-weight: 400;
 }
 #index-items--controls a.data-hover--active {
   background-color: #8D734A;

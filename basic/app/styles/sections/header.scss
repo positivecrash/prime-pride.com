@@ -8,7 +8,6 @@ header[role="banner"]{
 	z-index: 9999;
 
 	background-color: $c-base;
-	padding-top: 2px;
 
 	@extend %text_title;
 	font-size: 19px;
@@ -71,9 +70,7 @@ header[role="banner"]{
 		position: relative;
 
 		& > a{
-    		padding: 10px 10px 22px;
-    		margin-top: 8px;
-    		border-radius: 2px 2px 0 0;
+    		padding: 20px 10px 22px;
 		}
 	}
 
@@ -124,7 +121,7 @@ header[role="banner"]{
 
 	li { 
 		display: block;
-		margin-top: 15px;
+		padding-top: 15px;
 		white-space: nowrap;
 		text-align: left;
 
@@ -162,7 +159,7 @@ header[role="banner"]{
 			animation: 0.2s DDfadeIn 0.4s ease-out forwards;
 		}
 
-		&:hover > a{
+		&:hover > a, &.active > a {
 			background-color: #fff;
 			color: $c-base;
 		}
