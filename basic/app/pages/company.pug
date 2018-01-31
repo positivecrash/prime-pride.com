@@ -1,0 +1,148 @@
+extends extends/layout.pug
+
+include includes/mixins.pug
+
+block head
+	- var pageTitle = 'О компании - PistenBully Россия'
+
+block content
+	main(role="main")
+		#inside-banner
+			#inside-banner--content
+				h1 О компании
+
+				img#inside-banner--logo(alt="", src="assets/i/pp-logo-big.png", srcset="assets/i/pp-logo-big-x2.png")
+				#inside-banner--logoStripe-m
+					span.sprite-insideBannerBrandsM
+				#inside-banner--logoStripe.sprite-insideBannerBrands
+
+				#index-num
+					.container-narrow
+						.d-t
+							.d-t-cell.align-b-middle
+								.index-num--n
+									span.index-num--text.js-countto(data-countTo="187") 0
+									span.sprite-diamondLight
+
+								span.index-num--t.index-num--text клиентов
+
+							.d-t-cell.align-b-middle
+								.index-num--n
+									span.index-num--text.js-countto(data-countTo="327") 0
+									span.sprite-diamondLight
+
+								span.index-num--t.index-num--text машин
+
+							.d-t-cell.align-b-middle
+								.index-num--n
+									span.index-num--text.js-countto(data-countTo="116000") 0
+									span.sprite-diamondLight
+
+								span.index-num--t.index-num--text м/ч безотказной работы
+
+		
+		section.container
+			.title-compl.title-compl--serv5
+				.title-compl--content
+					h2 С нами приятно.
+
+			p Наша компания была основана в 2014 году как эксклюзивный представитель в России и РБ компании "REFORM", чуть позже мы стали предтавителями техники "PistenBully".
+			p Мы с 2014 года занимаемся продажей, ремонтом и обучением эксплуатации техники "REFORM" и "PistenBully". У нас так много клиентов, потому что мы относимся к работе серьёзно, что значит если и допускаем ошибки, то всегда признаём их, исправляем, и делаем выводы. Мы понимаем, как работает бизнес наших партнёров, и всегда работаем с ними в связке. У нас своя ремонтная база, огромный склад запчастей в наличии, лучшие сервисмены и лучшие специалисты в офисе. Мы доступны круглосуточно. Мы официальные дистрибьюторы и представители производителя, а это значит, что мы соответствуем всем стандартам и нормам качества.
+
+		hr/
+		h2.t-beige-dark Партнеры
+
+		.sec-imgGrid.container-narrow
+			.row
+				.col-sm-4
+					img(alt="", src="assets/i/tmp/comp-1.png")
+					h3.title-light WINTERSHAPEPRO
+				.col-sm-4
+					img(alt="", src="assets/i/tmp/comp-1.png")
+					h3.title-light Компания с длинным названием
+				.col-sm-4
+					img(alt="", src="assets/i/tmp/comp-1.png")
+					h3.title-light Компания с длинным названием
+				.col-sm-4
+					img(alt="", src="assets/i/tmp/comp-1.png")
+					h3.title-light Компания с длинным названием
+				.col-sm-4
+					img(alt="", src="assets/i/tmp/comp-1.png")
+					h3.title-light Компания с длинным названием
+				.col-sm-4
+					img(alt="", src="assets/i/tmp/comp-1.png")
+					h3.title-light Компания с длинным названием
+
+		hr/
+		h2.t-beige-dark Логотипы
+
+		.container-narrow
+			.row
+				.col-sm-6.sec-logoWrap
+					h3.title-light Русская версия прайм прайд
+
+					.sec-logo
+						img(alt="", src="assets/i/tmp/logos/pp-logo-cyr-preview.png")
+						.sec-logo__links
+							| Скачать:
+							a(href="assets/i/tmp/logos/pp-logo-cyr.eps", target="_blank") EPS
+							a(href="assets/i/tmp/logos/pp-logo-cyr.png", target="_blank") PNG
+
+					h3.title-light pistenbully
+
+					.sec-logo
+						img(alt="", src="assets/i/tmp/logos/pp-logo-cyr-preview.png")
+						.sec-logo__links
+							| Скачать:
+							a(href="assets/i/tmp/logos/pp-logo-cyr.eps", target="_blank") EPS
+							a(href="assets/i/tmp/logos/pp-logo-cyr.png", target="_blank") PNG
+
+
+				.col-sm-6.sec-logoWrap
+					h3.title-light Латинская версия прайм-прайд
+
+					.sec-logo
+						img(alt="", src="assets/i/tmp/logos/pp-logo-cyr-preview.png")
+						.sec-logo__links
+							| Скачать:
+							a(href="assets/i/tmp/logos/pp-logo-cyr.eps", target="_blank") EPS
+							a(href="assets/i/tmp/logos/pp-logo-cyr.png", target="_blank") PNG
+
+					h3.title-light reform
+
+					.sec-logo
+						img(alt="", src="assets/i/tmp/logos/pp-logo-cyr-preview.png")
+						.sec-logo__links
+							| Скачать:
+							a(href="assets/i/tmp/logos/pp-logo-cyr.eps", target="_blank") EPS
+							a(href="assets/i/tmp/logos/pp-logo-cyr.png", target="_blank") PNG
+
+
+
+		hr/
+		h2.t-beige-dark Изображения
+
+		.sec-imgGrid.container-narrow
+			.row
+				.col-sm-4
+					a(href="assets/i/tmp/2.jpg" data-fancybox="gallery")
+						img(alt="", src="assets/i/tmp/2.jpg")
+				.col-sm-4
+					a(href="assets/i/tmp/2.jpg" data-fancybox="gallery")
+						img(alt="", src="assets/i/tmp/2.jpg")
+				.col-sm-4
+					a(href="assets/i/tmp/2.jpg" data-fancybox="gallery")
+						img(alt="", src="assets/i/tmp/2.jpg")
+				.col-sm-4
+					a(href="assets/i/tmp/2.jpg" data-fancybox="gallery")
+						img(alt="", src="assets/i/tmp/2.jpg")
+				.col-sm-4
+					a(href="assets/i/tmp/2.jpg" data-fancybox="gallery")
+						img(alt="", src="assets/i/tmp/2.jpg")
+				.col-sm-4
+					a(href="assets/i/tmp/2.jpg" data-fancybox="gallery")
+						img(alt="", src="assets/i/tmp/2.jpg")
+
+
+		hr/
+		+contacts()

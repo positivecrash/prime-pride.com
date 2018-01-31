@@ -1,0 +1,25 @@
+#inside-banner
+	{
+		background-image: image_url('companyBack.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		padding: 0;
+
+		#inside-banner--content
+			{
+				border: none;
+			}
+
+		#index-num
+			{
+				background: none;
+				min-height: auto;
+				margin-top: 80px;
+
+				.index-num--t
+					{
+						color: #F0D283;
+					}
+			}
+	}

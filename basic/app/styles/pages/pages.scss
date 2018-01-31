@@ -215,3 +215,242 @@
 			}
 	}
 /* end of ITEM PARAMETRS */
+
+
+
+
+$tree-trunk: 27px;
+$tree-trunk-2: 17px;
+$tree-trunk-c: $c-gray-2;
+
+.sec-tree
+  {
+    h2 { color: $c-beige-dark; }
+
+    .row
+      {
+        margin-top: 30px;
+        padding-top: $tree-trunk + $tree-trunk-2;
+        position: relative;
+
+
+        @media screen and (min-width: #{$bootstrap-md})
+          {
+            &:before, &:after
+            {
+              content:"";
+              position: absolute;
+              left: 50%;
+            }
+
+            &:before
+              {
+                width: 10px;
+                height: 10px;
+                border: 1px solid $tree-trunk-c;
+                margin-left: -5.5px;
+                top: - 10px;
+              }
+
+            &:after
+              {
+                background-color: $tree-trunk-c;
+                width: 1px;
+                height: $tree-trunk-2;
+                margin-left: -0.5px;
+                top: 0;
+              }
+          }
+
+
+
+
+        div[class*='col-']
+          {
+            
+            .c-inside
+              {
+                margin: 0 10px 10px;
+                background-color: $c-base;
+                color: #fff;
+                padding: 15px;
+              }
+
+            position: relative;
+            padding: 0;
+
+            @media screen and (min-width: #{$bootstrap-md})
+              {
+                &:before, &:after
+                  {
+                    content:"";
+                    background-color: $tree-trunk-c;
+                    position: absolute;
+                    top: -$tree-trunk;
+                  }
+
+                &:before
+                  {
+                    height: 1px;
+                    left: 0;
+                    right: 0;
+                  }
+
+                &:after
+                  {
+                    
+                    width: 1px;
+                    height: $tree-trunk;
+                    left: 50%;
+                    margin-left: -0.5px;
+                    
+                  }
+
+                &:first-child:before
+                  {
+                    left: 50%;
+                  }
+
+                &:last-child:before
+                  {
+                    right: 50%;
+                  }
+              }
+          }
+
+        h3 {
+          color: $c-beige;
+          font-weight: 300;
+          padding: 5px 0;
+          border-width: 1px 0;
+          border-style: solid;
+          border-color: $c-beige;
+        }
+
+        .sec-tree__equal_2
+          {
+            border-top: 1px solid $c-gray-4;
+            padding-top: 10px;
+            margin-top: 10px;
+          }
+
+        @media screen and (min-width: 950px)
+        {
+            .sec-tree__equal_1
+              {
+                height: 180px;
+              }
+
+              .sec-tree__equal_2
+                {
+                  height: 100px;
+                }
+        }
+
+
+        @media screen and (min-width: #{$bootstrap-md}) and (max-width: 950px)
+        {
+            .sec-tree__equal_1
+              {
+                height: 260px;
+              }
+
+              .sec-tree__equal_2
+                {
+                  height: 120px;
+                }
+        }
+      }
+  }
+
+.sec-imgGrid
+  {
+    img
+      {
+        display: block;
+        max-width: 100%;
+      }
+
+    .col-sm-4
+      {
+        margin-bottom: 20px;
+      }
+  }
+
+
+
+
+ .sec-logoWrap
+ 	{
+ 		h3.title-light
+ 			{
+ 				margin-top: 40px;
+ 				margin-bottom: 10px;
+
+ 				&:first-child
+ 					{
+ 						margin-top: 0;
+ 					}
+ 			}
+ 	}
+
+
+.sec-logo
+  {
+  	border: 1px solid $c-gray-2;
+  	padding: 10px;
+  	height: 138px;
+  	text-align: center;
+  	position: relative;
+
+  	img
+  		{
+  			display: inline-block;
+  			max-height: 100%;
+  		}
+
+  	&:hover
+  		{
+  			.sec-logo__links
+  				{
+  					opacity: 1;
+  					visibility: visible;
+  				}
+  		}
+
+  	.sec-logo__links
+  		{
+  			opacity: 0;
+  			visibility: hidden;
+  			transition: 0.2s all linear;
+
+  			position: absolute;
+  			top: 0;
+  			lefT: 0;
+  			right: 0;
+  			bottom: 0;
+  			z-index: 1;
+
+  			background: rgba(#000, .8);
+
+  			@extend %text_title;
+  			color: $c-beige-3;
+  			font-size: 27px;
+
+  			padding-top: 50px;
+
+  			a
+  				{
+  					display: inline-block;
+  					margin-left: 15px;
+  					background-color: #fff;
+  					color: $c-text;
+  					padding: 0 5px;
+
+  					&:hover
+  						{
+  							background-color: $c-beige-3;
+  						}
+  				}
+  		}
+  }

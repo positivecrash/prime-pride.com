@@ -160,7 +160,7 @@ jQuery(document).ready(function($){
 
 	/* Set equal height for titles in Contacts section */
 	/* Set equal height for title of item */
-	var contactsTitle = '#pageContacts h3';
+	var contactsTitle = '.contacts h3';
 
 	if ( $(contactsTitle).length > 0 ){
 		set_height(contactsTitle, contactsTitle, false);
