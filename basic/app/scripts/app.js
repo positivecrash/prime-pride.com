@@ -157,7 +157,16 @@ jQuery(document).ready(function($){
 
 	/* end of CATALOG */
 
-	// var viewer = new Kaleidoscope.Image(
-	// 	{source: "assets/i/tmp/pano/panno_test.png", containerId: "#test"});
-	// viewer.render();
+
+	/* Set equal height for titles in Contacts section */
+	/* Set equal height for title of item */
+	var contactsTitle = '#pageContacts h3';
+
+	if ( $(contactsTitle).length > 0 ){
+		set_height(contactsTitle, contactsTitle, false);
+
+		$w.on('resize', function(){
+			set_height(contactsTitle, contactsTitle, false);
+		});
+	}
 });
